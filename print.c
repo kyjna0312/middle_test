@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "type.h"
+#include "print.h"
+
 void print_source(A_NODE *node)
 {
     printf("======= source program ==========\n");
@@ -194,13 +194,6 @@ void prt_for_expression(A_NODE *node)
 }
 void prt_A_TYPE(A_TYPE *t, int s)
 {
-    /* 추가한 부분*/
-    extern A_TYPE* int_type;
-    extern A_TYPE* float_type;
-    extern A_TYPE* char_type;
-    extern A_TYPE* void_type;
-    extern A_TYPE* string_type;
-    /* 추가한거 끝 */
     print_space(s);
     if (t == int_type)
         printf("(int)\n");
@@ -244,4 +237,40 @@ void prt_A_ID(A_ID *id)
 {
     printf("%s", id->name);
     print_A_TYPE(id->type);
+}
+
+void print_space(int s)
+{
+    int i;
+    for(i=1; i<=s; i++) 
+        printf("| ");
+}
+
+void print_A_TYPE (A_TYPE *t) {
+    if (t == int_type)
+        printf("(int)\n");
+    else if (t == float_type)
+        printf("(float)\n");
+    else if (t == char_type)
+        printf("(char %d)\n", t->size);
+    else if (t == void_type)
+        printf("(void)");
+    else if (t->kind == T_NULL)
+        printf("(null)");
+    else
+        switch (t->kind)
+        {
+        case T_ENUM:
+            break;
+        case T_POINTER:
+            break;
+        case T_ARRAY:
+            break;
+        case T_STRUCT:
+            break;
+        case T_UNION:
+            break;
+        case T_FUNC:
+            prt_statement(t->expr);
+        }
 }
