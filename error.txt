@@ -1,0 +1,1943 @@
+lex.l: In function ‘yylex’:
+lex.l:73:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   73 | {digit}+\.{digit}+ { yylval = makeString(yytext); return(FLOAT_CONSTANT); }
+      |          ^
+lex.l:75:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   75 | \"([^"\n]|\\["\n])*\" { yylval = makeString(yytext); return(STRING_LITERAL); }
+      |          ^
+lex.l: In function ‘checkIdentifier’:
+lex.l:100:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  100 |   yylval = makeString(s);
+      |          ^
+lex.l:104:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  104 |   yylval = id -> type;
+      |          ^
+lex.l:108:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  108 |   yylval = id -> name;
+      |          ^
+main.c: In function ‘main’:
+main.c:13:9: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   13 |         exit(1);
+      |         ^~~~
+main.c:13:9: warning: incompatible implicit declaration of built-in function ‘exit’
+main.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+    2 | #include "print.h"
+  +++ |+#include <stdlib.h>
+    3 | extern int syntax_err;
+main.c:16:5: warning: implicit declaration of function ‘initialize’; did you mean ‘prt_initializer’? [-Wimplicit-function-declaration]
+   16 |     initialize();
+      |     ^~~~~~~~~~
+      |     prt_initializer
+main.c:18:18: warning: implicit declaration of function ‘yyparse’ [-Wimplicit-function-declaration]
+   18 |     int result = yyparse();
+      |                  ^~~~~~~
+print.c: In function ‘print_source’:
+print.c:67:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   67 |     printf("======= source program ==========\n");
+      |     ^~~~~~
+print.c:67:5: warning: incompatible implicit declaration of built-in function ‘printf’
+print.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "print.h"
+  +++ |+#include <stdio.h>
+    2 | 
+print.c: In function ‘prt_program’:
+print.c:75:27: warning: passing argument 1 of ‘prt_A_ID_LIST’ from incompatible pointer type [-Wincompatible-pointer-types]
+   75 |         prt_A_ID_LIST(node->clink);
+      |                       ~~~~^~~~~~~
+      |                           |
+      |                           struct s_node *
+In file included from print.c:1:
+print.h:18:20: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   18 | void prt_A_ID_LIST(A_ID *);
+      |                    ^~~~~~
+print.c:78:9: warning: incompatible implicit declaration of built-in function ‘printf’
+   78 |         printf("****syntax tree error******");
+      |         ^~~~~~
+print.c:78:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_initializer’:
+print.c:95:9: warning: incompatible implicit declaration of built-in function ‘printf’
+   95 |         printf("****syntax tree error******");
+      |         ^~~~~~
+print.c:95:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_expression’:
+print.c:155:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  155 |         printf("****syntax tree error******");
+      |         ^~~~~~
+print.c:155:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_arg_expr_list’:
+print.c:169:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  169 |         printf("****syntax tree error******");
+      |         ^~~~~~
+print.c:169:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_statement’:
+print.c:185:31: warning: passing argument 1 of ‘prt_A_ID_LIST’ from incompatible pointer type [-Wincompatible-pointer-types]
+  185 |             prt_A_ID_LIST(node->llink);
+      |                           ~~~~^~~~~~~
+      |                               |
+      |                               struct s_node *
+In file included from print.c:1:
+print.h:18:20: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   18 | void prt_A_ID_LIST(A_ID *);
+      |                    ^~~~~~
+print.c:224:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  224 |         printf("****syntax tree error******");
+      |         ^~~~~~
+print.c:224:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_statement_list’:
+print.c:238:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  238 |         printf("****syntax tree error******");
+      |         ^~~~~~
+print.c:238:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_for_expression’:
+print.c:254:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  254 |         printf("****syntax tree error******");
+      |         ^~~~~~
+print.c:254:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_A_TYPE’:
+print.c:261:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  261 |         printf("(int)\n");
+      |         ^~~~~~
+print.c:261:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:263:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  263 |         printf("(float)\n");
+      |         ^~~~~~
+print.c:263:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:265:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  265 |         printf("(char %d)\n", t->size);
+      |         ^~~~~~
+print.c:265:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:267:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  267 |         printf("(void)");
+      |         ^~~~~~
+print.c:267:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:269:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  269 |         printf("(null)");
+      |         ^~~~~~
+print.c:269:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_A_ID’:
+print.c:300:5: warning: incompatible implicit declaration of built-in function ‘printf’
+  300 |     printf("%s", id->name);
+      |     ^~~~~~
+print.c:300:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘print_space’:
+print.c:308:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  308 |         printf("| ");
+      |         ^~~~~~
+print.c:308:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘print_A_TYPE’:
+print.c:313:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  313 |         printf("(int)\n");
+      |         ^~~~~~
+print.c:313:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:315:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  315 |         printf("(float)\n");
+      |         ^~~~~~
+print.c:315:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:317:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  317 |         printf("(char %d)\n", t->size);
+      |         ^~~~~~
+print.c:317:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:319:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  319 |         printf("(void)");
+      |         ^~~~~~
+print.c:319:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:321:9: warning: incompatible implicit declaration of built-in function ‘printf’
+  321 |         printf("(null)");
+      |         ^~~~~~
+print.c:321:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+support_func.c: In function ‘searchIdentifier’:
+support_func.c:108:8: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+  108 |     if(strcmp(id->name,s)==0)
+      |        ^~~~~~
+support_func.c: In function ‘setFunctionDeclaratorSpecifier’:
+support_func.c:289:13: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+  289 |         if (strlen(a->name))
+      |             ^~~~~~
+support_func.c:289:13: warning: incompatible implicit declaration of built-in function ‘strlen’
+support_func.c:2:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    1 | #include "support_func.h"
+  +++ |+#include <string.h>
+    2 | 
+support_func.c: In function ‘setDeclaratorListSpecifier’:
+support_func.c:311:13: warning: incompatible implicit declaration of built-in function ‘strlen’
+  311 |         if (strlen(a->name) && searchIdentifierAtCurrentLevel(a->name, a->prev))
+      |             ^~~~~~
+support_func.c:311:13: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+support_func.c: In function ‘syntax_error’:
+support_func.c:541:6: warning: incompatible implicit declaration of built-in function ‘strlen’
+  541 |   if(strlen(yytext)==0)
+      |      ^~~~~~
+support_func.c:541:6: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+kim.y: In function ‘yyparse’:
+kim.y:32:65: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+   32 |     translation_unit {root=makeNode(N_PROGRAM, NIL, $1, NIL); checkForwardReference();}
+      |                                                            ~~~~~^~~
+      |                                                                 |
+      |                                                                 YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:37:103: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   37 |     |translation_unit external_declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                                                       ^   
+      |                                                                                                       |
+      |                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:37:114: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   37 |     |translation_unit external_declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                                                                  ^  
+      |                                                                                                                  |
+      |                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:37:78: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   37 |     |translation_unit external_declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                              ^
+kim.y:46:112: warning: passing argument 1 of ‘setFunctionDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   46 |        declaration_specifiers declarator{$$=setFunctionDeclaratorSpecifier($2, $1);} compound_statement{$$=setFunctionDeclaratorBody($3, $4);}
+      |                                                                                                           ~~~~~^~~
+      |                                                                                                                |
+      |                                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:26:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   26 | A_ID *setFunctionDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:46:122: warning: passing argument 2 of ‘setFunctionDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   46 |        declaration_specifiers declarator{$$=setFunctionDeclaratorSpecifier($2, $1);} compound_statement{$$=setFunctionDeclaratorBody($3, $4);}
+      |                                                                                                                     ~~~~~^~~~
+      |                                                                                                                          |
+      |                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:26:7: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   26 | A_ID *setFunctionDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:46:75: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   46 |        declaration_specifiers declarator{$$=setFunctionDeclaratorSpecifier($2, $1);} compound_statement{$$=setFunctionDeclaratorBody($3, $4);}
+      |                                                                           ^
+kim.y:46:170: warning: passing argument 1 of ‘setFunctionDeclaratorBody’ makes pointer from integer without a cast [-Wint-conversion]
+   46 |        declaration_specifiers declarator{$$=setFunctionDeclaratorSpecifier($2, $1);} compound_statement{$$=setFunctionDeclaratorBody($3, $4);}
+      |                                                                                                                                                                          ^   
+      |                                                                                                                                                                          |
+      |                                                                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:27:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   27 | A_ID *setFunctionDeclaratorBody(A_ID *, A_NODE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:46:181: warning: passing argument 2 of ‘setFunctionDeclaratorBody’ makes pointer from integer without a cast [-Wint-conversion]
+   46 |        declaration_specifiers declarator{$$=setFunctionDeclaratorSpecifier($2, $1);} compound_statement{$$=setFunctionDeclaratorBody($3, $4);}
+      |                                                                                                                                                                                     ^  
+      |                                                                                                                                                                                     |
+      |                                                                                                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:27:7: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   27 | A_ID *setFunctionDeclaratorBody(A_ID *, A_NODE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:46:138: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   46 |        declaration_specifiers declarator{$$=setFunctionDeclaratorSpecifier($2, $1);} compound_statement{$$=setFunctionDeclaratorBody($3, $4);}
+      |                                                                                                                                          ^
+kim.y:47:90: warning: passing argument 1 of ‘setFunctionDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   47 |        |declarator{$$=setFunctionDeclaratorSpecifier($1, makeSpecifier(int_type, 0));} compound_statement{$$=setFunctionDeclaratorBody($2, $3);}
+      |                                                                                     ~~~~~^~~
+      |                                                                                          |
+      |                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:26:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   26 | A_ID *setFunctionDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:47:53: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   47 |        |declarator{$$=setFunctionDeclaratorSpecifier($1, makeSpecifier(int_type, 0));} compound_statement{$$=setFunctionDeclaratorBody($2, $3);}
+      |                                                     ^
+kim.y:47:172: warning: passing argument 1 of ‘setFunctionDeclaratorBody’ makes pointer from integer without a cast [-Wint-conversion]
+   47 |        |declarator{$$=setFunctionDeclaratorSpecifier($1, makeSpecifier(int_type, 0));} compound_statement{$$=setFunctionDeclaratorBody($2, $3);}
+      |                                                                                                                                                                            ^   
+      |                                                                                                                                                                            |
+      |                                                                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:27:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   27 | A_ID *setFunctionDeclaratorBody(A_ID *, A_NODE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:47:183: warning: passing argument 2 of ‘setFunctionDeclaratorBody’ makes pointer from integer without a cast [-Wint-conversion]
+   47 |        |declarator{$$=setFunctionDeclaratorSpecifier($1, makeSpecifier(int_type, 0));} compound_statement{$$=setFunctionDeclaratorBody($2, $3);}
+      |                                                                                                                                                                                       ^  
+      |                                                                                                                                                                                       |
+      |                                                                                                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:27:7: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   27 | A_ID *setFunctionDeclaratorBody(A_ID *, A_NODE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:47:140: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   47 |        |declarator{$$=setFunctionDeclaratorSpecifier($1, makeSpecifier(int_type, 0));} compound_statement{$$=setFunctionDeclaratorBody($2, $3);}
+      |                                                                                                                                            ^
+kim.y:57:94: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   57 |     |declaration_list declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                                              ^   
+      |                                                                                              |
+      |                                                                                              YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:57:105: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   57 |     |declaration_list declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                                                         ^  
+      |                                                                                                         |
+      |                                                                                                         YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:57:69: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   57 |     |declaration_list declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                     ^
+kim.y:61:117: warning: passing argument 1 of ‘setDeclaratorListSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   61 |      declaration_specifiers init_declarator_list_opt SEMICOLON {$$=setDeclaratorListSpecifier($2, $1);}
+      |                                                                                                                     ^   
+      |                                                                                                                     |
+      |                                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:25:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   25 | A_ID *setDeclaratorListSpecifier(A_ID *, A_SPECIFIER *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:61:128: warning: passing argument 2 of ‘setDeclaratorListSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   61 |      declaration_specifiers init_declarator_list_opt SEMICOLON {$$=setDeclaratorListSpecifier($2, $1);}
+      |                                                                                                                                ^   
+      |                                                                                                                                |
+      |                                                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:25:7: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   25 | A_ID *setDeclaratorListSpecifier(A_ID *, A_SPECIFIER *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:61:84: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   61 |      declaration_specifiers init_declarator_list_opt SEMICOLON {$$=setDeclaratorListSpecifier($2, $1);}
+      |                                                                                    ^
+kim.y:65:84: warning: passing argument 1 of ‘makeSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   65 |        type_specifier {$$=makeSpecifier($1, 0);}
+      |                                                                                    ^  
+      |                                                                                    |
+      |                                                                                    YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:11:14: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   11 | A_SPECIFIER *makeSpecifier(A_TYPE *, S_KIND);
+      |              ^~~~~~~~~~~~~
+kim.y:65:64: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} makes integer from pointer without a cast [-Wint-conversion]
+   65 |        type_specifier {$$=makeSpecifier($1, 0);}
+      |                                                                ^
+kim.y:66:74: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} makes integer from pointer without a cast [-Wint-conversion]
+   66 |        |storage_class_specifier {$$=makeSpecifier(0, $1);}
+      |                                                                          ^
+kim.y:67:110: warning: passing argument 1 of ‘updateSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   67 |        |type_specifier declaration_specifiers {$$=updateSpecifier($2, $1, 0);}
+      |                                                                                                              ^  
+      |                                                                                                              |
+      |                                                                                                              YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:14:14: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   14 | A_SPECIFIER *updateSpecifier(A_SPECIFIER *, A_TYPE *, S_KIND);
+      |              ^~~~~~~~~~~~~~~
+kim.y:67:120: warning: passing argument 2 of ‘updateSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   67 |        |type_specifier declaration_specifiers {$$=updateSpecifier($2, $1, 0);}
+      |                                                                                                                        ^   
+      |                                                                                                                        |
+      |                                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:14:14: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   14 | A_SPECIFIER *updateSpecifier(A_SPECIFIER *, A_TYPE *, S_KIND);
+      |              ^~~~~~~~~~~~~~~
+kim.y:67:88: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} makes integer from pointer without a cast [-Wint-conversion]
+   67 |        |type_specifier declaration_specifiers {$$=updateSpecifier($2, $1, 0);}
+      |                                                                                        ^
+kim.y:68:119: warning: passing argument 1 of ‘updateSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   68 |        |storage_class_specifier declaration_specifiers {$$=updateSpecifier($2, 0, $1);}
+      |                                                                                                                       ^  
+      |                                                                                                                       |
+      |                                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:14:14: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   14 | A_SPECIFIER *updateSpecifier(A_SPECIFIER *, A_TYPE *, S_KIND);
+      |              ^~~~~~~~~~~~~~~
+kim.y:68:97: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} makes integer from pointer without a cast [-Wint-conversion]
+   68 |        |storage_class_specifier declaration_specifiers {$$=updateSpecifier($2, 0, $1);}
+      |                                                                                                 ^
+kim.y:78:55: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   78 |       {$$=makeDummyIdentifier();}
+      |                                                       ^
+kim.y:84:116: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   84 |      |init_declarator_list COMMA init_declarator {$$=linkDeclaratorList($1, $3);}
+      |                                                                                                                    ^   
+      |                                                                                                                    |
+      |                                                                                                                    YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:84:127: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   84 |      |init_declarator_list COMMA init_declarator {$$=linkDeclaratorList($1, $3);}
+      |                                                                                                                               ^  
+      |                                                                                                                               |
+      |                                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:84:91: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   84 |      |init_declarator_list COMMA init_declarator {$$=linkDeclaratorList($1, $3);}
+      |                                                                                           ^
+kim.y:89:89: warning: passing argument 1 of ‘setDeclaratorInit’ makes pointer from integer without a cast [-Wint-conversion]
+   89 |       |declarator ASSIGN initializer {$$=setDeclaratorInit($1, $3);}
+      |                                                                                         ^   
+      |                                                                                         |
+      |                                                                                         YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:20:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 | A_ID *setDeclaratorInit(A_ID *, A_NODE *);
+      |       ^~~~~~~~~~~~~~~~~
+kim.y:89:100: warning: passing argument 2 of ‘setDeclaratorInit’ makes pointer from integer without a cast [-Wint-conversion]
+   89 |       |declarator ASSIGN initializer {$$=setDeclaratorInit($1, $3);}
+      |                                                                                                    ^  
+      |                                                                                                    |
+      |                                                                                                    YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:20:7: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 | A_ID *setDeclaratorInit(A_ID *, A_NODE *);
+      |       ^~~~~~~~~~~~~~~~~
+kim.y:89:65: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   89 |       |declarator ASSIGN initializer {$$=setDeclaratorInit($1, $3);}
+      |                                                                 ^
+kim.y:93:83: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+   93 |      constant_expression {$$=makeNode(N_INIT_LIST_ONE, NIL, $1, NIL);}
+      |                                                                                   ^  
+      |                                                                                   |
+      |                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:93:46: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+   93 |      constant_expression {$$=makeNode(N_INIT_LIST_ONE, NIL, $1, NIL);}
+      |                                              ^
+kim.y:98:79: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |     initializer {$$=makeNode(N_INIT_LIST, $1, NIL, makeNode(N_INIT_LIST_NIL, NIL, NIL, NIL));}
+      |                                                                          ~~~~~^~~
+      |                                                                               |
+      |                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:98:51: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+   98 |     initializer {$$=makeNode(N_INIT_LIST, $1, NIL, makeNode(N_INIT_LIST_NIL, NIL, NIL, NIL));}
+      |                                                   ^
+kim.y:99:107: warning: passing argument 2 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+   99 |     |initializer_list COMMA initializer {$$=makeNodeList(N_INIT_LIST, $1, $3);}
+      |                                                                                                           ^   
+      |                                                                                                           |
+      |                                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:7:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    7 | A_NODE *makeNodeList(NODE_NAME, A_NODE *, A_NODE *);
+      |         ^~~~~~~~~~~~
+kim.y:99:118: warning: passing argument 3 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+   99 |     |initializer_list COMMA initializer {$$=makeNodeList(N_INIT_LIST, $1, $3);}
+      |                                                                                                                      ^  
+      |                                                                                                                      |
+      |                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:7:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    7 | A_NODE *makeNodeList(NODE_NAME, A_NODE *, A_NODE *);
+      |         ^~~~~~~~~~~~
+kim.y:99:75: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+   99 |     |initializer_list COMMA initializer {$$=makeNodeList(N_INIT_LIST, $1, $3);}
+      |                                                                           ^
+kim.y:109:122: warning: passing argument 2 of ‘setTypeStructOrEnumIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |       struct_or_union IDENTIFIER {$$=setTypeStructOrEnumIdentifier($1, $2, ID_STRUCT);} LR {$$=current_id; current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($3, $6); current_level--; current_id=$5;}
+      |                                                                                                                     ~~~~~^~~
+      |                                                                                                                          |
+      |                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:35:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   35 | A_TYPE *setTypeStructOrEnumIdentifier(T_KIND, char *, ID_KIND);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:109:75: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  109 |       struct_or_union IDENTIFIER {$$=setTypeStructOrEnumIdentifier($1, $2, ID_STRUCT);} LR {$$=current_id; current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($3, $6); current_level--; current_id=$5;}
+      |                                                                           ^
+kim.y:109:133: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  109 |       struct_or_union IDENTIFIER {$$=setTypeStructOrEnumIdentifier($1, $2, ID_STRUCT);} LR {$$=current_id; current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($3, $6); current_level--; current_id=$5;}
+      |                                                                                                                                     ^
+kim.y:109:238: warning: passing argument 1 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |       struct_or_union IDENTIFIER {$$=setTypeStructOrEnumIdentifier($1, $2, ID_STRUCT);} LR {$$=current_id; current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($3, $6); current_level--; current_id=$5;}
+      |                                                                                                                                                                                                                                         ~~~  ^   
+      |                                                                                                                                                                                                                                              |
+      |                                                                                                                                                                                                                                              YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:109:249: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |       struct_or_union IDENTIFIER {$$=setTypeStructOrEnumIdentifier($1, $2, ID_STRUCT);} LR {$$=current_id; current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($3, $6); current_level--; current_id=$5;}
+      |                                                                                                                                                                                                                                                         ^   
+      |                                                                                                                                                                                                                                                         |
+      |                                                                                                                                                                                                                                                         YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:109:219: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  109 |       struct_or_union IDENTIFIER {$$=setTypeStructOrEnumIdentifier($1, $2, ID_STRUCT);} LR {$$=current_id; current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($3, $6); current_level--; current_id=$5;}
+      |                                                                                                                                                                                                                           ^
+kim.y:109:283: warning: assignment to ‘A_ID *’ {aka ‘struct s_id *’} from ‘YYSTYPE’ {aka ‘long int’} makes pointer from integer without a cast [-Wint-conversion]
+  109 |       struct_or_union IDENTIFIER {$$=setTypeStructOrEnumIdentifier($1, $2, ID_STRUCT);} LR {$$=current_id; current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($3, $6); current_level--; current_id=$5;}
+      |                                                                                                                                                                                                                                                                                           ^
+kim.y:110:65: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  110 |       |struct_or_union {$$=makeType($1);} LR{$$=current_id;current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($2,$5); current_level--; current_id=$4;}
+      |                                                                 ^
+kim.y:110:86: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  110 |       |struct_or_union {$$=makeType($1);} LR{$$=current_id;current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($2,$5); current_level--; current_id=$4;}
+      |                                                                                      ^
+kim.y:110:190: warning: passing argument 1 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  110 |       |struct_or_union {$$=makeType($1);} LR{$$=current_id;current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($2,$5); current_level--; current_id=$4;}
+      |                                                                                                                                                                                         ~~   ^   
+      |                                                                                                                                                                                              |
+      |                                                                                                                                                                                              YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:110:200: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  110 |       |struct_or_union {$$=makeType($1);} LR{$$=current_id;current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($2,$5); current_level--; current_id=$4;}
+      |                                                                                                                                                                                                        ^   
+      |                                                                                                                                                                                                        |
+      |                                                                                                                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:110:171: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  110 |       |struct_or_union {$$=makeType($1);} LR{$$=current_id;current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($2,$5); current_level--; current_id=$4;}
+      |                                                                                                                                                                           ^
+kim.y:110:234: warning: assignment to ‘A_ID *’ {aka ‘struct s_id *’} from ‘YYSTYPE’ {aka ‘long int’} makes pointer from integer without a cast [-Wint-conversion]
+  110 |       |struct_or_union {$$=makeType($1);} LR{$$=current_id;current_level++;} struct_declaration_list RR {checkForwardReference(); $$=setTypeField($2,$5); current_level--; current_id=$4;}
+      |                                                                                                                                                                                                                                          ^
+kim.y:111:128: warning: passing argument 2 of ‘getTypeOfStructOrEnumRefIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  111 |       |struct_or_union IDENTIFIER {$$=getTypeOfStructOrEnumRefIdentifier($1, $2, ID_STRUCT);}
+      |                                                                                                                                ^  
+      |                                                                                                                                |
+      |                                                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:19:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   19 | A_TYPE *getTypeOfStructOrEnumRefIdentifier(T_KIND, char *, ID_KIND);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:111:76: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  111 |       |struct_or_union IDENTIFIER {$$=getTypeOfStructOrEnumRefIdentifier($1, $2, ID_STRUCT);}
+      |                                                                            ^
+kim.y:121:119: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  121 |         |struct_declaration_list struct_declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                                                                       ^   
+      |                                                                                                                       |
+      |                                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:121:130: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  121 |         |struct_declaration_list struct_declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                                                                                  ^  
+      |                                                                                                                                  |
+      |                                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:121:94: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  121 |         |struct_declaration_list struct_declaration {$$=linkDeclaratorList($1, $2);}
+      |                                                                                              ^
+kim.y:125:128: warning: passing argument 1 of ‘setStructDeclaratorListSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  125 |       type_specifier struct_declarator_list SEMICOLON {$$=setStructDeclaratorListSpecifier($2, $1);}
+      |                                                                                                                                ^   
+      |                                                                                                                                |
+      |                                                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:29:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   29 | A_ID *setStructDeclaratorListSpecifier(A_ID *, A_TYPE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:125:139: warning: passing argument 2 of ‘setStructDeclaratorListSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  125 |       type_specifier struct_declarator_list SEMICOLON {$$=setStructDeclaratorListSpecifier($2, $1);}
+      |                                                                                                                                           ^   
+      |                                                                                                                                           |
+      |                                                                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:29:7: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   29 | A_ID *setStructDeclaratorListSpecifier(A_ID *, A_TYPE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:125:89: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  125 |       type_specifier struct_declarator_list SEMICOLON {$$=setStructDeclaratorListSpecifier($2, $1);}
+      |                                                                                         ^
+kim.y:130:122: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  130 |        |struct_declarator_list COMMA struct_declarator {$$=linkDeclaratorList($1, $3);}
+      |                                                                                                                          ^   
+      |                                                                                                                          |
+      |                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:130:133: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  130 |        |struct_declarator_list COMMA struct_declarator {$$=linkDeclaratorList($1, $3);}
+      |                                                                                                                                     ^  
+      |                                                                                                                                     |
+      |                                                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:130:97: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  130 |        |struct_declarator_list COMMA struct_declarator {$$=linkDeclaratorList($1, $3);}
+      |                                                                                                 ^
+kim.y:138:106: warning: passing argument 2 of ‘setTypeStructOrEnumIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  138 |        ENUM_SYM IDENTIFIER {$$=setTypeStructOrEnumIdentifier(T_ENUM, $2, ID_ENUM);} LR enumerator_list RR {$$=setTypeField($3, $4);}
+      |                                                                                                     ~~~~~^~~
+      |                                                                                                          |
+      |                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:35:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   35 | A_TYPE *setTypeStructOrEnumIdentifier(T_KIND, char *, ID_KIND);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:138:62: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  138 |        ENUM_SYM IDENTIFIER {$$=setTypeStructOrEnumIdentifier(T_ENUM, $2, ID_ENUM);} LR enumerator_list RR {$$=setTypeField($3, $4);}
+      |                                                              ^
+kim.y:138:160: warning: passing argument 1 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  138 |        ENUM_SYM IDENTIFIER {$$=setTypeStructOrEnumIdentifier(T_ENUM, $2, ID_ENUM);} LR enumerator_list RR {$$=setTypeField($3, $4);}
+      |                                                                                                                                                                ^   
+      |                                                                                                                                                                |
+      |                                                                                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:138:171: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  138 |        ENUM_SYM IDENTIFIER {$$=setTypeStructOrEnumIdentifier(T_ENUM, $2, ID_ENUM);} LR enumerator_list RR {$$=setTypeField($3, $4);}
+      |                                                                                                                                                                           ^   
+      |                                                                                                                                                                           |
+      |                                                                                                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:138:141: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  138 |        ENUM_SYM IDENTIFIER {$$=setTypeStructOrEnumIdentifier(T_ENUM, $2, ID_ENUM);} LR enumerator_list RR {$$=setTypeField($3, $4);}
+      |                                                                                                                                             ^
+kim.y:139:52: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  139 |        |ENUM_SYM {$$=makeType(T_ENUM);} LR enumerator_list RR {$$=setTypeField($2, $4);}
+      |                                                    ^
+kim.y:139:116: warning: passing argument 1 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  139 |        |ENUM_SYM {$$=makeType(T_ENUM);} LR enumerator_list RR {$$=setTypeField($2, $4);}
+      |                                                                                                                    ^   
+      |                                                                                                                    |
+      |                                                                                                                    YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:139:127: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  139 |        |ENUM_SYM {$$=makeType(T_ENUM);} LR enumerator_list RR {$$=setTypeField($2, $4);}
+      |                                                                                                                               ^   
+      |                                                                                                                               |
+      |                                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:139:97: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  139 |        |ENUM_SYM {$$=makeType(T_ENUM);} LR enumerator_list RR {$$=setTypeField($2, $4);}
+      |                                                                                                 ^
+kim.y:140:112: warning: passing argument 2 of ‘getTypeOfStructOrEnumRefIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  140 |        |ENUM_SYM IDENTIFIER {$$=getTypeOfStructOrEnumRefIdentifier(T_ENUM, $2, ID_ENUM);}
+      |                                                                                                                ^  
+      |                                                                                                                |
+      |                                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:19:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   19 | A_TYPE *getTypeOfStructOrEnumRefIdentifier(T_KIND, char *, ID_KIND);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:140:63: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  140 |        |ENUM_SYM IDENTIFIER {$$=getTypeOfStructOrEnumRefIdentifier(T_ENUM, $2, ID_ENUM);}
+      |                                                               ^
+kim.y:145:93: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  145 |       |enumerator_list COMMA enumerator {$$=linkDeclaratorList($1, $3);}
+      |                                                                                             ^   
+      |                                                                                             |
+      |                                                                                             YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:145:104: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  145 |       |enumerator_list COMMA enumerator {$$=linkDeclaratorList($1, $3);}
+      |                                                                                                        ^  
+      |                                                                                                        |
+      |                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:145:68: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  145 |       |enumerator_list COMMA enumerator {$$=linkDeclaratorList($1, $3);}
+      |                                                                    ^
+kim.y:149:75: warning: passing argument 1 of ‘makeIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  149 |     IDENTIFIER {$$=setDeclaratorKind(makeIdentifier($1), ID_ENUM_LITERAL);}
+      |                                                                      ~~~~~^  
+      |                                                                           |
+      |                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:8:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    8 | A_ID   *makeIdentifier(char *);
+      |         ^~~~~~~~~~~~~~
+kim.y:149:36: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  149 |     IDENTIFIER {$$=setDeclaratorKind(makeIdentifier($1), ID_ENUM_LITERAL);}
+      |                                    ^
+kim.y:150:76: warning: passing argument 1 of ‘makeIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  150 |     |IDENTIFIER {$$=setDeclaratorKind(makeIdentifier($1), ID_ENUM_LITERAL);} ASSIGN expression {$$=setDeclaratorInit($2, $4);}
+      |                                                                       ~~~~~^~~
+      |                                                                            |
+      |                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:8:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    8 | A_ID   *makeIdentifier(char *);
+      |         ^~~~~~~~~~~~~~
+kim.y:150:37: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  150 |     |IDENTIFIER {$$=setDeclaratorKind(makeIdentifier($1), ID_ENUM_LITERAL);} ASSIGN expression {$$=setDeclaratorInit($2, $4);}
+      |                                     ^
+kim.y:150:140: warning: passing argument 1 of ‘setDeclaratorInit’ makes pointer from integer without a cast [-Wint-conversion]
+  150 |     |IDENTIFIER {$$=setDeclaratorKind(makeIdentifier($1), ID_ENUM_LITERAL);} ASSIGN expression {$$=setDeclaratorInit($2, $4);}
+      |                                                                                                                                            ^   
+      |                                                                                                                                            |
+      |                                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:20:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 | A_ID *setDeclaratorInit(A_ID *, A_NODE *);
+      |       ^~~~~~~~~~~~~~~~~
+kim.y:150:151: warning: passing argument 2 of ‘setDeclaratorInit’ makes pointer from integer without a cast [-Wint-conversion]
+  150 |     |IDENTIFIER {$$=setDeclaratorKind(makeIdentifier($1), ID_ENUM_LITERAL);} ASSIGN expression {$$=setDeclaratorInit($2, $4);}
+      |                                                                                                                                                       ^  
+      |                                                                                                                                                       |
+      |                                                                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:20:7: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 | A_ID *setDeclaratorInit(A_ID *, A_NODE *);
+      |       ^~~~~~~~~~~~~~~~~
+kim.y:150:116: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  150 |     |IDENTIFIER {$$=setDeclaratorKind(makeIdentifier($1), ID_ENUM_LITERAL);} ASSIGN expression {$$=setDeclaratorInit($2, $4);}
+      |                                                                                                                    ^
+kim.y:154:82: warning: passing argument 1 of ‘setDeclaratorElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  154 |     pointer direct_declarator {$$=setDeclaratorElementType($2, $1);}
+      |                                                                                  ^  
+      |                                                                                  |
+      |                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:23:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   23 | A_ID *setDeclaratorElementType(A_ID *, A_TYPE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:154:92: warning: passing argument 2 of ‘setDeclaratorElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  154 |     pointer direct_declarator {$$=setDeclaratorElementType($2, $1);}
+      |                                                                                            ^   
+      |                                                                                            |
+      |                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:23:7: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   23 | A_ID *setDeclaratorElementType(A_ID *, A_TYPE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:154:51: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  154 |     pointer direct_declarator {$$=setDeclaratorElementType($2, $1);}
+      |                                                   ^
+kim.y:159:23: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  159 |     STAR {$$=makeType(T_POINTER);}
+      |                       ^
+kim.y:160:57: warning: passing argument 1 of ‘setTypeElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  160 |     |STAR pointer {$$=setTypeElementType($2, makeType(T_POINTER));}
+      |                                                    ~~~~~^~~
+      |                                                         |
+      |                                                         YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:31:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 | A_TYPE *setTypeElementType(A_TYPE *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~
+kim.y:160:32: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  160 |     |STAR pointer {$$=setTypeElementType($2, makeType(T_POINTER));}
+      |                                ^
+kim.y:164:72: warning: passing argument 1 of ‘makeIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  164 |      IDENTIFIER {$$=makeIdentifier($1);}
+      |                                                                        ^  
+      |                                                                        |
+      |                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:8:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    8 | A_ID   *makeIdentifier(char *);
+      |         ^~~~~~~~~~~~~~
+kim.y:164:51: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  164 |      IDENTIFIER {$$=makeIdentifier($1);}
+      |                                                   ^
+kim.y:166:162: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  166 |      |direct_declarator LB constant_expression_opt RB {$$=setDeclaratorElementType($1, setTypeExpr(makeType(T_ARRAY), $3));}
+      |                                                                                                                                                                  ^   
+      |                                                                                                                                                                  |
+      |                                                                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:33:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   33 | A_TYPE *setTypeExpr(A_TYPE *, A_NODE *);
+      |         ^~~~~~~~~~~
+kim.y:166:120: warning: passing argument 1 of ‘setDeclaratorElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  166 |      |direct_declarator LB constant_expression_opt RB {$$=setDeclaratorElementType($1, setTypeExpr(makeType(T_ARRAY), $3));}
+      |                                                                                                                   ~~~~~^~~~
+      |                                                                                                                        |
+      |                                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:23:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   23 | A_ID *setDeclaratorElementType(A_ID *, A_TYPE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:166:89: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  166 |      |direct_declarator LB constant_expression_opt RB {$$=setDeclaratorElementType($1, setTypeExpr(makeType(T_ARRAY), $3));}
+      |                                                                                         ^
+kim.y:167:62: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  167 |      |direct_declarator LP {$$=current_id; current_level++;} parameter_type_list_opt RP {checkForwardReference(); current_id=$3; current_level--; $$=setDeclaratorElementType($1, setTypeField(makeType(T_FUNC), $4));}
+      |                                                              ^
+kim.y:167:153: warning: assignment to ‘A_ID *’ {aka ‘struct s_id *’} from ‘YYSTYPE’ {aka ‘long int’} makes pointer from integer without a cast [-Wint-conversion]
+  167 |      |direct_declarator LP {$$=current_id; current_level++;} parameter_type_list_opt RP {checkForwardReference(); current_id=$3; current_level--; $$=setDeclaratorElementType($1, setTypeField(makeType(T_FUNC), $4));}
+      |                                                                                                                                                         ^
+kim.y:167:260: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  167 |      |direct_declarator LP {$$=current_id; current_level++;} parameter_type_list_opt RP {checkForwardReference(); current_id=$3; current_level--; $$=setDeclaratorElementType($1, setTypeField(makeType(T_FUNC), $4));}
+      |                                                                                                                                                                                                                                                                    ^   
+      |                                                                                                                                                                                                                                                                    |
+      |                                                                                                                                                                                                                                                                    YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:32:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 | A_TYPE *setTypeField(A_TYPE *, A_ID *);
+      |         ^~~~~~~~~~~~
+kim.y:167:218: warning: passing argument 1 of ‘setDeclaratorElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  167 |      |direct_declarator LP {$$=current_id; current_level++;} parameter_type_list_opt RP {checkForwardReference(); current_id=$3; current_level--; $$=setDeclaratorElementType($1, setTypeField(makeType(T_FUNC), $4));}
+      |                                                                                                                                                                                                                     ~~~  ^   
+      |                                                                                                                                                                                                                          |
+      |                                                                                                                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:23:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   23 | A_ID *setDeclaratorElementType(A_ID *, A_TYPE *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:167:187: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  167 |      |direct_declarator LP {$$=current_id; current_level++;} parameter_type_list_opt RP {checkForwardReference(); current_id=$3; current_level--; $$=setDeclaratorElementType($1, setTypeField(makeType(T_FUNC), $4));}
+      |                                                                                                                                                                                           ^
+kim.y:177:99: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  177 |        |parameter_list COMMA DOTDOTDOT {$$=linkDeclaratorList($1, setDeclaratorKind(makeDummyIdentifier(), ID_PARM));}
+      |                                                                                              ~~~~~^~~~
+      |                                                                                                   |
+      |                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:177:74: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  177 |        |parameter_list COMMA DOTDOTDOT {$$=linkDeclaratorList($1, setDeclaratorKind(makeDummyIdentifier(), ID_PARM));}
+      |                                                                          ^
+kim.y:182:102: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  182 |      |parameter_list COMMA parameter_declaration {$$=linkDeclaratorList($1, $3);}
+      |                                                                                                      ^   
+      |                                                                                                      |
+      |                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:182:113: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  182 |      |parameter_list COMMA parameter_declaration {$$=linkDeclaratorList($1, $3);}
+      |                                                                                                                 ^  
+      |                                                                                                                 |
+      |                                                                                                                 YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:17:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   17 | A_ID *linkDeclaratorList(A_ID *, A_ID *);
+      |       ^~~~~~~~~~~~~~~~~~
+kim.y:182:77: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  182 |      |parameter_list COMMA parameter_declaration {$$=linkDeclaratorList($1, $3);}
+      |                                                                             ^
+kim.y:186:120: warning: passing argument 1 of ‘setParameterDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  186 |       declaration_specifiers declarator {$$=setParameterDeclaratorSpecifier($2, $1);}
+      |                                                                                                                        ^  
+      |                                                                                                                        |
+      |                                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:28:7: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   28 | A_ID *setParameterDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:186:130: warning: passing argument 2 of ‘setParameterDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  186 |       declaration_specifiers declarator {$$=setParameterDeclaratorSpecifier($2, $1);}
+      |                                                                                                                                  ^   
+      |                                                                                                                                  |
+      |                                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:28:7: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   28 | A_ID *setParameterDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:186:82: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  186 |       declaration_specifiers declarator {$$=setParameterDeclaratorSpecifier($2, $1);}
+      |                                                                                  ^
+kim.y:187:175: warning: passing argument 2 of ‘setDeclaratorType’ makes pointer from integer without a cast [-Wint-conversion]
+  187 |       |declaration_specifiers abstract_declarator_opt {$$=setParameterDeclaratorSpecifier(setDeclaratorType(makeDummyIdentifier(), $2), $1);}
+      |                                                                                                                                                                               ^  
+      |                                                                                                                                                                               |
+      |                                                                                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:22:7: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   22 | A_ID *setDeclaratorType(A_ID *, A_TYPE *);
+      |       ^~~~~~~~~~~~~~~~~
+kim.y:187:186: warning: passing argument 2 of ‘setParameterDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  187 |       |declaration_specifiers abstract_declarator_opt {$$=setParameterDeclaratorSpecifier(setDeclaratorType(makeDummyIdentifier(), $2), $1);}
+      |                                                                                                                                                                                          ^   
+      |                                                                                                                                                                                          |
+      |                                                                                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:28:7: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   28 | A_ID *setParameterDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kim.y:187:96: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  187 |       |declaration_specifiers abstract_declarator_opt {$$=setParameterDeclaratorSpecifier(setDeclaratorType(makeDummyIdentifier(), $2), $1);}
+      |                                                                                                ^
+kim.y:197:51: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  197 |        |pointer {$$=makeType(T_POINTER);}
+      |                                                   ^
+kim.y:198:103: warning: passing argument 1 of ‘setTypeElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  198 |        |pointer direct_abstract_declarator {$$=setTypeElementType($2, makeType(T_POINTER));}
+      |                                                                                                       ^  
+      |                                                                                                       |
+      |                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:31:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 | A_TYPE *setTypeElementType(A_TYPE *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~
+kim.y:198:78: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  198 |        |pointer direct_abstract_declarator {$$=setTypeElementType($2, makeType(T_POINTER));}
+      |                                                                              ^
+kim.y:203:125: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  203 |         |LB constant_expression_opt RB {$$=setTypeExpr(makeType(T_ARRAY), $2);}
+      |                                                                                                                             ^   
+      |                                                                                                                             |
+      |                                                                                                                             YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:33:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   33 | A_TYPE *setTypeExpr(A_TYPE *, A_NODE *);
+      |         ^~~~~~~~~~~
+kim.y:203:88: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  203 |         |LB constant_expression_opt RB {$$=setTypeExpr(makeType(T_ARRAY), $2);}
+      |                                                                                        ^
+kim.y:204:182: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  204 |         |direct_abstract_declarator LB constant_expression_opt RB {$$=setTypeElementType($1, setTypeExpr(makeType(T_ARRAY), $3));}
+      |                                                                                                                                                                                      ^   
+      |                                                                                                                                                                                      |
+      |                                                                                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:33:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   33 | A_TYPE *setTypeExpr(A_TYPE *, A_NODE *);
+      |         ^~~~~~~~~~~
+kim.y:204:140: warning: passing argument 1 of ‘setTypeElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  204 |         |direct_abstract_declarator LB constant_expression_opt RB {$$=setTypeElementType($1, setTypeExpr(makeType(T_ARRAY), $3));}
+      |                                                                                                                                            ^   
+      |                                                                                                                                            |
+      |                                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:31:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 | A_TYPE *setTypeElementType(A_TYPE *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~
+kim.y:204:115: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  204 |         |direct_abstract_declarator LB constant_expression_opt RB {$$=setTypeElementType($1, setTypeExpr(makeType(T_ARRAY), $3));}
+      |                                                                                                                   ^
+kim.y:205:124: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  205 |         |LP parameter_type_list_opt RP {$$=setTypeExpr(makeType(T_FUNC), $2);}
+      |                                                                                                                            ^   
+      |                                                                                                                            |
+      |                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:33:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   33 | A_TYPE *setTypeExpr(A_TYPE *, A_NODE *);
+      |         ^~~~~~~~~~~
+kim.y:205:88: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  205 |         |LP parameter_type_list_opt RP {$$=setTypeExpr(makeType(T_FUNC), $2);}
+      |                                                                                        ^
+kim.y:206:181: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  206 |         |direct_abstract_declarator LP parameter_type_list_opt RP {$$=setTypeElementType($1, setTypeExpr(makeType(T_FUNC), $3));}
+      |                                                                                                                                                                                     ^   
+      |                                                                                                                                                                                     |
+      |                                                                                                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:33:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   33 | A_TYPE *setTypeExpr(A_TYPE *, A_NODE *);
+      |         ^~~~~~~~~~~
+kim.y:206:140: warning: passing argument 1 of ‘setTypeElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  206 |         |direct_abstract_declarator LP parameter_type_list_opt RP {$$=setTypeElementType($1, setTypeExpr(makeType(T_FUNC), $3));}
+      |                                                                                                                                            ^   
+      |                                                                                                                                            |
+      |                                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:31:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 | A_TYPE *setTypeElementType(A_TYPE *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~
+kim.y:206:115: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  206 |         |direct_abstract_declarator LP parameter_type_list_opt RP {$$=setTypeElementType($1, setTypeExpr(makeType(T_FUNC), $3));}
+      |                                                                                                                   ^
+kim.y:210:41: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  210 |       {$$=makeNode(N_STMT_LIST_NIL, NIL, NIL, NIL);}
+      |                                         ^
+kim.y:215:71: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  215 |      statement {$$=makeNode(N_STMT_LIST, $1, NIL, makeNode(N_STMT_LIST_NIL, NIL, NIL, NIL));}
+      |                                                                  ~~~~~^~~
+      |                                                                       |
+      |                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:215:43: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  215 |      statement {$$=makeNode(N_STMT_LIST, $1, NIL, makeNode(N_STMT_LIST_NIL, NIL, NIL, NIL));}
+      |                                           ^
+kim.y:216:91: warning: passing argument 2 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  216 |      |statement_list statement {$$=makeNodeList(N_STMT_LIST, $1, $2);}
+      |                                                                                           ^   
+      |                                                                                           |
+      |                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:7:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    7 | A_NODE *makeNodeList(NODE_NAME, A_NODE *, A_NODE *);
+      |         ^~~~~~~~~~~~
+kim.y:216:102: warning: passing argument 3 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  216 |      |statement_list statement {$$=makeNodeList(N_STMT_LIST, $1, $2);}
+      |                                                                                                      ^  
+      |                                                                                                      |
+      |                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:7:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    7 | A_NODE *makeNodeList(NODE_NAME, A_NODE *, A_NODE *);
+      |         ^~~~~~~~~~~~
+kim.y:216:59: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  216 |      |statement_list statement {$$=makeNodeList(N_STMT_LIST, $1, $2);}
+      |                                                           ^
+kim.y:229:119: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  229 |      CASE_SYM constant_expression COLON statement {$$=makeNode(N_STMT_LABEL_CASE, $2, NIL, $4);}
+      |                                                                                                                       ^   
+      |                                                                                                                       |
+      |                                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:229:135: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  229 |      CASE_SYM constant_expression COLON statement {$$=makeNode(N_STMT_LABEL_CASE, $2, NIL, $4);}
+      |                                                                                                                                       ^  
+      |                                                                                                                                       |
+      |                                                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:229:85: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  229 |      CASE_SYM constant_expression COLON statement {$$=makeNode(N_STMT_LABEL_CASE, $2, NIL, $4);}
+      |                                                                                     ^
+kim.y:230:111: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  230 |      |DEFAULT_SYM COLON statement {$$=makeNode(N_STMT_LABEL_DEFAULT, NIL, $3, NIL);}
+      |                                                                                                               ^  
+      |                                                                                                               |
+      |                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:230:69: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  230 |      |DEFAULT_SYM COLON statement {$$=makeNode(N_STMT_LABEL_DEFAULT, NIL, $3, NIL);}
+      |                                                                     ^
+kim.y:234:44: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  234 |       LR {$$=current_id; current_level++;} declaration_list_opt statement_list_opt RR {checkForwardReference(); $$=makeNode(N_STMT_COMPOUND, $3, NIL, $4); current_id=$2; current_level--;}
+      |                                            ^
+kim.y:234:178: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  234 |       LR {$$=current_id; current_level++;} declaration_list_opt statement_list_opt RR {checkForwardReference(); $$=makeNode(N_STMT_COMPOUND, $3, NIL, $4); current_id=$2; current_level--;}
+      |                                                                                                                                                                             ~~~~~^~~~
+      |                                                                                                                                                                                  |
+      |                                                                                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:234:194: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  234 |       LR {$$=current_id; current_level++;} declaration_list_opt statement_list_opt RR {checkForwardReference(); $$=makeNode(N_STMT_COMPOUND, $3, NIL, $4); current_id=$2; current_level--;}
+      |                                                                                                                                                                                                  ^   
+      |                                                                                                                                                                                                  |
+      |                                                                                                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:234:146: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  234 |       LR {$$=current_id; current_level++;} declaration_list_opt statement_list_opt RR {checkForwardReference(); $$=makeNode(N_STMT_COMPOUND, $3, NIL, $4); current_id=$2; current_level--;}
+      |                                                                                                                                                  ^
+kim.y:234:211: warning: assignment to ‘A_ID *’ {aka ‘struct s_id *’} from ‘YYSTYPE’ {aka ‘long int’} makes pointer from integer without a cast [-Wint-conversion]
+  234 |       LR {$$=current_id; current_level++;} declaration_list_opt statement_list_opt RR {checkForwardReference(); $$=makeNode(N_STMT_COMPOUND, $3, NIL, $4); current_id=$2; current_level--;}
+      |                                                                                                                                                                                                                   ^
+kim.y:238:57: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  238 |      SEMICOLON {$$=makeNode(N_STMT_EMPTY, NIL, NIL, NIL);}
+      |                                                         ^
+kim.y:239:108: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  239 |      |expression SEMICOLON {$$=makeNode(N_STMT_EXPRESSION, NIL, $1, NIL);}
+      |                                                                                                            ^   
+      |                                                                                                            |
+      |                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:239:69: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  239 |      |expression SEMICOLON {$$=makeNode(N_STMT_EXPRESSION, NIL, $1, NIL);}
+      |                                                                     ^
+kim.y:243:102: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  243 |        IF_SYM LP expression RP statement {$$=makeNode(N_STMT_IF, $3, NIL, $5);}
+      |                                                                                                      ^   
+      |                                                                                                      |
+      |                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:243:118: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  243 |        IF_SYM LP expression RP statement {$$=makeNode(N_STMT_IF, $3, NIL, $5);}
+      |                                                                                                                      ^  
+      |                                                                                                                      |
+      |                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:243:76: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  243 |        IF_SYM LP expression RP statement {$$=makeNode(N_STMT_IF, $3, NIL, $5);}
+      |                                                                            ^
+kim.y:244:127: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  244 |        |IF_SYM LP expression RP statement ELSE_SYM statement {$$=makeNode(N_STMT_IF_ELSE, $3, $5, $7);}
+      |                                                                                                                               ^   
+      |                                                                                                                               |
+      |                                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:244:138: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  244 |        |IF_SYM LP expression RP statement ELSE_SYM statement {$$=makeNode(N_STMT_IF_ELSE, $3, $5, $7);}
+      |                                                                                                                                          ^   
+      |                                                                                                                                          |
+      |                                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:244:149: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  244 |        |IF_SYM LP expression RP statement ELSE_SYM statement {$$=makeNode(N_STMT_IF_ELSE, $3, $5, $7);}
+      |                                                                                                                                                     ^  
+      |                                                                                                                                                     |
+      |                                                                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:244:96: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  244 |        |IF_SYM LP expression RP statement ELSE_SYM statement {$$=makeNode(N_STMT_IF_ELSE, $3, $5, $7);}
+      |                                                                                                ^
+kim.y:245:111: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  245 |        |SWITCH_SYM LP expression RP statement {$$=makeNode(N_STMT_SWITCH, $3, NIL, $5);}
+      |                                                                                                               ^   
+      |                                                                                                               |
+      |                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:245:127: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  245 |        |SWITCH_SYM LP expression RP statement {$$=makeNode(N_STMT_SWITCH, $3, NIL, $5);}
+      |                                                                                                                               ^  
+      |                                                                                                                               |
+      |                                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:245:81: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  245 |        |SWITCH_SYM LP expression RP statement {$$=makeNode(N_STMT_SWITCH, $3, NIL, $5);}
+      |                                                                                 ^
+kim.y:249:108: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  249 |        WHILE_SYM LP expression RP statement {$$=makeNode(N_STMT_WHILE, $3, NIL, $5);}
+      |                                                                                                            ^   
+      |                                                                                                            |
+      |                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:249:124: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  249 |        WHILE_SYM LP expression RP statement {$$=makeNode(N_STMT_WHILE, $3, NIL, $5);}
+      |                                                                                                                            ^  
+      |                                                                                                                            |
+      |                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:249:79: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  249 |        WHILE_SYM LP expression RP statement {$$=makeNode(N_STMT_WHILE, $3, NIL, $5);}
+      |                                                                               ^
+kim.y:250:123: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  250 |        |DO_SYM statement WHILE_SYM LP expression RP SEMICOLON {$$=makeNode(N_STMT_DO, $2, NIL, $5);}
+      |                                                                                                                           ^   
+      |                                                                                                                           |
+      |                                                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:250:139: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  250 |        |DO_SYM statement WHILE_SYM LP expression RP SEMICOLON {$$=makeNode(N_STMT_DO, $2, NIL, $5);}
+      |                                                                                                                                           ^   
+      |                                                                                                                                           |
+      |                                                                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:250:97: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  250 |        |DO_SYM statement WHILE_SYM LP expression RP SEMICOLON {$$=makeNode(N_STMT_DO, $2, NIL, $5);}
+      |                                                                                                 ^
+kim.y:251:109: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  251 |        |FOR_SYM LP for_expression RP statement {$$=makeNode(N_STMT_FOR, $3, NIL, $5);}
+      |                                                                                                             ^   
+      |                                                                                                             |
+      |                                                                                                             YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:251:125: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  251 |        |FOR_SYM LP for_expression RP statement {$$=makeNode(N_STMT_FOR, $3, NIL, $5);}
+      |                                                                                                                             ^  
+      |                                                                                                                             |
+      |                                                                                                                             YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:251:82: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  251 |        |FOR_SYM LP for_expression RP statement {$$=makeNode(N_STMT_FOR, $3, NIL, $5);}
+      |                                                                                  ^
+kim.y:255:124: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  255 |      expression_opt SEMICOLON expression_opt SEMICOLON expression_opt {$$=makeNode(N_FOR_EXP, $1, $3, $5);}
+      |                                                                                                                            ^   
+      |                                                                                                                            |
+      |                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:255:135: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  255 |      expression_opt SEMICOLON expression_opt SEMICOLON expression_opt {$$=makeNode(N_FOR_EXP, $1, $3, $5);}
+      |                                                                                                                                       ^   
+      |                                                                                                                                       |
+      |                                                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:255:146: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  255 |      expression_opt SEMICOLON expression_opt SEMICOLON expression_opt {$$=makeNode(N_FOR_EXP, $1, $3, $5);}
+      |                                                                                                                                                  ^  
+      |                                                                                                                                                  |
+      |                                                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:255:98: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  255 |      expression_opt SEMICOLON expression_opt SEMICOLON expression_opt {$$=makeNode(N_FOR_EXP, $1, $3, $5);}
+      |                                                                                                  ^
+kim.y:264:100: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  264 |      RETURN_SYM expression SEMICOLON {$$=makeNode(N_STMT_RETURN, NIL, $2, NIL);}
+      |                                                                                                    ^   
+      |                                                                                                    |
+      |                                                                                                    YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:264:65: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  264 |      RETURN_SYM expression SEMICOLON {$$=makeNode(N_STMT_RETURN, NIL, $2, NIL);}
+      |                                                                 ^
+kim.y:265:57: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  265 |      |CONTINUE_SYM SEMICOLON {$$=makeNode(N_STMT_CONTINUE, NIL, NIL, NIL);}
+      |                                                         ^
+kim.y:266:54: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  266 |      |BREAK_SYM SEMICOLON {$$=makeNode(N_STMT_BREAK, NIL, NIL, NIL);}
+      |                                                      ^
+kim.y:270:50: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  270 |         {$$=makeNode(N_ARG_LIST_NIL, NIL, NIL, NIL);}
+      |                                                  ^
+kim.y:275:91: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  275 |        assignment_expression {$$=makeNode(N_ARG_LIST, $1, NIL, makeNode(N_ARG_LIST_NIL, NIL, NIL, NIL));}
+      |                                                                                      ~~~~~^~~
+      |                                                                                           |
+      |                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:275:64: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  275 |        assignment_expression {$$=makeNode(N_ARG_LIST, $1, NIL, makeNode(N_ARG_LIST_NIL, NIL, NIL, NIL));}
+      |                                                                ^
+kim.y:276:122: warning: passing argument 2 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  276 |        |arg_expression_list COMMA assignment_expression {$$=makeNodeList(N_ARG_LIST, $1, $3);}
+      |                                                                                                                          ^   
+      |                                                                                                                          |
+      |                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:7:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    7 | A_NODE *makeNodeList(NODE_NAME, A_NODE *, A_NODE *);
+      |         ^~~~~~~~~~~~
+kim.y:276:133: warning: passing argument 3 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  276 |        |arg_expression_list COMMA assignment_expression {$$=makeNodeList(N_ARG_LIST, $1, $3);}
+      |                                                                                                                                     ^  
+      |                                                                                                                                     |
+      |                                                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:7:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    7 | A_NODE *makeNodeList(NODE_NAME, A_NODE *, A_NODE *);
+      |         ^~~~~~~~~~~~
+kim.y:276:91: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  276 |        |arg_expression_list COMMA assignment_expression {$$=makeNodeList(N_ARG_LIST, $1, $3);}
+      |                                                                                           ^
+kim.y:298:124: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  298 |       |unary_expression ASSIGN assignment_expression {$$=makeNode(N_EXP_ASSIGN, $1, NIL, $3);}
+      |                                                                                                                            ^   
+      |                                                                                                                            |
+      |                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:298:140: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  298 |       |unary_expression ASSIGN assignment_expression {$$=makeNode(N_EXP_ASSIGN, $1, NIL, $3);}
+      |                                                                                                                                            ^  
+      |                                                                                                                                            |
+      |                                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:298:95: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  298 |       |unary_expression ASSIGN assignment_expression {$$=makeNode(N_EXP_ASSIGN, $1, NIL, $3);}
+      |                                                                                               ^
+kim.y:307:126: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  307 |       |logical_or_expression BARBAR logical_and_expression {$$=makeNode(N_EXP_OR, $1, NIL, $3);}
+      |                                                                                                                              ^   
+      |                                                                                                                              |
+      |                                                                                                                              YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:307:142: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  307 |       |logical_or_expression BARBAR logical_and_expression {$$=makeNode(N_EXP_OR, $1, NIL, $3);}
+      |                                                                                                                                              ^  
+      |                                                                                                                                              |
+      |                                                                                                                                              YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:307:101: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  307 |       |logical_or_expression BARBAR logical_and_expression {$$=makeNode(N_EXP_OR, $1, NIL, $3);}
+      |                                                                                                     ^
+kim.y:312:128: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  312 |        |logical_and_expression AMPAMP bitwise_or_expression {$$=makeNode(N_EXP_AND, $1, NIL, $3);}
+      |                                                                                                                                ^   
+      |                                                                                                                                |
+      |                                                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:312:144: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  312 |        |logical_and_expression AMPAMP bitwise_or_expression {$$=makeNode(N_EXP_AND, $1, NIL, $3);}
+      |                                                                                                                                                ^  
+      |                                                                                                                                                |
+      |                                                                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:312:102: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  312 |        |logical_and_expression AMPAMP bitwise_or_expression {$$=makeNode(N_EXP_AND, $1, NIL, $3);}
+      |                                                                                                      ^
+kim.y:329:115: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  329 |        |equality_expression EQL relational_expression {$$=makeNode(N_EXP_EQL, $1, NIL, $3);}
+      |                                                                                                                   ^   
+      |                                                                                                                   |
+      |                                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:329:131: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  329 |        |equality_expression EQL relational_expression {$$=makeNode(N_EXP_EQL, $1, NIL, $3);}
+      |                                                                                                                                   ^  
+      |                                                                                                                                   |
+      |                                                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:329:89: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  329 |        |equality_expression EQL relational_expression {$$=makeNode(N_EXP_EQL, $1, NIL, $3);}
+      |                                                                                         ^
+kim.y:330:115: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  330 |        |equality_expression NEQ relational_expression {$$=makeNode(N_EXP_NEQ, $1, NIL, $3);}
+      |                                                                                                                   ^   
+      |                                                                                                                   |
+      |                                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:330:131: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  330 |        |equality_expression NEQ relational_expression {$$=makeNode(N_EXP_NEQ, $1, NIL, $3);}
+      |                                                                                                                                   ^  
+      |                                                                                                                                   |
+      |                                                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:330:89: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  330 |        |equality_expression NEQ relational_expression {$$=makeNode(N_EXP_NEQ, $1, NIL, $3);}
+      |                                                                                         ^
+kim.y:335:118: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  335 |       |relational_expression LSS shift_expression {$$=makeNode(N_EXP_LSS, $1, NIL, $3);}
+      |                                                                                                                      ^   
+      |                                                                                                                      |
+      |                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:335:134: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  335 |       |relational_expression LSS shift_expression {$$=makeNode(N_EXP_LSS, $1, NIL, $3);}
+      |                                                                                                                                      ^  
+      |                                                                                                                                      |
+      |                                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:335:92: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  335 |       |relational_expression LSS shift_expression {$$=makeNode(N_EXP_LSS, $1, NIL, $3);}
+      |                                                                                            ^
+kim.y:336:118: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  336 |       |relational_expression GTR shift_expression {$$=makeNode(N_EXP_GTR, $1, NIL, $3);}
+      |                                                                                                                      ^   
+      |                                                                                                                      |
+      |                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:336:134: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  336 |       |relational_expression GTR shift_expression {$$=makeNode(N_EXP_GTR, $1, NIL, $3);}
+      |                                                                                                                                      ^  
+      |                                                                                                                                      |
+      |                                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:336:92: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  336 |       |relational_expression GTR shift_expression {$$=makeNode(N_EXP_GTR, $1, NIL, $3);}
+      |                                                                                            ^
+kim.y:337:118: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  337 |       |relational_expression LEQ shift_expression {$$=makeNode(N_EXP_LEQ, $1, NIL, $3);}
+      |                                                                                                                      ^   
+      |                                                                                                                      |
+      |                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:337:134: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  337 |       |relational_expression LEQ shift_expression {$$=makeNode(N_EXP_LEQ, $1, NIL, $3);}
+      |                                                                                                                                      ^  
+      |                                                                                                                                      |
+      |                                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:337:92: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  337 |       |relational_expression LEQ shift_expression {$$=makeNode(N_EXP_LEQ, $1, NIL, $3);}
+      |                                                                                            ^
+kim.y:338:118: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  338 |       |relational_expression GEQ shift_expression {$$=makeNode(N_EXP_GEQ, $1, NIL, $3);}
+      |                                                                                                                      ^   
+      |                                                                                                                      |
+      |                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:338:134: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  338 |       |relational_expression GEQ shift_expression {$$=makeNode(N_EXP_GEQ, $1, NIL, $3);}
+      |                                                                                                                                      ^  
+      |                                                                                                                                      |
+      |                                                                                                                                      YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:338:92: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  338 |       |relational_expression GEQ shift_expression {$$=makeNode(N_EXP_GEQ, $1, NIL, $3);}
+      |                                                                                            ^
+kim.y:347:120: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  347 |        |additive_expression PLUS multiplicative_expression {$$=makeNode(N_EXP_ADD, $1, NIL, $3);}
+      |                                                                                                                        ^   
+      |                                                                                                                        |
+      |                                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:347:136: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  347 |        |additive_expression PLUS multiplicative_expression {$$=makeNode(N_EXP_ADD, $1, NIL, $3);}
+      |                                                                                                                                        ^  
+      |                                                                                                                                        |
+      |                                                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:347:94: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  347 |        |additive_expression PLUS multiplicative_expression {$$=makeNode(N_EXP_ADD, $1, NIL, $3);}
+      |                                                                                              ^
+kim.y:348:121: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  348 |        |additive_expression MINUS multiplicative_expression {$$=makeNode(N_EXP_SUB, $1, NIL, $3);}
+      |                                                                                                                         ^   
+      |                                                                                                                         |
+      |                                                                                                                         YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:348:137: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  348 |        |additive_expression MINUS multiplicative_expression {$$=makeNode(N_EXP_SUB, $1, NIL, $3);}
+      |                                                                                                                                         ^  
+      |                                                                                                                                         |
+      |                                                                                                                                         YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:348:95: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  348 |        |additive_expression MINUS multiplicative_expression {$$=makeNode(N_EXP_SUB, $1, NIL, $3);}
+      |                                                                                               ^
+kim.y:353:130: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  353 |        |multiplicative_expression STAR cast_expression {$$=makeNode(N_EXP_MUL, $1, NIL, $3);}
+      |                                                                                                                                  ^   
+      |                                                                                                                                  |
+      |                                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:353:146: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  353 |        |multiplicative_expression STAR cast_expression {$$=makeNode(N_EXP_MUL, $1, NIL, $3);}
+      |                                                                                                                                                  ^  
+      |                                                                                                                                                  |
+      |                                                                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:353:104: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  353 |        |multiplicative_expression STAR cast_expression {$$=makeNode(N_EXP_MUL, $1, NIL, $3);}
+      |                                                                                                        ^
+kim.y:354:131: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  354 |        |multiplicative_expression SLASH cast_expression {$$=makeNode(N_EXP_DIV, $1, NIL, $3);}
+      |                                                                                                                                   ^   
+      |                                                                                                                                   |
+      |                                                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:354:147: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  354 |        |multiplicative_expression SLASH cast_expression {$$=makeNode(N_EXP_DIV, $1, NIL, $3);}
+      |                                                                                                                                                   ^  
+      |                                                                                                                                                   |
+      |                                                                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:354:105: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  354 |        |multiplicative_expression SLASH cast_expression {$$=makeNode(N_EXP_DIV, $1, NIL, $3);}
+      |                                                                                                         ^
+kim.y:355:133: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  355 |        |multiplicative_expression PERCENT cast_expression {$$=makeNode(N_EXP_MOD, $1, NIL, $3);}
+      |                                                                                                                                     ^   
+      |                                                                                                                                     |
+      |                                                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:355:149: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  355 |        |multiplicative_expression PERCENT cast_expression {$$=makeNode(N_EXP_MOD, $1, NIL, $3);}
+      |                                                                                                                                                     ^  
+      |                                                                                                                                                     |
+      |                                                                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:355:107: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  355 |        |multiplicative_expression PERCENT cast_expression {$$=makeNode(N_EXP_MOD, $1, NIL, $3);}
+      |                                                                                                           ^
+kim.y:360:94: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  360 |       |LP type_name RP cast_expression {$$=makeNode(N_EXP_CAST, $2, NIL, $4);}
+      |                                                                                              ^   
+      |                                                                                              |
+      |                                                                                              YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:360:110: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  360 |       |LP type_name RP cast_expression {$$=makeNode(N_EXP_CAST, $2, NIL, $4);}
+      |                                                                                                              ^  
+      |                                                                                                              |
+      |                                                                                                              YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:360:67: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  360 |       |LP type_name RP cast_expression {$$=makeNode(N_EXP_CAST, $2, NIL, $4);}
+      |                                                                   ^
+kim.y:365:101: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  365 |     |PLUSPLUS unary_expression {$$=makeNode(N_EXP_PRE_INC, NIL, $2, NIL);}
+      |                                                                                                     ^  
+      |                                                                                                     |
+      |                                                                                                     YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:365:66: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  365 |     |PLUSPLUS unary_expression {$$=makeNode(N_EXP_PRE_INC, NIL, $2, NIL);}
+      |                                                                  ^
+kim.y:366:103: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  366 |     |MINUSMINUS unary_expression {$$=makeNode(N_EXP_PRE_DEC, NIL, $2, NIL);}
+      |                                                                                                       ^  
+      |                                                                                                       |
+      |                                                                                                       YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:366:68: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  366 |     |MINUSMINUS unary_expression {$$=makeNode(N_EXP_PRE_DEC, NIL, $2, NIL);}
+      |                                                                    ^
+kim.y:367:91: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  367 |     |AMP cast_expression {$$=makeNode(N_EXP_AMP, NIL, $2, NIL);}
+      |                                                                                           ^  
+      |                                                                                           |
+      |                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:367:60: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  367 |     |AMP cast_expression {$$=makeNode(N_EXP_AMP, NIL, $2, NIL);}
+      |                                                            ^
+kim.y:368:93: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  368 |     |STAR cast_expression {$$=makeNode(N_EXP_STAR, NIL, $2, NIL);}
+      |                                                                                             ^  
+      |                                                                                             |
+      |                                                                                             YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:368:61: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  368 |     |STAR cast_expression {$$=makeNode(N_EXP_STAR, NIL, $2, NIL);}
+      |                                                             ^
+kim.y:369:92: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  369 |     |EXCL cast_expression {$$=makeNode(N_EXP_NOT, NIL, $2, NIL);}
+      |                                                                                            ^  
+      |                                                                                            |
+      |                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:369:61: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  369 |     |EXCL cast_expression {$$=makeNode(N_EXP_NOT, NIL, $2, NIL);}
+      |                                                             ^
+kim.y:370:95: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  370 |     |MINUS cast_expression {$$=makeNode(N_EXP_MINUS, NIL, $2, NIL);}
+      |                                                                                               ^  
+      |                                                                                               |
+      |                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:370:62: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  370 |     |MINUS cast_expression {$$=makeNode(N_EXP_MINUS, NIL, $2, NIL);}
+      |                                                              ^
+kim.y:371:93: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  371 |     |PLUS cast_expression {$$=makeNode(N_EXP_PLUS, NIL, $2, NIL);}
+      |                                                                                             ^  
+      |                                                                                             |
+      |                                                                                             YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:371:61: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  371 |     |PLUS cast_expression {$$=makeNode(N_EXP_PLUS, NIL, $2, NIL);}
+      |                                                             ^
+kim.y:372:104: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  372 |     |SIZEOF_SYM unary_expression {$$=makeNode(N_EXP_SIZE_EXP, NIL, $2, NIL);}
+      |                                                                                                        ^  
+      |                                                                                                        |
+      |                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:372:68: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  372 |     |SIZEOF_SYM unary_expression {$$=makeNode(N_EXP_SIZE_EXP, NIL, $2, NIL);}
+      |                                                                    ^
+kim.y:373:104: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  373 |     |SIZEOF_SYM LP type_name RP {$$=makeNode(N_EXP_SIZE_TYPE, NIL, $3, NIL);}
+      |                                                                                                        ^   
+      |                                                                                                        |
+      |                                                                                                        YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:373:67: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  373 |     |SIZEOF_SYM LP type_name RP {$$=makeNode(N_EXP_SIZE_TYPE, NIL, $3, NIL);}
+      |                                                                   ^
+kim.y:378:106: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  378 |       |postfix_expression LB expression RB {$$=makeNode(N_EXP_ARRAY, $1, NIL, $3);}
+      |                                                                                                          ^   
+      |                                                                                                          |
+      |                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:378:122: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  378 |       |postfix_expression LB expression RB {$$=makeNode(N_EXP_ARRAY, $1, NIL, $3);}
+      |                                                                                                                          ^   
+      |                                                                                                                          |
+      |                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:378:78: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  378 |       |postfix_expression LB expression RB {$$=makeNode(N_EXP_ARRAY, $1, NIL, $3);}
+      |                                                                              ^
+kim.y:379:127: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  379 |       |postfix_expression LP arg_expression_list_opt RP {$$=makeNode(N_EXP_FUNCTION_CALL, $1, NIL, $3);}
+      |                                                                                                                               ^   
+      |                                                                                                                               |
+      |                                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:379:143: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  379 |       |postfix_expression LP arg_expression_list_opt RP {$$=makeNode(N_EXP_FUNCTION_CALL, $1, NIL, $3);}
+      |                                                                                                                                               ^   
+      |                                                                                                                                               |
+      |                                                                                                                                               YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:379:91: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  379 |       |postfix_expression LP arg_expression_list_opt RP {$$=makeNode(N_EXP_FUNCTION_CALL, $1, NIL, $3);}
+      |                                                                                           ^
+kim.y:380:108: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  380 |       |postfix_expression PERIOD IDENTIFIER {$$=makeNode(N_EXP_STRUCT, $1, NIL, $3);}
+      |                                                                                                            ^   
+      |                                                                                                            |
+      |                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:380:124: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  380 |       |postfix_expression PERIOD IDENTIFIER {$$=makeNode(N_EXP_STRUCT, $1, NIL, $3);}
+      |                                                                                                                            ^  
+      |                                                                                                                            |
+      |                                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:380:79: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  380 |       |postfix_expression PERIOD IDENTIFIER {$$=makeNode(N_EXP_STRUCT, $1, NIL, $3);}
+      |                                                                               ^
+kim.y:381:106: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  381 |       |postfix_expression ARROW IDENTIFIER {$$=makeNode(N_EXP_ARROW, $1, NIL, $3);}
+      |                                                                                                          ^   
+      |                                                                                                          |
+      |                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:381:122: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  381 |       |postfix_expression ARROW IDENTIFIER {$$=makeNode(N_EXP_ARROW, $1, NIL, $3);}
+      |                                                                                                                          ^  
+      |                                                                                                                          |
+      |                                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:381:78: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  381 |       |postfix_expression ARROW IDENTIFIER {$$=makeNode(N_EXP_ARROW, $1, NIL, $3);}
+      |                                                                              ^
+kim.y:382:106: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  382 |       |postfix_expression PLUSPLUS {$$=makeNode(N_EXP_POST_INC, NIL, $1, NIL);}
+      |                                                                                                          ^   
+      |                                                                                                          |
+      |                                                                                                          YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:382:70: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  382 |       |postfix_expression PLUSPLUS {$$=makeNode(N_EXP_POST_INC, NIL, $1, NIL);}
+      |                                                                      ^
+kim.y:383:108: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  383 |       |postfix_expression MINUSMINUS {$$=makeNode(N_EXP_POST_DEC, NIL, $1, NIL);}
+      |                                                                                                            ^   
+      |                                                                                                            |
+      |                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:383:72: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  383 |       |postfix_expression MINUSMINUS {$$=makeNode(N_EXP_POST_DEC, NIL, $1, NIL);}
+      |                                                                        ^
+kim.y:387:107: warning: passing argument 1 of ‘getIdentifierDeclared’ makes pointer from integer without a cast [-Wint-conversion]
+  387 |       IDENTIFIER {$$=makeNode(N_EXP_IDENT, NIL, getIdentifierDeclared($1), NIL);}
+      |                                                                                                           ^  
+      |                                                                                                           |
+      |                                                                                                           YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:18:7: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   18 | A_ID *getIdentifierDeclared(char *);
+      |       ^~~~~~~~~~~~~~~~~~~~~
+kim.y:387:80: warning: passing argument 3 of ‘makeNode’ from incompatible pointer type [-Wincompatible-pointer-types]
+  387 |       IDENTIFIER {$$=makeNode(N_EXP_IDENT, NIL, getIdentifierDeclared($1), NIL);}
+      |                                                                                ^~                             
+      |                                                                                |
+      |                                                                                A_ID * {aka struct s_id *}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘A_ID *’ {aka ‘struct s_id *’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:387:52: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  387 |       IDENTIFIER {$$=makeNode(N_EXP_IDENT, NIL, getIdentifierDeclared($1), NIL);}
+      |                                                    ^
+kim.y:388:96: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  388 |       |INTEGER_CONSTANT {$$+makeNode(N_EXP_INT_CONST, NIL, $1, NIL);}
+      |                                                                                                ^  
+      |                                                                                                |
+      |                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:389:96: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  389 |       |FLOAT_CONSTANT {$$=makeNode(N_EXP_FLOAT_CONST, NIL, $1, NIL);}
+      |                                                                                                ^  
+      |                                                                                                |
+      |                                                                                                YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:389:57: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  389 |       |FLOAT_CONSTANT {$$=makeNode(N_EXP_FLOAT_CONST, NIL, $1, NIL);}
+      |                                                         ^
+kim.y:390:99: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  390 |       |CHARACTER_CONSTANT {$$=makeNode(N_EXP_CHAR_CONST, NIL, $1, NIL);}
+      |                                                                                                   ^  
+      |                                                                                                   |
+      |                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:390:61: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  390 |       |CHARACTER_CONSTANT {$$=makeNode(N_EXP_CHAR_CONST, NIL, $1, NIL);}
+      |                                                             ^
+kim.y:391:99: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  391 |       |STRING_LITERAL {$$=makeNode(N_EXP_STRING_LITERAL, NIL, $1, NIL);}
+      |                                                                                                   ^  
+      |                                                                                                   |
+      |                                                                                                   YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:6:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+    6 | A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |         ^~~~~~~~
+kim.y:391:57: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  391 |       |STRING_LITERAL {$$=makeNode(N_EXP_STRING_LITERAL, NIL, $1, NIL);}
+      |                                                         ^
+kim.y:396:98: warning: passing argument 1 of ‘setTypeNameSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  396 |    declaration_specifiers abstract_declarator_opt {$$=setTypeNameSpecifier($2, $2);}
+      |                                                                                                  ^  
+      |                                                                                                  |
+      |                                                                                                  YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:30:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   30 | A_TYPE *setTypeNameSpecifier(A_TYPE *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~
+kim.y:396:108: warning: passing argument 2 of ‘setTypeNameSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  396 |    declaration_specifiers abstract_declarator_opt {$$=setTypeNameSpecifier($2, $2);}
+      |                                                                                                            ^  
+      |                                                                                                            |
+      |                                                                                                            YYSTYPE {aka long int}
+In file included from kim.y:8:
+support_func.h:30:9: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   30 | A_TYPE *setTypeNameSpecifier(A_TYPE *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~
+kim.y:396:71: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  396 |    declaration_specifiers abstract_declarator_opt {$$=setTypeNameSpecifier($2, $2);}
+      |                                                                       ^
+y.tab.c:2791:7: warning: implicit declaration of function ‘yyerror’; did you mean ‘yyerrok’? [-Wimplicit-function-declaration]
+ 2791 |       yyerror (YY_("syntax error"));
+      |       ^~~~~~~
+      |       yyerrok
+kim.y: At top level:
+kim.y:402:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  402 | yyerror(char *s){
+      | ^~~~~~~

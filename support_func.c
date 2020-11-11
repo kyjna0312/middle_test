@@ -133,6 +133,7 @@ void checkForwardReference(){
       syntax_error(31, id->name);
     else if((id->kind==ID_STRUCT || id->kind==ID_ENUM)&& t->field==NIL)
       syntax_error(32, id->name);
+    id = id->prev;
   }
 }
 

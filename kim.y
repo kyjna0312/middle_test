@@ -2,6 +2,8 @@
 
 
 %{
+#define YYSTYPE_IS_DECLARED 1
+typedef long YYSTYPE;
 #include <stdio.h>
 #include "support_func.h"
 
@@ -74,7 +76,7 @@ storage_class_specifier:
 
 init_declarator_list_opt:
 						{$$=makeDummyIdentifier();}
-						|init_declarator_list COMMA init_declarator_list {$$=$1;}
+						|init_declarator_list {$$=$1;}
 						;
 
 init_declarator_list:
