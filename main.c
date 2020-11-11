@@ -1,9 +1,7 @@
 #include <stdio.h>
-/* 추가한 부분 시작 */
-#include "type.h"
+#include "print.h"
 extern int syntax_err;
 extern A_NODE *root;
-/* 추가한 부분 끝 */
 
 void main(int argc, char *argv[])
 { //적당히 고쳐서 사용하세요
