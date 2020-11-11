@@ -6,15 +6,10 @@ ws {delim}+
 
 %{
 #include "y.tab.h"
-#include <string.h>
-
-/* 추가한 부분 시작 */
 #include "type.h"
 extern A_ID *current_id;
-extern int yyval;
-/* 추가한 부분 끝 */
-
-extern int line_no = 1;
+//extern A_VALUE yylval;
+extern int line_no;
 
 char *makeString();
 int checkIdentifier();
@@ -71,13 +66,15 @@ while { return(WHILE_SYM); }
 "\-" { return(MINUS); }
 "\=" { return(ASSIGN); }
 
-{digit}+ {return(INTEGER_CONSTANT); }
-{digit}+\.{digit}+ {return(FLOAT_CONSTANT); }
+{digit}+	{ yylval = atoi(yytext); return(INTEGER_CONSTANT); }
+{digit}+\.{digit}+	{ yylval = makeString(yytext); return(FLOAT_CONSTANT); }
 {letter}({letter}|{digit})* { return(checkIdentifier(yytext)); }
-\"([^"\n]|\\["\n])*\" {return(STRING_LITERAL); }
-\'([^'\n]|\'\')\' {return(CHARACTER_CONSTANT); }
-"//"[^\n]* { }
+\"([^"\n]|\\["\n])*\"	{ yylval = makeString(yytext); return(STRING_LITERAL); }
+\'([^'\n]|\'\')\'	{ yylval = *(yytext+1);  return(CHARACTER_CONSTANT); }
+"//"[^\n]*	{ }
 %%
+#include <string.h>
+
 char *makeString(char *s){
 	char *t;
 	t = malloc(strlen(s)+1);
@@ -98,33 +95,18 @@ int checkIdentifier(char *s){
 	}
 	if(id==0){
 		yylval = makeString(s);
-		return(IDENTIFIER);}
+		return(IDENTIFIER);
+	}
 	else if(id -> kind == ID_TYPE){
 		yylval = id -> type;
 		return(TYPE_IDENTIFIER);
 	}
 	else{
-		yylval=id -> name;
+		yylval = id -> name;
 		return(IDENTIFIER);
 	}
-}
-/* 삭제한 부분 시작 */
-/*
-int checkIdentifier(char *s) {
-	if (strcmp(s, "int") == 0)
-		return TYPE_IDENTIFIER;
-	else if (strcmp(s, "float") == 0)
-		return TYPE_IDENTIFIER;
-	else if (strcmp(s, "char") == 0)
-		return TYPE_IDENTIFIER;
-	else if (strcmp(s, "void") == 0)
-		return TYPE_IDENTIFIER;
-		
-	return IDENTIFIER;
 }
 
 int yywrap() {
 	return 1;
 }
-*/
-/* 삭제한 부분 끝 */
