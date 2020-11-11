@@ -4,7 +4,10 @@ delim [\t]
 line [\n]
 ws {delim}+
 
+
 %{
+#define YYSTYPE_IS_DECLARED 1
+typedef long YYSTYPE;
 #include "y.tab.h"
 #include "type.h"
 extern A_ID *current_id;

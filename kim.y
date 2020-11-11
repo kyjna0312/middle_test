@@ -11,6 +11,7 @@ extern A_ID *current_id;
 extern int yylex();
 extern A_NODE *root;
 extern A_TYPE *int_type;
+
 %}
 
 %start program

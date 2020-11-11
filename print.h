@@ -1,5 +1,5 @@
 #include "type.h"
-
+/*
 char *node_name[] = {
     "N_NULL",
     "N_PROGRAM",
@@ -61,7 +61,7 @@ char *node_name[] = {
     "N_INIT_LIST_ONE",
     "N_INIT_LIST_NIL"
 };
-
+*/
 extern A_TYPE *int_type;
 extern A_TYPE *float_type;
 extern A_TYPE *char_type;
