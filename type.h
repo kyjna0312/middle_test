@@ -169,3 +169,11 @@ typedef struct
     S_KIND stor;
     int line;
 } A_SPECIFIER;
+
+typedef union
+{
+    int val;
+    char chr;
+    char *str;
+    ID_KIND *kind;
+} A_VALUE;
