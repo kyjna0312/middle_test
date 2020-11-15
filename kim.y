@@ -1,9 +1,7 @@
+
 %{
 #define YYSTYPE_IS_DECLARED 1
 typedef long YYSTYPE;
-%}
-
-%{
 #include <stdio.h>
 #include "support_func.h"
 
