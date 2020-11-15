@@ -1,5 +1,7 @@
-
-
+%{
+#define YYSTYPE_IS_DECLARED 1
+typedef long YYSTYPE;
+%}
 
 %{
 #include <stdio.h>
@@ -74,7 +76,7 @@ storage_class_specifier:
 
 init_declarator_list_opt:
 						{$$=makeDummyIdentifier();}
-						|init_declarator_list COMMA init_declarator_list {$$=$1;}
+						|init_declarator_list {$$=$1;}
 						;
 
 init_declarator_list:
@@ -133,7 +135,7 @@ struct_declarator:
 				 ;
 
 enum_type_specifier:
-				   ENUM_SYM IDENTIFIER {$$=setTypeStructOrEnumIdentifier(T_ENUM, $2, ID_ENUM);} LR enumerator_list RR {$$=setTypeField($3, $4);}
+				   ENUM_SYM IDENTIFIER {$$=setTypeStructOrEnumIdentifier(T_ENUM, $2, ID_ENUM);} LR enumerator_list RR {$$=setTypeField($3, $5);}
 				   |ENUM_SYM {$$=makeType(T_ENUM);} LR enumerator_list RR {$$=setTypeField($2, $4);}
 				   |ENUM_SYM IDENTIFIER {$$=getTypeOfStructOrEnumRefIdentifier(T_ENUM, $2, ID_ENUM);}
 				   ;
@@ -275,7 +277,7 @@ arg_expression_list:
 				   ;
 
 constant_expression_opt:
-					   {$$=NIL;}
+					    {$$=NIL;}
 					   |constant_expression {$$=$1;}
 					   ;
 
@@ -383,7 +385,7 @@ postfix_expression:
 
 primary_expression:
 				  IDENTIFIER {$$=makeNode(N_EXP_IDENT, NIL, getIdentifierDeclared($1), NIL);}
-				  |INTEGER_CONSTANT {$$+makeNode(N_EXP_INT_CONST, NIL, $1, NIL);}
+				  |INTEGER_CONSTANT {$$=makeNode(N_EXP_INT_CONST, NIL, $1, NIL);}
 				  |FLOAT_CONSTANT {$$=makeNode(N_EXP_FLOAT_CONST, NIL, $1, NIL);}
 				  |CHARACTER_CONSTANT {$$=makeNode(N_EXP_CHAR_CONST, NIL, $1, NIL);}
 				  |STRING_LITERAL {$$=makeNode(N_EXP_STRING_LITERAL, NIL, $1, NIL);}
@@ -391,7 +393,7 @@ primary_expression:
 				  ;
 
 type_name:
-		 declaration_specifiers abstract_declarator_opt {$$=setTypeNameSpecifier($2, $2);}
+		 declaration_specifiers abstract_declarator_opt {$$=setTypeNameSpecifier($2, $1);}
 		 ;
 
 %%

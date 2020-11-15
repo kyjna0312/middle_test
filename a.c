@@ -1,5 +1,6 @@
 int a;
-int main() {
-  int b,c;
-  a=b;
+int main()
+{
+  int b, c;
+  a = b;
 }

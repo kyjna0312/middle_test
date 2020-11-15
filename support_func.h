@@ -5,8 +5,8 @@
 
 A_NODE *makeNode(NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
 A_NODE *makeNodeList(NODE_NAME, A_NODE *, A_NODE *);
-A_ID   *makeIdentifier(char *);
-A_ID   *makeDummyIdentifier();
+A_ID *makeIdentifier(char *);
+A_ID *makeDummyIdentifier();
 A_TYPE *makeType(T_KIND);
 A_SPECIFIER *makeSpecifier(A_TYPE *, S_KIND);
 A_ID *searchIdentifier(char *, A_ID *);
