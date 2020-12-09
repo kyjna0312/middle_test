@@ -1,14 +1,14 @@
 GCC = gcc
-LEX = lex
+LEX = flex
 YACC = yacc
 
-all: test
+all: sem_anyalize
 
 run:
-	-./test
+	./sem_anyalize
 
-test: y.tab.c lex.yy.c
-	$(GCC) -g -w y.tab.c lex.yy.c support_func.c print.c main.c
+sem_anyalize: y.tab.c lex.yy.c
+	$(GCC) -g -w -o  sem_anyalize y.tab.c lex.yy.c  print_sem.c semantic.c support_func.c print.c main.c
 
 lex.yy.c: 
 	$(LEX) lex.l

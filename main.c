@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "print.h"
+#include "print_sem.h"
 extern int syntax_err;
+extern int semantic_err;
 extern A_NODE *root;
 extern FILE *yyin;
 
@@ -16,8 +18,12 @@ void main(int argc, char *argv[])
     printf("file success\n");
     initialize();
     printf("initialize\n");
-    int result = yyparse();
+    // int result = yyparse();
+    yyparse();
     printf("parse\n");
     if (!syntax_err)
         print_source(root);
+
+    if (!semantic_err)
+        print_sem_ast(root);
 }

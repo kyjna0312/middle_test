@@ -564,6 +564,15 @@ void initialize()
               setDeclaratorTypeAndKind(makeDummyIdentifier(), string_type, ID_PARM),
               setDeclaratorKind(makeDummyIdentifier(), ID_PARM))),
       ID_FUNC);
+
+  setDeclaratorTypeAndKind(
+      makeIdentifier("malloc"),
+      setTypeField(
+          setTypeElementType(makeType(T_FUNC), void_type),
+          linkDeclaratorList(
+              setDeclaratorTypeAndKind(makeDummyIdentifier(), string_type, ID_PARM),
+              setDeclaratorKind(makeDummyIdentifier(), ID_PARM))),
+      ID_FUNC);
 }
 void syntax_error(int i, char *s)
 {

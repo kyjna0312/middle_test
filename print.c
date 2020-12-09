@@ -2,12 +2,6 @@
 // #include "type.h"
 #include "print.h"
 
-extern A_TYPE *int_type;
-extern A_TYPE *float_type;
-extern A_TYPE *char_type;
-extern A_TYPE *void_type;
-extern A_TYPE *string_type;
-
 char *node_name[] = {
     "N_NULL",
     "N_PROGRAM",
@@ -67,7 +61,36 @@ char *node_name[] = {
     "N_STMT_LIST_NIL",
     "N_INIT_LIST",
     "N_INIT_LIST_ONE",
-    "N_INIT_LIST_NIL"};
+    "N_INIT_LIST_NIL",
+};
+
+char *type_kind_name[] = {
+    "NULL",
+    "ENUM",
+    "ARRAY",
+    "STRUCT",
+    "UNION",
+    "FUNC",
+    "POINTER",
+    "VOID",
+};
+char *id_kind_name[] = {
+    "NULL",
+    "VAR",
+    "FUNC",
+    "PARM",
+    "FIELD",
+    "TYPE",
+    "ENUM",
+    "STRUCT",
+    "ENUM_LITERAL",
+};
+char *spec_name[] = {
+    "NULL",
+    "AUTO",
+    "STATIC",
+    "TYPEDEF",
+};
 
 extern A_TYPE *int_type, *float_type, *char_type, *void_type, *string_type;
 
@@ -320,8 +343,6 @@ void prt_STRING(char *str, int s)
     printf("%s\n", str);
 }
 
-char *type_kind_name[] = {"NULL", "ENUM", "ARRAY", "STRUCT", "UNION", "FUNC", "POINTER", "VOID"};
-
 void prt_A_TYPE(A_TYPE *t, int s)
 {
     print_space(s);
@@ -410,9 +431,6 @@ void prt_A_ID_LIST(A_ID *id, int s)
         id = id->link;
     }
 }
-
-char *id_kind_name[] = {"NULL", "VAR", "FUNC", "PARM", "FIELD", "TYPE", "ENUM", "STRUCT", "ENUM_LITERAL"};
-char *spec_name[] = {"NULL", "AUTO", "STATIC", "TYPEDEF"};
 
 void prt_A_ID_NAME(A_ID *id, int s)
 {
