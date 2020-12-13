@@ -1,4 +1,6 @@
 #include "type.h"
+#include <string.h>
+
 #define LIT_MAX 100
 
 extern A_TYPE *int_type, *float_type, *char_type, *string_type, *void_type;
@@ -93,17 +95,21 @@ int put_literal(A_LITERAL lit, int ll)
         semantic_error(93, ll, 0);
     else
         literal_no++;
+
     literal_table[literal_no] = lit;
     literal_table[literal_no].addr = literal_size;
     if (lit.type->kind == T_ENUM)
         literal_size += 4;
+
     else if (isStringType(lit.type))
         literal_size += strlen(lit.value.s) + 1;
+
     if (literal_size % 4)
         literal_size = literal_size / 4 * 4 + 4;
 
     return (literal_no);
 }
+
 A_TYPE *sem_expression(A_NODE *node)
 {
     A_TYPE *result = NIL, *t, *t1, *t2;
@@ -151,6 +157,7 @@ A_TYPE *sem_expression(A_NODE *node)
         lit.type = string_type;
         lit.value.s = node->clink;
         node->clink = put_literal(lit, node->line); // index of literal_table
+        result = string_type;
         break;
     case N_EXP_ARRAY:
         t1 = sem_expression(node->line);
@@ -418,6 +425,11 @@ void sem_arg_expr_list(A_NODE *node, A_ID *id)
                 else
                     semantic_error(59, node->line, 0);
                 sem_arg_expr_list(node->rlink, id->link);
+            }
+            else // DNOTNODT parameter : no conversion
+            {
+                t = sem_expression(node->llink);
+                sem_arg_expr_list(node->rlink, id);
             }
             arg_size = node->llink->type->size + node->rlink->value;
         }
@@ -720,6 +732,11 @@ int sem_declaration(A_ID *id, int addr)
     A_TYPE *t;
     int size = 0, i;
     A_LITERAL lit;
+
+    // 파라미터가 없는 경우
+    if (id == NULL)
+        return 0;
+
     switch (id->kind)
     {
     case ID_VAR:
@@ -1087,8 +1104,11 @@ BOOLEAN isFunctionType(A_TYPE *t)
 
 BOOLEAN isStructOrUnionType(A_TYPE *t)
 {
-    if (t && (t->kind == T_STRUCT || t->kind == T_UNION))
-        return (TRUE);
+    if (t)
+    {
+        if (t->kind == T_STRUCT || t->kind == T_UNION)
+            return (TRUE);
+    }
 
     else
         return (FALSE);

@@ -5,12 +5,33 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "(gdb) 시작",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/sem_analysis",
+            "args": [
+                "test2.c"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "gdb에 자동 서식 지정 사용",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/a.out",
+            "program": "${workspaceFolder}/sem_analysis",
             "args": [
-                "a.c"
+                "test2.c"
             ],
             "cwd": "${workspaceFolder}"
         }

@@ -174,6 +174,7 @@ A_SPECIFIER *updateSpecifier(A_SPECIFIER *p, A_TYPE *t, S_KIND s)
     else
       p->type = t;
   }
+
   if (s)
   {
     if (p->stor)
@@ -262,8 +263,10 @@ A_ID *setDeclaratorType(A_ID *id, A_TYPE *t)
 A_ID *setDeclaratorElementType(A_ID *id, A_TYPE *t)
 {
   A_TYPE *tt;
+
   if (id->type == NIL)
     id->type = t;
+
   else
   {
     tt = id->type;
@@ -271,6 +274,7 @@ A_ID *setDeclaratorElementType(A_ID *id, A_TYPE *t)
       tt = tt->element_type;
     tt->element_type = t;
   }
+
   return (id);
 }
 

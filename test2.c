@@ -5,7 +5,7 @@ typedef struct _node
 } Node;
 
 Node *addNode(int);
-void printList(Node *);
+// void printList(Node *);
 
 main()
 {
@@ -15,13 +15,13 @@ main()
     head = addNode(-1);
     temp = head;
 
-    for (i = 0; i < 10; i++)
-    {
-        temp->next = addNode(i);
-        temp = temp->next;
-    }
+    // for (i = 0; i < 10; i++)
+    // {
+    //     temp->next = addNode(i);
+    //     temp = temp->next;
+    // }
 
-    printList(head);
+    // printList(head);
 }
 
 Node *addNode(int value)
@@ -32,13 +32,13 @@ Node *addNode(int value)
     return n;
 }
 
-void printList(Node *node)
-{
-    while (node)
-    {
-        printf("%d ", node->value);
-        node = node->next;
-    }
+// void printList(Node *node)
+// {
+//     while (node)
+//     {
+//         printf("%d ", node->value);
+//         node = node->next;
+//     }
 
-    printf("\n");
-}
+//     printf("\n");
+// }

@@ -94,12 +94,6 @@ char *spec_name[] = {
 
 extern A_TYPE *int_type, *float_type, *char_type, *void_type, *string_type;
 
-void print_source(A_NODE *node)
-{
-    printf("======= source program ==========\n");
-    prt_program(node, 0);
-}
-
 void print_space(int s)
 {
     int i;

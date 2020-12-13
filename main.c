@@ -6,9 +6,11 @@ extern int semantic_err;
 extern A_NODE *root;
 extern FILE *yyin;
 
+void semantic_analysis(A_NODE *);
+void print_ast(A_NODE *);
+
 void main(int argc, char *argv[])
 {
-    // argv[1] = "test.c";
     printf("%s\n", argv[1]);
     if ((yyin = fopen(argv[1], "r")) == NULL)
     {
@@ -21,9 +23,14 @@ void main(int argc, char *argv[])
     // int result = yyparse();
     yyparse();
     printf("parse\n");
-    if (!syntax_err)
-        print_source(root);
 
-    if (!semantic_err)
+    if (syntax_err)
+        return;
+
+    print_ast(root);
+
+    semantic_analysis(root);
+
+    if (semantic_err == 0)
         print_sem_ast(root);
 }
