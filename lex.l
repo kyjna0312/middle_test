@@ -68,6 +68,8 @@ while { return(WHILE_SYM); }
 "\+" { return(PLUS); }
 "\-" { return(MINUS); }
 "\=" { return(ASSIGN); }
+"\*" { return(STAR);}
+"\/" { return(SLASH);}
 
 {digit}+	{ yylval = atoi(yytext); return(INTEGER_CONSTANT); }
 {digit}+\.{digit}+	{ yylval = makeString(yytext); return(FLOAT_CONSTANT); }

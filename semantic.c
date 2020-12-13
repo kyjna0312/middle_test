@@ -1133,7 +1133,7 @@ BOOLEAN isPointerType(A_TYPE *t)
 
 BOOLEAN isIntType(A_TYPE *t)
 {
-    if (t && &t == int_type)
+    if (t && t == int_type)
         return (TRUE);
 
     else
