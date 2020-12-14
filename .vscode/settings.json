@@ -5,7 +5,8 @@
         "istream": "c",
         "ostream": "c",
         "sstream": "c",
-        "streambuf": "c"
+        "streambuf": "c",
+        "cstdlib": "c"
     }
     
 }

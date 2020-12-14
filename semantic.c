@@ -1,5 +1,6 @@
 #include "type.h"
 #include <string.h>
+#include <stdlib.h>
 
 #define LIT_MAX 100
 
@@ -10,7 +11,7 @@ int semantic_err = 0;
 int literal_no = 0;
 int literal_size = 0;
 
-float atof();
+// float atof();
 void sem_arg_expr_list(A_NODE *, A_ID *);
 A_ID *getStructFieldIdentifier(A_TYPE *, char *);
 A_ID *getPointerFieldIdentifier(A_TYPE *, char *);
@@ -59,7 +60,7 @@ int sem_declaration_list(A_ID *, int);
 int sem_declaration(A_ID *, int);
 A_LITERAL getTypeAndValueOfExpression(A_NODE *);
 void semantic_warning(int, int);
-void semantic_error();
+void semantic_error(int, int, char *);
 
 void semantic_analysis(A_NODE *node)
 {
@@ -149,6 +150,7 @@ A_TYPE *sem_expression(A_NODE *node)
         lit.type = float_type;
         lit.value.f = atof(node->clink);
         node->clink = put_literal(lit, node->line); //index of literal_table
+        result = float_type;
         break;
     case N_EXP_CHAR_CONST:
         result = char_type;
@@ -160,7 +162,7 @@ A_TYPE *sem_expression(A_NODE *node)
         result = string_type;
         break;
     case N_EXP_ARRAY:
-        t1 = sem_expression(node->line);
+        t1 = sem_expression(node->llink);
         t2 = sem_expression(node->rlink);
         // usal binary conversion
         t = convertUsualBinaryConversion(node);
@@ -300,10 +302,12 @@ A_TYPE *sem_expression(A_NODE *node)
     case N_EXP_PRE_DEC:
         result = sem_expression(node->clink);
         // usual binaryconversion between the expression and 1
-        if (isScalarType(result))
+        if (!isScalarType(result))
             semantic_error(27, node->line, 0);
+
         //check if modifiable lvalue
-        semantic_error(60, node->line, 0);
+        if (!isModifiableLvalue(node->clink))
+            semantic_error(60, node->line, 0);
         break;
     case N_EXP_MUL:
     case N_EXP_DIV:
@@ -496,6 +500,7 @@ int sem_statement(A_NODE *node, int addr, A_TYPE *ret, BOOLEAN sw, BOOLEAN brk, 
             node->llink = convertScalarToInteger(node->llink);
         else
             semantic_error(50, node->line, 0);
+        local_size = sem_statement(node->rlink, addr, ret, FALSE, brk, cnt);
         break;
     case N_STMT_IF_ELSE:
         t = sem_expression(node->llink);
@@ -1484,7 +1489,7 @@ void semantic_error(int i, int ll, char *s)
     case 74:
         printf("continue statement not within a loop \n");
         break;
-        // errors in type & declarator
+    // errors in type & declarator
     case 80:
         printf("undefined type\n");
         break;

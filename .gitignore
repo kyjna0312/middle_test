@@ -5,6 +5,9 @@
 
 ### Yacc Lex ###
 
+*.swp
+*.dSYM
+
 ### C ###
 # Prerequisites
 *.d

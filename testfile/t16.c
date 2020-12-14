@@ -1,14 +1,13 @@
-struct People{
+struct People
+{
 	char name[12];
 	int age;
 	float height;
-}data;
+} data;
 
-void main(){
-	
+void main()
+{
 
 	data.age = 27;
 	data.height = 172.4;
 }
-
-

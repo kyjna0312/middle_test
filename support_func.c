@@ -572,9 +572,9 @@ void initialize()
   setDeclaratorTypeAndKind(
       makeIdentifier("malloc"),
       setTypeField(
-          setTypeElementType(makeType(T_FUNC), void_type),
+          setTypeElementType(makeType(T_FUNC), string_type),
           linkDeclaratorList(
-              setDeclaratorTypeAndKind(makeDummyIdentifier(), string_type, ID_PARM),
+              setDeclaratorTypeAndKind(makeDummyIdentifier(), int_type, ID_PARM),
               setDeclaratorKind(makeDummyIdentifier(), ID_PARM))),
       ID_FUNC);
 }
