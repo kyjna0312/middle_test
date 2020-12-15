@@ -2,17 +2,16 @@ GCC = gcc
 LEX = flex
 YACC = yacc
 
-all: sem_analysis
+all: ssuCompiler
 
 run:
-	./sem_analysis
+	./ssuCompiler
 
-sem_analysis: y.tab.c lex.yy.c
-	$(GCC) -g -w -o  sem_analysis y.tab.c lex.yy.c  print_sem.c semantic.c support_func.c print.c main.c
+ssuCompiler: y.tab.c lex.yy.c
+	$(GCC) -g -w -o  ssuCompiler y.tab.c lex.yy.c print_sem.c semantic.c support_func.c print.c code_generator.c main.c
 
 lex.yy.c: 
 	$(LEX) lex.l
-
 y.tab.c: 
 	$(YACC) -d kim.y
 

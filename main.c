@@ -6,8 +6,11 @@ extern int semantic_err;
 extern A_NODE *root;
 extern FILE *yyin;
 
+FILE *fout;
+
 void semantic_analysis(A_NODE *);
 void print_ast(A_NODE *);
+void code_generation();
 
 void main(int argc, char *argv[])
 {
@@ -17,6 +20,13 @@ void main(int argc, char *argv[])
         printf("can not open input file: %s\n", argv[1]);
         exit(1);
     }
+
+    if ((fout = fopen("a.asm", "w")) == NULL)
+    {
+        printf("can not open output file: a.asm\n");
+        exit(1);
+    }
+
     printf("file success\n");
     initialize();
     printf("initialize\n");
@@ -33,4 +43,6 @@ void main(int argc, char *argv[])
 
     if (semantic_err == 0)
         print_sem_ast(root);
+
+    code_generation(root);
 }
