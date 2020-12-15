@@ -1,0 +1,23 @@
+syntax error at line 24: near L3
+========  code ==========
+   0:  INT	0,28
+   1:  SUP	0,4
+   2:  RET	0,0
+   3:  INT	0,16
+   4:  LDA	1,12
+   5:  INT	0,12
+   6:  LITI	0,1
+   7:  MINUSI	0,0
+   8:  POP	0,4
+   9:  CAL	0,0
+  10:  STX	0,0
+  11:  LDA	1,12
+  12:  LOD	1,12
+  13:  STX	0,0
+  14:  LDA	1,12
+  15:  LITI	0,0
+  16:  STX	0,1
+  17:  POP	0,1
+  18:  LOD	1,12
+  19:  LITI	0,10
+  20:  SUBI	0,0

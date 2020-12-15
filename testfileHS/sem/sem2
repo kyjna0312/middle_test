@@ -1,0 +1,473 @@
+./testfileHS/test2.c
+file success
+initialize
+                                                                                                                                            parse
+======= syntax tree ==========
+N_PROGRAM (0,0)
+| (ID="Node") TYPE:c473d1e0 KIND:TYPE SPEC=TYPEDEF LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | STRUCT
+| | | | FIELD
+| | | | | (ID="value") TYPE:c4738920 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | TYPE
+| | | | | | | (int)
+| | | | | (ID="next") TYPE:c473d2b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | TYPE
+| | | | | | | POINTER
+| | | | | | | | ELEMENT_TYPE
+| | | | | | | | | (DONE:c473d1e0)
+| (ID="addNode") TYPE:c473d510 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="") TYPE:c4738920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | TYPE
+| | | | | | | (int)
+| | | | TYPE
+| | | | | POINTER
+| | | | | | ELEMENT_TYPE
+| | | | | | | (DONE:c473d1e0)
+| (ID="printList") TYPE:c473d6d0 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="") TYPE:c473d640 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | TYPE
+| | | | | | | POINTER
+| | | | | | | | ELEMENT_TYPE
+| | | | | | | | | (DONE:c473d1e0)
+| | | | TYPE
+| | | | | (void)
+| (ID="main") TYPE:c473d780 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | TYPE
+| | | | | (int)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,0)
+| | | | | | (ID="head") TYPE:c473d820 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | TYPE
+| | | | | | | | POINTER
+| | | | | | | | | ELEMENT_TYPE
+| | | | | | | | | | (DONE:c473d1e0)
+| | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | TYPE
+| | | | | | | | POINTER
+| | | | | | | | | ELEMENT_TYPE
+| | | | | | | | | | (DONE:c473d1e0)
+| | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | TYPE
+| | | | | | | | (int)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | (ID="head") TYPE:c473d820 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
+| | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="addNode") TYPE:c473d510 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | N_EXP_MINUS (0,0)
+| | | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | | 1
+| | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="head") TYPE:c473d820 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | N_STMT_FOR (0,0)
+| | | | | | | | | | N_FOR_EXP (0,0)
+| | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | | 0
+| | | | | | | | | | | N_EXP_LSS (0,0)
+| | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | | 10
+| | | | | | | | | | | N_EXP_POST_INC (0,0)
+| | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | N_STMT_COMPOUND (0,0)
+| | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | | | N_EXP_ARROW (0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | next
+| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | (ID="addNode") TYPE:c473d510 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | N_EXP_ARROW (0,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | next
+| | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
+| | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
+| | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | (ID="printList") TYPE:c473d6d0 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | (ID="head") TYPE:c473d820 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | | | | N_STMT_LIST_NIL (0,0)
+| (ID="addNode") TYPE:c473e8b0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="value") TYPE:c4738920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | TYPE
+| | | | | | | (int)
+| | | | TYPE
+| | | | | POINTER
+| | | | | | ELEMENT_TYPE
+| | | | | | | (DONE:c473d1e0)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,0)
+| | | | | | (ID="n") TYPE:c473e930 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | TYPE
+| | | | | | | | POINTER
+| | | | | | | | | ELEMENT_TYPE
+| | | | | | | | | | (DONE:c473d1e0)
+| | | | | | | INIT
+| | | | | | | | N_INIT_LIST_ONE (0,0)
+| | | | | | | | | N_EXP_CAST (0,0)
+| | | | | | | | | | POINTER
+| | | | | | | | | | | ELEMENT_TYPE
+| | | | | | | | | | | | (DONE:c473d1e0)
+| | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
+| | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | (ID="malloc") TYPE:c4738e50 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | | N_EXP_SIZE_TYPE (0,0)
+| | | | | | | | | | | | | (DONE:c473d1e0)
+| | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | N_EXP_ARROW (0,0)
+| | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | (ID="n") TYPE:c473e930 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | value
+| | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | N_STMT_RETURN (0,0)
+| | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | (ID="n") TYPE:c473e930 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | N_STMT_LIST_NIL (0,0)
+| (ID="printList") TYPE:c473efc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | TYPE
+| | | | | | | POINTER
+| | | | | | | | ELEMENT_TYPE
+| | | | | | | | | (DONE:c473d1e0)
+| | | | TYPE
+| | | | | (void)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,0)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_WHILE (0,0)
+| | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | N_STMT_COMPOUND (0,0)
+| | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
+| | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | (ID="printf") TYPE:c4738bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
+| | | | | | | | | | | | | | "%d "
+| | | | | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | | | | N_EXP_ARROW (0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | value
+| | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | N_EXP_ARROW (0,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | next
+| | | | | | | | | | | N_STMT_LIST_NIL (0,0)
+| | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
+| | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="printf") TYPE:c4738bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
+| | | | | | | | | | | | "\n"
+| | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | | N_STMT_LIST_NIL (0,0)
+======= semantic tree ==========
+N_PROGRAM (0,28)
+| (ID="Node") TYPE:c473d1e0 KIND:TYPE SPEC=TYPEDEF LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | STRUCT
+| | | | FIELD
+| | | | | (ID="value") TYPE:c4738920 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
+ | | | | | | TYPE
+| | | | | | | (int)
+| | | | | (ID="next") TYPE:c473d2b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | TYPE
+| | | | | | | POINTER
+| | | | | | | | ELEMENT_TYPE
+| | | | | | | | | (DONE:c473d1e0)
+| (ID="addNode") TYPE:c473d510 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="") TYPE:c4738920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | TYPE
+| | | | | | | (int)
+| | | | TYPE
+| | | | | POINTER
+| | | | | | ELEMENT_TYPE
+| | | | | | | (DONE:c473d1e0)
+| (ID="printList") TYPE:c473d6d0 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="") TYPE:c473d640 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | TYPE
+| | | | | | | POINTER
+| | | | | | | | ELEMENT_TYPE
+| | | | | | | | | (DONE:c473d1e0)
+| | | | TYPE
+| | | | | (void)
+| (ID="main") TYPE:c473d780 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | TYPE
+| | | | | (int)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,4)
+| | | | | | (ID="head") TYPE:c473d820 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | TYPE
+| | | | | | | | POINTER
+| | | | | | | | | ELEMENT_TYPE
+| | | | | | | | | | (DONE:c473d1e0)
+| | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | TYPE
+| | | | | | | | POINTER
+| | | | | | | | | ELEMENT_TYPE
+| | | | | | | | | | (DONE:c473d1e0)
+| | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | TYPE
+| | | | | | | | (int)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | N_EXP_ASSIGN (c473d820,0)
+| | | | | | | | | N_EXP_IDENT (c473d820,1)
+| | | | | | | | | | (ID="head") TYPE:c473d820 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | N_EXP_FUNCTION_CALL (c473d410,0)
+| | | | | | | | | | N_EXP_AMP (c473f820,0)
+| | | | | | | | | | | N_EXP_IDENT (c473d510,0)
+| | | | | | | | | | | | (ID="addNode") TYPE:c473d510 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | N_EXP_MINUS (c4738920,0)
+| | | | | | | | | | | | N_EXP_INT_CONST (c4738920,0)
+| | | | | | | | | | | | | INT=1
+| | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | N_EXP_ASSIGN (c473d8d0,0)
+| | | | | | | | | | N_EXP_IDENT (c473d8d0,1)
+| | | | | | | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | N_EXP_IDENT (c473d820,1)
+| | | | | | | | | | | (ID="head") TYPE:c473d820 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | N_STMT_FOR (0,0)
+| | | | | | | | | | N_FOR_EXP (0,0)
+| | | | | | | | | | | N_EXP_ASSIGN (c4738920,0)
+| | | | | | | | | | | | N_EXP_IDENT (c4738920,1)
+| | | | | | | | | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | N_EXP_INT_CONST (c4738920,0)
+| | | | | | | | | | | | | INT=0
+| | | | | | | | | | | N_EXP_LSS (c4738920,0)
+| | | | | | | | | | | | N_EXP_IDENT (c4738920,1)
+| | | | | | | | | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | N_EXP_INT_CONST (c4738920,0)
+| | | | | | | | | | | | | INT=10
+| | | | | | | | | | | N_EXP_POST_INC (c4738920,0)
+| | | | | | | | | | | | N_EXP_IDENT (c4738920,1)
+| | | | | | | | | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | N_STMT_COMPOUND (0,0)
+| | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | N_EXP_ASSIGN (c473d2b0,0)
+| | | | | | | | | | | | | | N_EXP_ARROW (c473d2b0,1)
+| | | | | | | | | | | | | | | N_EXP_IDENT (c473d8d0,1)
+| | | | | | | | | | | | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | (ID="next") TYPE:c473d2b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (c473d410,0)
+| | | | | | | | | | | | | | | N_EXP_AMP (c473f8a0,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (c473d510,0)
+| | | | | | | | | | | | | | | | | (ID="addNode") TYPE:c473d510 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (c4738920,1)
+| | | | | | | | | | | | | | | | | (ID="i") TYPE:c4738920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | N_EXP_ASSIGN (c473d8d0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (c473d8d0,1)
+| | | | | | | | | | | | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | N_EXP_ARROW (c473d2b0,1)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (c473d8d0,1)
+| | | | | | | | | | | | | | | | | (ID="temp") TYPE:c473d8d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | | (ID="next") TYPE:c473d2b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
+| | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | N_EXP_FUNCTION_CALL (c4738ad0,0)
+| | | | | | | | | | | | N_EXP_AMP (c473f920,0)
+| | | | | | | | | | | | | N_EXP_IDENT (c473d6d0,0)
+| | | | | | | | | | | | | | (ID="printList") TYPE:c473d6d0 KIND:FUNC SPEC=AUTO LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (c473d820,1)
+| | | | | | | | | | | | | | (ID="head") TYPE:c473d820 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | | | | N_STMT_LIST_NIL (0,0)
+| (ID="addNode") TYPE:c473e8b0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="value") TYPE:c4738920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | TYPE
+| | | | | | | (int)
+| | | | TYPE
+| | | | | POINTER
+| | | | | | ELEMENT_TYPE
+| | | | | | | (DONE:c473d1e0)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,0)
+| | | | | | (ID="n") TYPE:c473e930 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | TYPE
+| | | | | | | | POINTER
+| | | | | | | | | ELEMENT_TYPE
+| | | | | | | | | | (DONE:c473d1e0)
+| | | | | | | INIT
+| | | | | | | | N_INIT_LIST_ONE (0,0)
+| | | | | | | | | N_EXP_CAST (0,0)
+| | | | | | | | | | POINTER
+| | | | | | | | | | | ELEMENT_TYPE
+| | | | | | | | | | | | (DONE:c473d1e0)
+| | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
+| | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | (ID="malloc") TYPE:c4738e50 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | | N_EXP_SIZE_TYPE (0,0)
+| | | | | | | | | | | | | INT=-999042592
+| | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | N_EXP_ARROW (c4738920,1)
+| | | | | | | | | N_EXP_IDENT (c473e930,1)
+| | | | | | | | | | (ID="n") TYPE:c473e930 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | (ID="value") TYPE:c4738920 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
+ | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | N_STMT_RETURN (0,0)
+| | | | | | | | | N_EXP_IDENT (c473e930,1)
+| | | | | | | | | | (ID="n") TYPE:c473e930 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | N_STMT_LIST_NIL (0,0)
+| (ID="printList") TYPE:c473efc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | TYPE
+| | | | | | | POINTER
+| | | | | | | | ELEMENT_TYPE
+| | | | | | | | | (DONE:c473d1e0)
+| | | | TYPE
+| | | | | (void)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,0)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_WHILE (0,0)
+| | | | | | | | N_EXP_IDENT (c4738920,1)
+| | | | | | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | N_STMT_COMPOUND (0,0)
+| | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | N_EXP_FUNCTION_CALL (c4738ad0,0)
+| | | | | | | | | | | | N_EXP_AMP (c473f9a0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (c4738bf0,0)
+| | | | | | | | | | | | | | (ID="printf") TYPE:c4738bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | | | N_ARG_LIST (0,8)
+| | | | | | | | | | | | | N_EXP_STRING_LITERAL (c4738b10,0)
+| | | | | | | | | | | | | | LITERAL: "%d "
+| | | | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | | | N_EXP_ARROW (c4738920,1)
+| | | | | | | | | | | | | | | N_EXP_IDENT (c473ef30,1)
+| | | | | | | | | | | | | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | (ID="value") TYPE:c4738920 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
+ | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | N_EXP_ASSIGN (c473ef30,0)
+| | | | | | | | | | | | | N_EXP_IDENT (c473ef30,1)
+| | | | | | | | | | | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | N_EXP_ARROW (c473d2b0,1)
+| | | | | | | | | | | | | | N_EXP_IDENT (c473ef30,1)
+| | | | | | | | | | | | | | | (ID="node") TYPE:c473ef30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | (ID="next") TYPE:c473d2b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
+| | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | N_EXP_FUNCTION_CALL (c4738ad0,0)
+| | | | | | | | | | N_EXP_AMP (c473fa20,0)
+| | | | | | | | | | | N_EXP_IDENT (c4738bf0,0)
+| | | | | | | | | | | | (ID="printf") TYPE:c4738bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | N_EXP_STRING_LITERAL (c4738b10,0)
+| | | | | | | | | | | | LITERAL: "\n"
+| | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | | N_STMT_LIST_NIL (0,0)
+*** error at line 15fatal compiler error during code generation
+unknown 
+*** error at line 15fatal compiler error during code generation
+unknown 
+*** error at line 20fatal compiler error during code generation
+unknown 
+*** error at line 20fatal compiler error during code generation
+unknown 
+*** error at line 24fatal compiler error during code generation
+unknown 
+*** error at line 24fatal compiler error during code generation
+unknown 
+*** error at line 39fatal compiler error during code generation
+unknown 
+*** error at line 39fatal compiler error during code generation
+unknown 
+*** error at line 43fatal compiler error during code generation
+unknown 
+*** error at line 43fatal compiler error during code generation
+unknown 

@@ -1,0 +1,33 @@
+======== symbol =========
+   1:  printf	-1
+   2:  malloc	-2
+   3:  scanf	-3
+   4:  main	3
+   5:  Han	20
+========  code ==========
+   0:  INT	0,28
+   1:  SUP	0,3
+   2:  RET	0,0
+   3:  INT	0,20
+   4:  INT	0,12
+   5:  LDA	0,12
+   6:  POP	0,5
+   7:  CAL	0,0
+   8:  LDA	1,16
+   9:  INT	0,16
+  10:  LOD	1,12
+  11:  POP	0,4
+  12:  CAL	0,0
+  13:  STX	0,1
+  14:  POP	0,1
+  15:  INT	0,12
+  16:  LDA	0,20
+  17:  POP	0,5
+  18:  CAL	0,0
+  19:  RET	0,0
+  20:  INT	0,36
+  21:  RET	0,0
+start execution
+library not yet implemented
+library not yet implemented
+end execution
