@@ -4,7 +4,7 @@ initialize
                                                                                                   parse
 ======= syntax tree ==========
 N_PROGRAM (0,0)
-| (ID="main") TYPE:cac60200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="main") TYPE:d049c200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -12,71 +12,71 @@ N_PROGRAM (0,0)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="n") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="n") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="scanf") TYPE:cac5bd20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="scanf") TYPE:d0497d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | "%d"
 | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="n") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="n") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | N_FOR_EXP (0,0)
 | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | 0
 | | | | | | | | | | N_EXP_LSS (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="n") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="n") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | N_EXP_POST_INC (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | | | | N_FOR_EXP (0,0)
 | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | 0
 | | | | | | | | | | | | | N_EXP_LSS (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_EXP_SUB (0,0)
 | | | | | | | | | | | | | | | N_EXP_SUB (0,0)
 | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | (ID="n") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | (ID="n") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | 1
 | | | | | | | | | | | | | N_EXP_POST_INC (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="printf") TYPE:cac5bbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="printf") TYPE:d0497bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | " "
@@ -86,21 +86,21 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | N_FOR_EXP (0,0)
 | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | 0
 | | | | | | | | | | | | | | N_EXP_LEQ (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_EXP_POST_INC (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="printf") TYPE:cac5bbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="printf") TYPE:d0497bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | "*"
@@ -109,7 +109,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="printf") TYPE:cac5bbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="printf") TYPE:d0497bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | "\n"
@@ -118,7 +118,7 @@ N_PROGRAM (0,0)
 | | | | | | | | N_STMT_LIST_NIL (0,0)
 ======= semantic tree ==========
 N_PROGRAM (0,36)
-| (ID="main") TYPE:cac60200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="main") TYPE:d049c200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -126,127 +126,111 @@ N_PROGRAM (0,36)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,12)
-| | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="n") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | (ID="n") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_FUNCTION_CALL (cac5bad0,0)
-| | | | | | | | | N_EXP_AMP (cac615f0,0)
-| | | | | | | | | | N_EXP_IDENT (cac5bd20,0)
-| | | | | | | | | | | (ID="scanf") TYPE:cac5bd20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | N_EXP_FUNCTION_CALL (d0497ad0,0)
+| | | | | | | | | N_EXP_AMP (d049d5f0,0)
+| | | | | | | | | | N_EXP_IDENT (d0497d20,0)
+| | | | | | | | | | | (ID="scanf") TYPE:d0497d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | N_EXP_STRING_LITERAL (cac5bb10,0)
+| | | | | | | | | | N_EXP_STRING_LITERAL (d0497b10,0)
 | | | | | | | | | | | LITERAL: "%d"
 | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | N_EXP_AMP (cac61670,0)
-| | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | (ID="n") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | | | | | | N_EXP_AMP (d049d670,0)
+| | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | (ID="n") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | N_FOR_EXP (0,0)
-| | | | | | | | | | N_EXP_ASSIGN (cac5b920,0)
-| | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | N_EXP_INT_CONST (cac5b920,0)
+| | | | | | | | | | N_EXP_ASSIGN (d0497920,0)
+| | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | N_EXP_INT_CONST (d0497920,0)
 | | | | | | | | | | | | INT=0
-| | | | | | | | | | N_EXP_LSS (cac5b920,0)
-| | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | (ID="n") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
- | | | | | | | | | | N_EXP_POST_INC (cac5b920,0)
-| | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | N_EXP_LSS (d0497920,0)
+| | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | (ID="n") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+ | | | | | | | | | | N_EXP_POST_INC (d0497920,0)
+| | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | | | | N_FOR_EXP (0,0)
-| | | | | | | | | | | | | N_EXP_ASSIGN (cac5b920,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
- | | | | | | | | | | | | | | N_EXP_INT_CONST (cac5b920,0)
+| | | | | | | | | | | | | N_EXP_ASSIGN (d0497920,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | | N_EXP_INT_CONST (d0497920,0)
 | | | | | | | | | | | | | | | INT=0
-| | | | | | | | | | | | | N_EXP_LSS (cac5b920,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
- | | | | | | | | | | | | | | N_EXP_SUB (cac5b920,0)
-| | | | | | | | | | | | | | | N_EXP_SUB (cac5b920,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | | | (ID="n") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
- | | | | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | | | N_EXP_INT_CONST (cac5b920,0)
+| | | | | | | | | | | | | N_EXP_LSS (d0497920,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | | N_EXP_SUB (d0497920,0)
+| | | | | | | | | | | | | | | N_EXP_SUB (d0497920,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | | | (ID="n") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+ | | | | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | N_EXP_INT_CONST (d0497920,0)
 | | | | | | | | | | | | | | | | INT=1
-| | | | | | | | | | | | | N_EXP_POST_INC (cac5b920,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | | | | | | | | N_EXP_POST_INC (d0497920,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cac5bad0,0)
-| | | | | | | | | | | | | | N_EXP_AMP (cac616b0,0)
-| | | | | | | | | | | | | | | N_EXP_IDENT (cac5bbf0,0)
-| | | | | | | | | | | | | | | | (ID="printf") TYPE:cac5bbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | N_EXP_FUNCTION_CALL (d0497ad0,0)
+| | | | | | | | | | | | | | N_EXP_AMP (d049d6b0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (d0497bf0,0)
+| | | | | | | | | | | | | | | | (ID="printf") TYPE:d0497bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cac5bb10,0)
+| | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (d0497b10,0)
 | | | | | | | | | | | | | | | | LITERAL: " "
 | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | | | | | N_FOR_EXP (0,0)
-| | | | | | | | | | | | | | N_EXP_ASSIGN (cac5b920,0)
-| | | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
- | | | | | | | | | | | | | | | N_EXP_INT_CONST (cac5b920,0)
+| | | | | | | | | | | | | | N_EXP_ASSIGN (d0497920,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | | | N_EXP_INT_CONST (d0497920,0)
 | | | | | | | | | | | | | | | | INT=0
-| | | | | | | | | | | | | | N_EXP_LEQ (cac5b920,0)
-| | | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
- | | | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | | (ID="i") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | | N_EXP_POST_INC (cac5b920,0)
-| | | | | | | | | | | | | | | N_EXP_IDENT (cac5b920,1)
-| | | | | | | | | | | | | | | | (ID="j") TYPE:cac5b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | | | | | | | | | N_EXP_LEQ (d0497920,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | | (ID="i") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | N_EXP_POST_INC (d0497920,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (d0497920,1)
+| | | | | | | | | | | | | | | | (ID="j") TYPE:d0497920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cac5bad0,0)
-| | | | | | | | | | | | | | | N_EXP_AMP (cac61730,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (cac5bbf0,0)
-| | | | | | | | | | | | | | | | | (ID="printf") TYPE:cac5bbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (d0497ad0,0)
+| | | | | | | | | | | | | | | N_EXP_AMP (d049d730,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (d0497bf0,0)
+| | | | | | | | | | | | | | | | | (ID="printf") TYPE:d0497bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cac5bb10,0)
+| | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (d0497b10,0)
 | | | | | | | | | | | | | | | | | LITERAL: "*"
 | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cac5bad0,0)
-| | | | | | | | | | | | | | | N_EXP_AMP (cac617b0,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (cac5bbf0,0)
-| | | | | | | | | | | | | | | | | (ID="printf") TYPE:cac5bbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (d0497ad0,0)
+| | | | | | | | | | | | | | | N_EXP_AMP (d049d7b0,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (d0497bf0,0)
+| | | | | | | | | | | | | | | | | (ID="printf") TYPE:d0497bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cac5bb10,0)
+| | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (d0497b10,0)
 | | | | | | | | | | | | | | | | | LITERAL: "\n"
 | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST_NIL (0,0)
-*** error at line 5fatal compiler error during code generation
-unknown 
-*** error at line 5fatal compiler error during code generation
-unknown 
-*** error at line 10fatal compiler error during code generation
-unknown 
-*** error at line 10fatal compiler error during code generation
-unknown 
-*** error at line 12fatal compiler error during code generation
-unknown 
-*** error at line 12fatal compiler error during code generation
-unknown 
-*** error at line 13fatal compiler error during code generation
-unknown 
-*** error at line 13fatal compiler error during code generation
-unknown 

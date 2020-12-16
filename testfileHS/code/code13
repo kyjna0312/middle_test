@@ -1,29 +1,9 @@
-======== symbol =========
-   1:  printf	-1
-   2:  malloc	-2
-   3:  scanf	-3
-   4:  main	5
-   5:  fac	3
+syntax error at line 9: near L1
 ========  code ==========
    0:  INT	0,28
-   1:  SUP	0,5
+   1:  SUP	0,4
    2:  RET	0,0
    3:  INT	0,16
-   4:  RET	0,0
-   5:  INT	0,16
-   6:  INT	0,12
-   7:  LDA	0,12
-   8:  POP	0,5
-   9:  CAL	0,0
-  10:  INT	0,12
-  11:  LDA	0,20
-  12:  POP	0,5
-  13:  CAL	0,0
-  14:  LDA	1,-4
-  15:  LITI	0,0
-  16:  STO	0,1
-  17:  RET	0,0
-  18:  RET	0,0
-start execution
-library not yet implemented
-end execution
+   4:  LOD	1,12
+   5:  LITI	0,1
+   6:  GTRI	0,0

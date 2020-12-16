@@ -4,11 +4,11 @@ initialize
                                                                          parse
 ======= syntax tree ==========
 N_PROGRAM (0,0)
-| (ID="fac") TYPE:daa82290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="fac") TYPE:dfba6290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | (int)
 | | | | TYPE
@@ -19,27 +19,27 @@ N_PROGRAM (0,0)
 | | | | | | | N_STMT_IF_ELSE (0,0)
 | | | | | | | | N_EXP_GTR (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | 1
 | | | | | | | | N_STMT_RETURN (0,0)
 | | | | | | | | | N_EXP_MUL (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="fac") TYPE:daa82290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="fac") TYPE:dfba6290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | N_EXP_SUB (0,0)
 | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | 1
 | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | N_STMT_IF_ELSE (0,0)
 | | | | | | | | | N_EXP_EQL (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | 0
 | | | | | | | | | N_STMT_RETURN (0,0)
@@ -47,9 +47,9 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | 1
 | | | | | | | | | N_STMT_RETURN (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="main") TYPE:daa829a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="main") TYPE:dfba69a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -57,37 +57,37 @@ N_PROGRAM (0,0)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="N") TYPE:daa7d920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="N") TYPE:dfba1920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="scanf") TYPE:daa7dd20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="scanf") TYPE:dfba1d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | "%d"
 | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="N") TYPE:daa7d920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="N") TYPE:dfba1920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="printf") TYPE:daa7dbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="printf") TYPE:dfba1bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | "%d"
 | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | (ID="fac") TYPE:daa82290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | (ID="fac") TYPE:dfba6290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="N") TYPE:daa7d920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="N") TYPE:dfba1920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST (0,0)
@@ -97,11 +97,11 @@ N_PROGRAM (0,0)
 | | | | | | | | | N_STMT_LIST_NIL (0,0)
 ======= semantic tree ==========
 N_PROGRAM (0,28)
-| (ID="fac") TYPE:daa82290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="fac") TYPE:dfba6290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | (int)
 | | | | TYPE
@@ -110,40 +110,40 @@ N_PROGRAM (0,28)
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_IF_ELSE (0,0)
-| | | | | | | | N_EXP_GTR (daa7d920,0)
-| | | | | | | | | N_EXP_IDENT (daa7d920,1)
-| | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | N_EXP_INT_CONST (daa7d920,0)
+| | | | | | | | N_EXP_GTR (dfba1920,0)
+| | | | | | | | | N_EXP_IDENT (dfba1920,1)
+| | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | N_EXP_INT_CONST (dfba1920,0)
 | | | | | | | | | | INT=1
 | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | N_EXP_MUL (daa7d920,0)
-| | | | | | | | | | N_EXP_IDENT (daa7d920,1)
-| | | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | N_EXP_FUNCTION_CALL (daa7d920,0)
-| | | | | | | | | | | N_EXP_AMP (daa83270,0)
-| | | | | | | | | | | | N_EXP_IDENT (daa82290,0)
-| | | | | | | | | | | | | (ID="fac") TYPE:daa82290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | N_EXP_MUL (dfba1920,0)
+| | | | | | | | | | N_EXP_IDENT (dfba1920,1)
+| | | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | N_EXP_FUNCTION_CALL (dfba1920,0)
+| | | | | | | | | | | N_EXP_AMP (dfba7270,0)
+| | | | | | | | | | | | N_EXP_IDENT (dfba6290,0)
+| | | | | | | | | | | | | (ID="fac") TYPE:dfba6290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | N_EXP_SUB (daa7d920,0)
-| | | | | | | | | | | | | N_EXP_IDENT (daa7d920,1)
-| | | | | | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | N_EXP_INT_CONST (daa7d920,0)
+| | | | | | | | | | | | N_EXP_SUB (dfba1920,0)
+| | | | | | | | | | | | | N_EXP_IDENT (dfba1920,1)
+| | | | | | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | N_EXP_INT_CONST (dfba1920,0)
 | | | | | | | | | | | | | | INT=1
 | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | N_STMT_IF_ELSE (0,0)
-| | | | | | | | | N_EXP_EQL (daa7d920,0)
-| | | | | | | | | | N_EXP_IDENT (daa7d920,1)
-| | | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | N_EXP_INT_CONST (daa7d920,0)
+| | | | | | | | | N_EXP_EQL (dfba1920,0)
+| | | | | | | | | | N_EXP_IDENT (dfba1920,1)
+| | | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | N_EXP_INT_CONST (dfba1920,0)
 | | | | | | | | | | | INT=0
 | | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | | N_EXP_INT_CONST (daa7d920,0)
+| | | | | | | | | | N_EXP_INT_CONST (dfba1920,0)
 | | | | | | | | | | | INT=1
 | | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | | N_EXP_IDENT (daa7d920,1)
-| | | | | | | | | | | (ID="n") TYPE:daa7d920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | N_EXP_IDENT (dfba1920,1)
+| | | | | | | | | | | (ID="n") TYPE:dfba1920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="main") TYPE:daa829a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="main") TYPE:dfba69a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -151,54 +151,44 @@ N_PROGRAM (0,28)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,4)
-| | | | | | (ID="N") TYPE:daa7d920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | (ID="N") TYPE:dfba1920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_FUNCTION_CALL (daa7dad0,0)
-| | | | | | | | | N_EXP_AMP (daa832b0,0)
-| | | | | | | | | | N_EXP_IDENT (daa7dd20,0)
-| | | | | | | | | | | (ID="scanf") TYPE:daa7dd20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | N_EXP_FUNCTION_CALL (dfba1ad0,0)
+| | | | | | | | | N_EXP_AMP (dfba72b0,0)
+| | | | | | | | | | N_EXP_IDENT (dfba1d20,0)
+| | | | | | | | | | | (ID="scanf") TYPE:dfba1d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | N_EXP_STRING_LITERAL (daa7db10,0)
+| | | | | | | | | | N_EXP_STRING_LITERAL (dfba1b10,0)
 | | | | | | | | | | | LITERAL: "%d"
 | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | N_EXP_AMP (daa83330,0)
-| | | | | | | | | | | | N_EXP_IDENT (daa7d920,1)
-| | | | | | | | | | | | | (ID="N") TYPE:daa7d920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | | N_EXP_AMP (dfba7330,0)
+| | | | | | | | | | | | N_EXP_IDENT (dfba1920,1)
+| | | | | | | | | | | | | (ID="N") TYPE:dfba1920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | N_EXP_FUNCTION_CALL (daa7dad0,0)
-| | | | | | | | | | N_EXP_AMP (daa83370,0)
-| | | | | | | | | | | N_EXP_IDENT (daa7dbf0,0)
-| | | | | | | | | | | | (ID="printf") TYPE:daa7dbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | N_EXP_FUNCTION_CALL (dfba1ad0,0)
+| | | | | | | | | | N_EXP_AMP (dfba7370,0)
+| | | | | | | | | | | N_EXP_IDENT (dfba1bf0,0)
+| | | | | | | | | | | | (ID="printf") TYPE:dfba1bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | | N_EXP_STRING_LITERAL (daa7db10,0)
+| | | | | | | | | | | N_EXP_STRING_LITERAL (dfba1b10,0)
 | | | | | | | | | | | | LITERAL: "%d"
 | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | N_EXP_FUNCTION_CALL (daa7d920,0)
-| | | | | | | | | | | | | N_EXP_AMP (daa833f0,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (daa82290,0)
-| | | | | | | | | | | | | | | (ID="fac") TYPE:daa82290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | N_EXP_FUNCTION_CALL (dfba1920,0)
+| | | | | | | | | | | | | N_EXP_AMP (dfba73f0,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (dfba6290,0)
+| | | | | | | | | | | | | | | (ID="fac") TYPE:dfba6290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | N_EXP_IDENT (daa7d920,1)
-| | | | | | | | | | | | | | | (ID="N") TYPE:daa7d920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | | | | | N_EXP_IDENT (dfba1920,1)
+| | | | | | | | | | | | | | | (ID="N") TYPE:dfba1920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | | N_EXP_INT_CONST (daa7d920,0)
+| | | | | | | | | | N_EXP_INT_CONST (dfba1920,0)
 | | | | | | | | | | | INT=0
 | | | | | | | | | N_STMT_LIST_NIL (0,0)
-*** error at line 8fatal compiler error during code generation
-unknown 
-*** error at line 13fatal compiler error during code generation
-unknown 
-*** error at line 13fatal compiler error during code generation
-unknown 
-*** error at line 14fatal compiler error during code generation
-unknown 
-*** error at line 14fatal compiler error during code generation
-unknown 

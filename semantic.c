@@ -430,7 +430,7 @@ void sem_arg_expr_list(A_NODE *node, A_ID *id)
                     semantic_error(59, node->line, 0);
                 sem_arg_expr_list(node->rlink, id->link);
             }
-            else // DNOTNODT parameter : no conversion
+            else // DOTDOTT parameter : no conversion
             {
                 t = sem_expression(node->llink);
                 sem_arg_expr_list(node->rlink, id);
@@ -698,7 +698,7 @@ int sem_A_TYPE(A_TYPE *t)
         if (isArrayType(tt) || isFunctionType(tt)) // check return type
             semantic_error(85, t->line, 0);
 
-        i = sem_declaration(t->field, 12) + 12; // parameter type and size
+        i = sem_declaration_list(t->field, 12) + 12; // parameter type and size
 
         if (t->expr)
         {

@@ -1,21 +1,16 @@
-======== symbol =========
-   1:  printf	-1
-   2:  malloc	-2
-   3:  scanf	-3
-   4:  main	3
+syntax error at line 16: near L1
 ========  code ==========
    0:  INT	0,52
-   1:  SUP	0,3
+   1:  SUP	0,4
    2:  RET	0,0
    3:  INT	0,20
    4:  INT	0,12
    5:  LDA	0,12
-   6:  POP	0,6
-   7:  CAL	0,0
-   8:  LDA	1,-4
-   9:  LITI	0,0
-  10:  STO	0,1
-  11:  RET	0,0
-  12:  RET	0,0
-start execution
-runtime error at pc 49 : fatal error: unknown opcode
+   6:  LDA	1,12
+   7:  LDA	1,16
+   8:  POP	0,6
+   9:  ADDR	0,3
+  10:  CAL	0,0
+  11:  LOD	1,12
+  12:  LITI	0,0
+  13:  EQLI	0,0

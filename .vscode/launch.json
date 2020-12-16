@@ -8,9 +8,9 @@
             "name": "(gdb) 시작",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/sem_analysis",
+            "program": "${workspaceFolder}/ssuCompiler",
             "args": [
-                "./test_file/test16.c"
+                "./testfileYG/t10.c"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

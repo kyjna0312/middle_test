@@ -1,33 +1,31 @@
-======== symbol =========
-   1:  printf	-1
-   2:  malloc	-2
-   3:  scanf	-3
-   4:  main	3
-   5:  Han	20
+syntax error at line 32: near L1
 ========  code ==========
    0:  INT	0,28
-   1:  SUP	0,3
+   1:  SUP	0,4
    2:  RET	0,0
    3:  INT	0,20
    4:  INT	0,12
    5:  LDA	0,12
-   6:  POP	0,5
-   7:  CAL	0,0
-   8:  LDA	1,16
-   9:  INT	0,16
-  10:  LOD	1,12
-  11:  POP	0,4
-  12:  CAL	0,0
-  13:  STX	0,1
-  14:  POP	0,1
-  15:  INT	0,12
-  16:  LDA	0,20
-  17:  POP	0,5
-  18:  CAL	0,0
-  19:  RET	0,0
-  20:  INT	0,36
-  21:  RET	0,0
-start execution
-library not yet implemented
-library not yet implemented
-end execution
+   6:  LDA	1,12
+   7:  POP	0,5
+   8:  ADDR	0,3
+   9:  CAL	0,0
+  10:  LDA	1,16
+  11:  INT	0,16
+  12:  LOD	1,12
+  13:  POP	0,4
+  14:  ADDR	0,5
+  15:  CAL	0,0
+  16:  STX	0,1
+  17:  POP	0,1
+  18:  INT	0,12
+  19:  LDA	0,20
+  20:  LOD	1,16
+  21:  POP	0,5
+  22:  ADDR	0,1
+  23:  CAL	0,0
+  24:  RET	0,0
+  25:  INT	0,36
+  26:  LOD	1,12
+  27:  LITI	0,100
+  28:  SUBI	0,0

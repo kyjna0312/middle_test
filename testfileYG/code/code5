@@ -1,0 +1,7 @@
+syntax error at line 7: near 0
+========  code ==========
+   0:  INT	0,12
+   1:  SUP	0,4
+   2:  RET	0,0
+   3:  INT	0,20
+   4:  LOD	1,12

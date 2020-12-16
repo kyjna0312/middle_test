@@ -12,7 +12,7 @@ char *opcode_name[] = {
     "STX",
     "STXB",
     "SUBI",
-    " SUBF",
+    "SUBF",
     "DIVI",
     "DIVF",
     "ADDI",
@@ -58,9 +58,9 @@ char *opcode_name[] = {
     "LDI",
     "LDIB",
     "SWITCH",
-    "SWLABEL",
-    "SWDEFAULT",
     "SWVALUE",
+    "SWDEFAULT",
+    "SWLABEL",
     "SWEND",
     "POP",
     "POPB",
@@ -217,7 +217,7 @@ void gen_expression(A_NODE *node)
         else
             gen_code_i(INT, 0, i);
 
-        gen_expression(node->rlink);
+        gen_expression(node->llink);
         gen_code_i(CAL, 0, 0);
         break;
 
@@ -679,7 +679,7 @@ void gen_arg_expression(A_NODE *node)
     {
     case N_ARG_LIST:
         gen_expression(node->llink);
-        gen_expression(node->rlink);
+        gen_arg_expression(node->rlink);
         break;
     case N_ARG_LIST_NIL:
         break;
@@ -752,6 +752,13 @@ void gen_statement(A_NODE *node, int cont_label, int break_label, A_SWITCH sw[],
     case N_STMT_IF:
         gen_expression(node->llink);
         gen_code_l(JPC, 0, l1 = get_label());
+        gen_statement(node->rlink, cont_label, break_label, 0, 0);
+        gen_label_number(l1);
+        break;
+
+    case N_STMT_IF_ELSE:
+        gen_expression(node->llink);
+        gen_code_l(JPC, 0, l1 = get_label());
         gen_statement(node->clink, cont_label, break_label, 0, 0);
         gen_code_l(JMP, 0, l2 = get_label());
         gen_label_number(l1);
@@ -782,6 +789,7 @@ void gen_statement(A_NODE *node, int cont_label, int break_label, A_SWITCH sw[],
 
     case N_STMT_WHILE:
         l3 = get_label();
+        gen_label_number(l1 = get_label());
         gen_expression(node->llink);
         gen_code_l(JPC, 0, l2 = get_label());
         gen_statement(node->rlink, l3, l2, 0, 0);
@@ -947,7 +955,7 @@ void gen_declaration(A_ID *id)
 void gen_error(int i, int ll, char *s)
 {
     gen_err++;
-    printf("*** error at line %d", ll);
+    printf("*** error at line %d: ", ll);
 
     switch (i)
     {
@@ -990,7 +998,7 @@ void gen_code_i(OPCODE op, int l, int a)
 
 void gen_code_f(OPCODE op, int l, float a)
 {
-    fprintf(fout, "\t%9s %d, %f", opcode_name[op], l, a);
+    fprintf(fout, "\t%9s    %d, %f", opcode_name[op], l, a);
 }
 
 void gen_code_s(OPCODE op, int l, char *a)
@@ -1000,7 +1008,7 @@ void gen_code_s(OPCODE op, int l, char *a)
 
 void gen_code_l(OPCODE op, int l, int a)
 {
-    fprintf(fout, "\t%9s     %d L%d\n", opcode_name[op], l, a);
+    fprintf(fout, "\t%9s    %d, L%d\n", opcode_name[op], l, a);
 }
 
 void gen_label_number(int i)

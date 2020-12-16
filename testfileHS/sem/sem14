@@ -4,7 +4,7 @@ initialize
                                                                                                                                                                                                                                                                  parse
 ======= syntax tree ==========
 N_PROGRAM (0,0)
-| (ID="stack") TYPE:dac47240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| (ID="stack") TYPE:cec31240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | ARRAY
 | | | | INDEX
@@ -12,10 +12,10 @@ N_PROGRAM (0,0)
 | | | | | | 10
 | | | | ELEMENT_TYPE
 | | | | | (int)
-| (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | (int)
-| (ID="init_stack") TYPE:dac473a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="init_stack") TYPE:cec313a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -27,16 +27,16 @@ N_PROGRAM (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_EXP_MINUS (0,0)
 | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | 1
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="val") TYPE:dac42920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="val") TYPE:cec2c920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | (int)
 | | | | TYPE
@@ -47,7 +47,7 @@ N_PROGRAM (0,0)
 | | | | | | | N_STMT_IF (0,0)
 | | | | | | | | N_EXP_GEQ (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_EXP_SUB (0,0)
 | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | 10
@@ -58,7 +58,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | "\n Stack Overflow\n"
@@ -74,18 +74,18 @@ N_PROGRAM (0,0)
 | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | N_EXP_ARRAY (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="stack") TYPE:dac47240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="stack") TYPE:cec31240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_PRE_INC (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="val") TYPE:dac42920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="val") TYPE:cec2c920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_RETURN (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="val") TYPE:dac42920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="val") TYPE:cec2c920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="pop") TYPE:dac48030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="pop") TYPE:cec32030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -97,7 +97,7 @@ N_PROGRAM (0,0)
 | | | | | | | N_STMT_IF (0,0)
 | | | | | | | | N_EXP_LSS (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | 0
 | | | | | | | | N_STMT_COMPOUND (0,0)
@@ -105,7 +105,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | "\n Stack Underflow\n"
@@ -120,12 +120,12 @@ N_PROGRAM (0,0)
 | | | | | | | | N_STMT_RETURN (0,0)
 | | | | | | | | | N_EXP_ARRAY (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="stack") TYPE:dac47240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="stack") TYPE:cec31240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | N_EXP_POST_DEC (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -133,14 +133,14 @@ N_PROGRAM (0,0)
 | | | | | (void)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | "\n Stack From Top-----> To Bottom\n"
@@ -150,33 +150,33 @@ N_PROGRAM (0,0)
 | | | | | | | | | N_FOR_EXP (0,0)
 | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | N_EXP_GEQ (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | 0
 | | | | | | | | | | N_EXP_POST_DEC (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | "%-6d"
 | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | N_EXP_ARRAY (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="stack") TYPE:dac47240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="stack") TYPE:cec31240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="main") TYPE:dac490d0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="main") TYPE:cec330d0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -184,20 +184,20 @@ N_PROGRAM (0,0)
 | | | | | (void)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="init_stack") TYPE:dac473a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="init_stack") TYPE:cec313a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | "\nPush 5, 4, 7, 8, 2, 1"
@@ -206,7 +206,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | 5
@@ -215,7 +215,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | 4
@@ -224,7 +224,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | 7
@@ -233,7 +233,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | 8
@@ -242,7 +242,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | 2
@@ -251,7 +251,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | 1
@@ -260,13 +260,13 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | "\nPop"
@@ -275,34 +275,34 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | (ID="pop") TYPE:dac48030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | (ID="pop") TYPE:cec32030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | "\n popped value is %d\n"
 | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | "\nPush 3, 2, 5, 7, 2"
@@ -311,7 +311,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | 3
@@ -320,7 +320,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | 2
@@ -329,7 +329,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | 5
@@ -338,7 +338,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | 7
@@ -347,7 +347,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 2
@@ -356,13 +356,13 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "\nNow Stack is full, push 3"
@@ -371,7 +371,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 3
@@ -380,13 +380,13 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "\nInitialize stack"
@@ -395,19 +395,19 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="init_stack") TYPE:dac473a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="init_stack") TYPE:cec313a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "\nNow Stack is empty, pop"
@@ -416,43 +416,43 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="pop") TYPE:dac48030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="pop") TYPE:cec32030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "\n popped value is %d\n"
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 ======= semantic tree ==========
 N_PROGRAM (0,352)
-| (ID="stack") TYPE:dac47240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=12
+| (ID="stack") TYPE:cec31240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=12
  | | TYPE
 | | | ARRAY
 | | | | INDEX
 | | | | | INT=10
 | | | | ELEMENT_TYPE
 | | | | | (int)
-| (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
+| (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
  | | TYPE
 | | | (int)
-| (ID="init_stack") TYPE:dac473a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="init_stack") TYPE:cec313a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -462,18 +462,18 @@ N_PROGRAM (0,352)
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_ASSIGN (dac42920,0)
-| | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
- | | | | | | | | | N_EXP_MINUS (dac42920,0)
-| | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | N_EXP_ASSIGN (cec2c920,0)
+| | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
+ | | | | | | | | | N_EXP_MINUS (cec2c920,0)
+| | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | INT=1
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="val") TYPE:dac42920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | (ID="val") TYPE:cec2c920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | (int)
 | | | | TYPE
@@ -482,48 +482,48 @@ N_PROGRAM (0,352)
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_IF (0,0)
-| | | | | | | | N_EXP_GEQ (dac42920,0)
-| | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
- | | | | | | | | | N_EXP_SUB (dac42920,0)
-| | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | N_EXP_GEQ (cec2c920,0)
+| | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
+ | | | | | | | | | N_EXP_SUB (cec2c920,0)
+| | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | INT=10
-| | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | INT=1
 | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | N_EXP_AMP (dac4c530,0)
-| | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | N_EXP_AMP (cec36530,0)
+| | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | LITERAL: "\n Stack Overflow\n"
 | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | | | | N_EXP_MINUS (dac42920,0)
-| | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | N_EXP_MINUS (cec2c920,0)
+| | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | INT=1
 | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | N_EXP_ASSIGN (dac42920,0)
-| | | | | | | | | | N_EXP_ARRAY (dac42920,1)
-| | | | | | | | | | | N_EXP_IDENT (dac47240,0)
-| | | | | | | | | | | | (ID="stack") TYPE:dac47240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=12
- | | | | | | | | | | | N_EXP_PRE_INC (dac42920,0)
-| | | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
- | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | (ID="val") TYPE:dac42920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | | | | | N_EXP_ASSIGN (cec2c920,0)
+| | | | | | | | | | N_EXP_ARRAY (cec2c920,1)
+| | | | | | | | | | | N_EXP_IDENT (cec31240,0)
+| | | | | | | | | | | | (ID="stack") TYPE:cec31240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=12
+ | | | | | | | | | | | N_EXP_PRE_INC (cec2c920,0)
+| | | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
+ | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | (ID="val") TYPE:cec2c920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | (ID="val") TYPE:dac42920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | (ID="val") TYPE:cec2c920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="pop") TYPE:dac48030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="pop") TYPE:cec32030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -533,38 +533,38 @@ N_PROGRAM (0,352)
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_IF (0,0)
-| | | | | | | | N_EXP_LSS (dac42920,0)
-| | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
- | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | N_EXP_LSS (cec2c920,0)
+| | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
+ | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | INT=0
 | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | N_EXP_AMP (dac4c5b0,0)
-| | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | N_EXP_AMP (cec365b0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | LITERAL: "\n Stack Underflow\n"
 | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | | | | N_EXP_MINUS (dac42920,0)
-| | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | N_EXP_MINUS (cec2c920,0)
+| | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | INT=1
 | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | N_EXP_ARRAY (dac42920,1)
-| | | | | | | | | | N_EXP_IDENT (dac47240,0)
-| | | | | | | | | | | (ID="stack") TYPE:dac47240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=12
- | | | | | | | | | | N_EXP_POST_DEC (dac42920,0)
-| | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
+| | | | | | | | | N_EXP_ARRAY (cec2c920,1)
+| | | | | | | | | | N_EXP_IDENT (cec31240,0)
+| | | | | | | | | | | (ID="stack") TYPE:cec31240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=12
+ | | | | | | | | | | N_EXP_POST_DEC (cec2c920,0)
+| | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
  | | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -572,52 +572,52 @@ N_PROGRAM (0,352)
 | | | | | (void)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,4)
-| | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | N_EXP_AMP (dac4c630,0)
-| | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | N_EXP_AMP (cec36630,0)
+| | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | LITERAL: "\n Stack From Top-----> To Bottom\n"
 | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | N_FOR_EXP (0,0)
-| | | | | | | | | | N_EXP_ASSIGN (dac42920,0)
-| | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | (ID="top") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
- | | | | | | | | | | N_EXP_GEQ (dac42920,0)
-| | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | N_EXP_ASSIGN (cec2c920,0)
+| | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | (ID="top") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=52
+ | | | | | | | | | | N_EXP_GEQ (cec2c920,0)
+| | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | INT=0
-| | | | | | | | | | N_EXP_POST_DEC (dac42920,0)
-| | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | N_EXP_POST_DEC (cec2c920,0)
+| | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | N_EXP_AMP (dac4c6b0,0)
-| | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | N_EXP_AMP (cec366b0,0)
+| | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | LITERAL: "%-6d"
 | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | N_EXP_ARRAY (dac42920,1)
-| | | | | | | | | | | | | | N_EXP_IDENT (dac47240,0)
-| | | | | | | | | | | | | | | (ID="stack") TYPE:dac47240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=12
- | | | | | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | | | | N_EXP_ARRAY (cec2c920,1)
+| | | | | | | | | | | | | | N_EXP_IDENT (cec31240,0)
+| | | | | | | | | | | | | | | (ID="stack") TYPE:cec31240 KIND:VAR SPEC=AUTO LEV=0 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="main") TYPE:dac490d0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="main") TYPE:cec330d0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -625,288 +625,288 @@ N_PROGRAM (0,352)
 | | | | | (void)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,4)
-| | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | N_EXP_AMP (dac4c730,0)
-| | | | | | | | | | N_EXP_IDENT (dac473a0,0)
-| | | | | | | | | | | (ID="init_stack") TYPE:dac473a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | N_EXP_AMP (cec36730,0)
+| | | | | | | | | | N_EXP_IDENT (cec313a0,0)
+| | | | | | | | | | | (ID="init_stack") TYPE:cec313a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | N_EXP_AMP (dac4c7b0,0)
-| | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | N_EXP_AMP (cec367b0,0)
+| | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | LITERAL: "\nPush 5, 4, 7, 8, 2, 1"
 | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | N_EXP_AMP (dac4c830,0)
-| | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | N_EXP_AMP (cec36830,0)
+| | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | INT=5
 | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | N_EXP_AMP (dac4c8b0,0)
-| | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | N_EXP_AMP (cec368b0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | INT=4
 | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | N_EXP_AMP (dac4c930,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | N_EXP_AMP (cec36930,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | INT=7
 | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | N_EXP_AMP (dac4c9b0,0)
-| | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | N_EXP_AMP (cec369b0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | INT=8
 | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | N_EXP_AMP (dac4ca30,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | N_EXP_AMP (cec36a30,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | | INT=2
 | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | N_EXP_AMP (dac4cab0,0)
-| | | | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | N_EXP_AMP (cec36ab0,0)
+| | | | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | | | INT=1
 | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | N_EXP_AMP (dac4cb30,0)
-| | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac487a0,0)
-| | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | N_EXP_AMP (cec36b30,0)
+| | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec327a0,0)
+| | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4cbb0,0)
-| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36bb0,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | | | | | | | LITERAL: "\nPop"
 | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (dac42920,0)
-| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4cc30,0)
-| | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac48030,0)
-| | | | | | | | | | | | | | | | | | | | | | (ID="pop") TYPE:dac48030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36c30,0)
+| | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec32030,0)
+| | | | | | | | | | | | | | | | | | | | | | (ID="pop") TYPE:cec32030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4ccb0,0)
-| | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac487a0,0)
-| | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36cb0,0)
+| | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec327a0,0)
+| | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4cd30,0)
-| | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36d30,0)
+| | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "\n popped value is %d\n"
 | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4cdb0,0)
-| | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36db0,0)
+| | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "\nPush 3, 2, 5, 7, 2"
 | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4ce30,0)
-| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36e30,0)
+| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | INT=3
 | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4ceb0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36eb0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | INT=2
 | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4cf30,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36f30,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | INT=5
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4cfb0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec36fb0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | INT=7
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d030,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec37030,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | INT=2
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d0b0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac487a0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec370b0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec327a0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d130,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec37130,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "\nNow Stack is full, push 3"
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d1b0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac47700,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:dac47700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec371b0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec31700,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="push") TYPE:cec31700 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (dac42920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (cec2c920,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | INT=3
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d230,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac487a0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec37230,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec327a0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d2b0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec372b0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "\nInitialize stack"
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d330,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac473a0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="init_stack") TYPE:dac473a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec37330,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec313a0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="init_stack") TYPE:cec313a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d3b0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac487a0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec373b0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec327a0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d430,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec37430,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "\nNow Stack is empty, pop"
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42920,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d4b0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac48030,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="pop") TYPE:dac48030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2c920,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec374b0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec32030,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="pop") TYPE:cec32030 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d530,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac487a0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:dac487a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec37530,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec327a0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="print_stack") TYPE:cec327a0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (dac42ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (dac4d5b0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:dac42bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (cec2cad0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (cec375b0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2cbf0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:cec2cbf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (dac42b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (cec2cb10,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "\n popped value is %d\n"
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (dac42920,1)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:dac42920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (cec2c920,1)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="i") TYPE:cec2c920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | 

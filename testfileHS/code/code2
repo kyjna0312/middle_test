@@ -1,4 +1,4 @@
-syntax error at line 24: near L3
+syntax error at line 25: near L3
 ========  code ==========
    0:  INT	0,28
    1:  SUP	0,4
@@ -9,15 +9,16 @@ syntax error at line 24: near L3
    6:  LITI	0,1
    7:  MINUSI	0,0
    8:  POP	0,4
-   9:  CAL	0,0
-  10:  STX	0,0
-  11:  LDA	1,12
-  12:  LOD	1,12
-  13:  STX	0,0
-  14:  LDA	1,12
-  15:  LITI	0,0
-  16:  STX	0,1
-  17:  POP	0,1
-  18:  LOD	1,12
-  19:  LITI	0,10
-  20:  SUBI	0,0
+   9:  ADDR	0,5
+  10:  CAL	0,0
+  11:  STX	0,0
+  12:  LDA	1,12
+  13:  LOD	1,12
+  14:  STX	0,0
+  15:  LDA	1,12
+  16:  LITI	0,0
+  17:  STX	0,1
+  18:  POP	0,1
+  19:  LOD	1,12
+  20:  LITI	0,10
+  21:  SUBI	0,0

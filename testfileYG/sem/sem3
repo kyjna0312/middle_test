@@ -1,0 +1,121 @@
+./testfileYG/t3.c
+file success
+initialize
+               parse
+======= syntax tree ==========
+N_PROGRAM (0,0)
+| (ID="Sum") TYPE:f3a0e320 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="v1") TYPE:f3a09920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | TYPE
+| | | | | | | (int)
+| | | | | (ID="v2") TYPE:f3a09920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | TYPE
+| | | | | | | (int)
+| | | | TYPE
+| | | | | (int)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,0)
+| | | | | | (ID="result") TYPE:f3a09920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | TYPE
+| | | | | | | | (int)
+| | | | | | | INIT
+| | | | | | | | N_INIT_LIST_ONE (0,0)
+| | | | | | | | | N_EXP_ADD (0,0)
+| | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="v1") TYPE:f3a09920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="v2") TYPE:f3a09920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_RETURN (0,0)
+| | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | (ID="result") TYPE:f3a09920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | N_STMT_LIST_NIL (0,0)
+| (ID="main") TYPE:f3a0e6c0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | TYPE
+| | | | | (int)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,0)
+| | | | | | (ID="s") TYPE:f3a09920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | TYPE
+| | | | | | | | (int)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | (ID="s") TYPE:f3a09920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
+| | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="Sum") TYPE:f3a0e320 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | 2
+| | | | | | | | | | | N_ARG_LIST (0,0)
+| | | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | | 4
+| | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | N_STMT_LIST_NIL (0,0)
+======= semantic tree ==========
+N_PROGRAM (0,12)
+| (ID="Sum") TYPE:f3a0e320 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | | (ID="v1") TYPE:f3a09920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | TYPE
+| | | | | | | (int)
+| | | | | (ID="v2") TYPE:f3a09920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0
+ | | | | | | TYPE
+| | | | | | | (int)
+| | | | TYPE
+| | | | | (int)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,4)
+| | | | | | (ID="result") TYPE:f3a09920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | TYPE
+| | | | | | | | (int)
+| | | | | | | INIT
+| | | | | | | | N_INIT_LIST_ONE (0,0)
+| | | | | | | | | N_EXP_ADD (0,0)
+| | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="v1") TYPE:f3a09920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | (ID="v2") TYPE:f3a09920 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0
+ | | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_RETURN (0,0)
+| | | | | | | | N_EXP_IDENT (f3a09920,1)
+| | | | | | | | | (ID="result") TYPE:f3a09920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | N_STMT_LIST_NIL (0,0)
+| (ID="main") TYPE:f3a0e6c0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | TYPE
+| | | | | (int)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,4)
+| | | | | | (ID="s") TYPE:f3a09920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | TYPE
+| | | | | | | | (int)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | N_EXP_ASSIGN (f3a09920,0)
+| | | | | | | | | N_EXP_IDENT (f3a09920,1)
+| | | | | | | | | | (ID="s") TYPE:f3a09920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | N_EXP_FUNCTION_CALL (f3a09920,0)
+| | | | | | | | | | N_EXP_AMP (f3a0eb10,0)
+| | | | | | | | | | | N_EXP_IDENT (f3a0e320,0)
+| | | | | | | | | | | | (ID="Sum") TYPE:f3a0e320 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | N_ARG_LIST (0,8)
+| | | | | | | | | | | N_EXP_INT_CONST (f3a09920,0)
+| | | | | | | | | | | | INT=2
+| | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | N_EXP_INT_CONST (f3a09920,0)
+| | | | | | | | | | | | | INT=4
+| | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
+| | | | | | | N_STMT_LIST_NIL (0,0)

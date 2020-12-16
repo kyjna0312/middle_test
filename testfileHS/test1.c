@@ -40,8 +40,8 @@ int main()
 
 	if (fun(10))
 	{
-		printf("");
-		scanf("");
+		printf("test1\n");
+		scanf("test2\n");
 	}
 	else
 	{

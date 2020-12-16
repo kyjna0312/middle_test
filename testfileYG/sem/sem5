@@ -1,0 +1,170 @@
+./testfileYG/t5.c
+file success
+initialize
+                   parse
+======= syntax tree ==========
+N_PROGRAM (0,0)
+| (ID="main") TYPE:f289b200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | TYPE
+| | | | | (void)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,0)
+| | | | | | (ID="score") TYPE:f2896920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | TYPE
+| | | | | | | | (int)
+| | | | | | | INIT
+| | | | | | | | N_INIT_LIST_ONE (0,0)
+| | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | 3
+| | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | TYPE
+| | | | | | | | (char 1)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_SWITCH (0,0)
+| | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | (ID="score") TYPE:f2896920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | N_STMT_COMPOUND (0,0)
+| | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | N_STMT_LABEL_CASE (0,0)
+| | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | 1
+| | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | N_EXP_CHAR_CONST (0,0)
+| | | | | | | | | | | | | | 65
+| | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
+| | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | | | 2
+| | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | N_EXP_CHAR_CONST (0,0)
+| | | | | | | | | | | | | | | | 66
+| | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
+| | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | | | | | 3
+| | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | N_EXP_CHAR_CONST (0,0)
+| | | | | | | | | | | | | | | | | | 67
+| | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
+| | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | | | | | | | | | 4
+| | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | N_EXP_CHAR_CONST (0,0)
+| | | | | | | | | | | | | | | | | | | | 68
+| | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | | | | N_STMT_LABEL_DEFAULT (0,0)
+| | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
+| | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
+| | | | | | | | | | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | N_EXP_CHAR_CONST (0,0)
+| | | | | | | | | | | | | | | | | | | | | | 70
+| | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
+| | | | | | | N_STMT_LIST_NIL (0,0)
+======= semantic tree ==========
+N_PROGRAM (0,12)
+| (ID="main") TYPE:f289b200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | TYPE
+| | | FUNCTION
+| | | | PARAMETER
+| | | | TYPE
+| | | | | (void)
+| | | | BODY
+| | | | | N_STMT_COMPOUND (0,8)
+| | | | | | (ID="score") TYPE:f2896920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | TYPE
+| | | | | | | | (int)
+| | | | | | | INIT
+| | | | | | | | N_INIT_LIST_ONE (0,0)
+| | | | | | | | | N_EXP_INT_CONST (0,0)
+| | | | | | | | | | INT=3
+| | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | TYPE
+| | | | | | | | (char 1)
+| | | | | | N_STMT_LIST (0,0)
+| | | | | | | N_STMT_SWITCH (0,0)
+| | | | | | | | N_EXP_IDENT (f2896920,1)
+| | | | | | | | | (ID="score") TYPE:f2896920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | N_STMT_COMPOUND (0,0)
+| | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | N_STMT_LABEL_CASE (0,0)
+| | | | | | | | | | | INT=1
+| | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | N_EXP_ASSIGN (f2896a40,0)
+| | | | | | | | | | | | | N_EXP_IDENT (f2896a40,1)
+| | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | N_EXP_CHAR_CONST (f2896a40,0)
+| | | | | | | | | | | | | | INT=65
+| | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
+| | | | | | | | | | | | | INT=2
+| | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | N_EXP_ASSIGN (f2896a40,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (f2896a40,1)
+| | | | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | | | N_EXP_CHAR_CONST (f2896a40,0)
+| | | | | | | | | | | | | | | | INT=66
+| | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
+| | | | | | | | | | | | | | | INT=3
+| | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | | | N_EXP_ASSIGN (f2896a40,0)
+| | | | | | | | | | | | | | | | | N_EXP_IDENT (f2896a40,1)
+| | | | | | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | | | | | N_EXP_CHAR_CONST (f2896a40,0)
+| | | | | | | | | | | | | | | | | | INT=67
+| | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
+| | | | | | | | | | | | | | | | | INT=4
+| | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (f2896a40,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (f2896a40,1)
+| | | | | | | | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | | | | | | | N_EXP_CHAR_CONST (f2896a40,0)
+| | | | | | | | | | | | | | | | | | | | INT=68
+| | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | | | | N_STMT_LABEL_DEFAULT (0,0)
+| | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
+| | | | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (f2896a40,0)
+| | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (f2896a40,1)
+| | | | | | | | | | | | | | | | | | | | | | (ID="grade") TYPE:f2896a40 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | | | | | | | | | | | N_EXP_CHAR_CONST (f2896a40,0)
+| | | | | | | | | | | | | | | | | | | | | | INT=70
+| | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
+| | | | | | | | | | | | | | | | | | | N_STMT_BREAK (0,0)
+| | | | | | | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
+| | | | | | | N_STMT_LIST_NIL (0,0)
