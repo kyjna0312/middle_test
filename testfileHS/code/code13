@@ -1,9 +1,70 @@
-syntax error at line 9: near L1
+======== symbol =========
+   1:  printf	-1
+   2:  malloc	-2
+   3:  scanf	-3
+   4:  main	35
+   5:  fac	3
+   6:  L1	21
+   7:  L2	34
+   8:  L3	30
+   9:  L4	34
 ========  code ==========
    0:  INT	0,28
-   1:  SUP	0,4
+   1:  SUP	0,35
    2:  RET	0,0
    3:  INT	0,16
    4:  LOD	1,12
    5:  LITI	0,1
    6:  GTRI	0,0
+   7:  JPC	0,21
+   8:  LDA	1,-4
+   9:  LOD	1,12
+  10:  INT	0,16
+  11:  LOD	1,12
+  12:  LITI	0,1
+  13:  SUBI	0,0
+  14:  POP	0,4
+  15:  ADDR	0,3
+  16:  CAL	0,0
+  17:  MULI	0,0
+  18:  STO	0,1
+  19:  RET	0,0
+  20:  JMP	0,34
+  21:  LOD	1,12
+  22:  LITI	0,0
+  23:  EQLI	0,0
+  24:  JPC	0,30
+  25:  LDA	1,-4
+  26:  LITI	0,1
+  27:  STO	0,1
+  28:  RET	0,0
+  29:  JMP	0,34
+  30:  LDA	1,-4
+  31:  LOD	1,12
+  32:  STO	0,1
+  33:  RET	0,0
+  34:  RET	0,0
+  35:  INT	0,16
+  36:  INT	0,12
+  37:  LDA	0,12
+  38:  LDA	1,12
+  39:  POP	0,5
+  40:  ADDR	0,-3
+  41:  CAL	0,0
+  42:  INT	0,12
+  43:  LDA	0,20
+  44:  INT	0,16
+  45:  LOD	1,12
+  46:  POP	0,4
+  47:  ADDR	0,3
+  48:  CAL	0,0
+  49:  POP	0,5
+  50:  ADDR	0,-1
+  51:  CAL	0,0
+  52:  LDA	1,-4
+  53:  LITI	0,0
+  54:  STO	0,1
+  55:  RET	0,0
+  56:  RET	0,0
+start execution
+120end execution

@@ -3,23 +3,23 @@ syntax error at line 25: near 0
    0:  INT	0,60
    1:  SUP	0,4
    2:  RET	0,0
-   3:  INT	0,28
+   3:  INT	0,32
    4:  INT	0,12
    5:  LDA	0,12
-   6:  LDA	1,16
+   6:  LDA	1,20
    7:  POP	0,5
    8:  ADDR	0,3
    9:  CAL	0,0
-  10:  LDA	1,20
-  11:  LOD	1,16
+  10:  LDA	1,24
+  11:  LOD	1,20
   12:  LITI	0,1
   13:  ADDI	0,0
   14:  STX	0,1
   15:  POP	0,1
-  16:  LDA	1,24
+  16:  LDA	1,28
   17:  LITI	0,1
   18:  LITI	0,2
   19:  ADDI	0,0
   20:  STX	0,1
   21:  POP	0,1
-  22:  LOD	1,16
+  22:  LOD	1,20

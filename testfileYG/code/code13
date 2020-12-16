@@ -3,7 +3,7 @@ syntax error at line 57: near 0
    0:  INT	0,76
    1:  SUP	0,4
    2:  RET	0,0
-   3:  INT	0,76
+   3:  INT	0,28
    4:  INT	0,12
    5:  LDA	0,12
    6:  LDA	1,12

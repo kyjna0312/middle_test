@@ -4,7 +4,7 @@ initialize
                                                     parse
 ======= syntax tree ==========
 N_PROGRAM (0,0)
-| (ID="main") TYPE:bba66200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="main") TYPE:55405fa0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -12,51 +12,51 @@ N_PROGRAM (0,0)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="init") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="init") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="count") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="count") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | | INIT
 | | | | | | | | N_INIT_LIST_ONE (0,0)
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | 0
-| | | | | | (ID="a") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="a") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="c") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="c") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="d") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="d") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="scanf") TYPE:bba61d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="scanf") TYPE:55405cc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | "%d"
 | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="init") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="init") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_DO (0,0)
 | | | | | | | | | | N_STMT_COMPOUND (0,0)
@@ -64,88 +64,88 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="a") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="a") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_EXP_DIV (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | 10
 | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_EXP_MOD (0,0)
 | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | 10
 | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | (ID="c") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | (ID="c") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | N_EXP_DIV (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_ADD (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | (ID="a") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | (ID="a") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | 10
 | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | (ID="d") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | (ID="d") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | N_EXP_MOD (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_ADD (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="a") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | (ID="a") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | | 10
 | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | N_EXP_ADD (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_MUL (0,0)
 | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | | | | | | | | 10
 | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="d") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | (ID="d") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_POST_INC (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="count") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | (ID="count") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | | | | N_EXP_NEQ (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="init") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="init") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="printf") TYPE:bba61bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="printf") TYPE:55405b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | "%d"
 | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="count") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="count") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 ======= semantic tree ==========
 N_PROGRAM (0,28)
-| (ID="main") TYPE:bba66200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="main") TYPE:55405fa0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -153,136 +153,136 @@ N_PROGRAM (0,28)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,28)
-| | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="init") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | (ID="init") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="count") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | (ID="count") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | | INIT
 | | | | | | | | N_INIT_LIST_ONE (0,0)
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | INT=0
-| | | | | | (ID="a") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+| | | | | | (ID="a") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
+| | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="c") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=32
+| | | | | | (ID="c") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=32
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="d") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=36
+| | | | | | (ID="d") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=36
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_FUNCTION_CALL (bba61ad0,0)
-| | | | | | | | | N_EXP_AMP (bba67a50,0)
-| | | | | | | | | | N_EXP_IDENT (bba61d20,0)
-| | | | | | | | | | | (ID="scanf") TYPE:bba61d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | N_EXP_FUNCTION_CALL (55405a70,0)
+| | | | | | | | | N_EXP_AMP (55407210,0)
+| | | | | | | | | | N_EXP_IDENT (55405cc0,0)
+| | | | | | | | | | | (ID="scanf") TYPE:55405cc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | N_EXP_STRING_LITERAL (bba61b10,0)
+| | | | | | | | | | N_EXP_STRING_LITERAL (55405b00,0)
 | | | | | | | | | | | LITERAL: "%d"
 | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | N_EXP_AMP (bba67ad0,0)
-| | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | | N_EXP_AMP (55407280,0)
+| | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | N_EXP_ASSIGN (bba61920,0)
-| | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | (ID="init") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
- | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | N_EXP_ASSIGN (554058c0,0)
+| | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | (ID="init") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_DO (0,0)
 | | | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | N_EXP_ASSIGN (bba61920,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | (ID="a") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | | | | N_EXP_DIV (bba61920,0)
-| | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | | | N_EXP_INT_CONST (bba61920,0)
+| | | | | | | | | | | | | N_EXP_ASSIGN (554058c0,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | (ID="a") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | | | | N_EXP_DIV (554058c0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | N_EXP_INT_CONST (554058c0,0)
 | | | | | | | | | | | | | | | | INT=10
 | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | N_EXP_ASSIGN (bba61920,0)
-| | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
- | | | | | | | | | | | | | | | N_EXP_MOD (bba61920,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | | | | N_EXP_INT_CONST (bba61920,0)
+| | | | | | | | | | | | | | N_EXP_ASSIGN (554058c0,0)
+| | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
+ | | | | | | | | | | | | | | | N_EXP_MOD (554058c0,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | | N_EXP_INT_CONST (554058c0,0)
 | | | | | | | | | | | | | | | | | INT=10
 | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | N_EXP_ASSIGN (bba61920,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | (ID="c") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=32
- | | | | | | | | | | | | | | | | N_EXP_DIV (bba61920,0)
-| | | | | | | | | | | | | | | | | N_EXP_ADD (bba61920,0)
-| | | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | | (ID="a") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
- | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (bba61920,0)
+| | | | | | | | | | | | | | | N_EXP_ASSIGN (554058c0,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | (ID="c") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=32
+ | | | | | | | | | | | | | | | | N_EXP_DIV (554058c0,0)
+| | | | | | | | | | | | | | | | | N_EXP_ADD (554058c0,0)
+| | | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | | (ID="a") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
+ | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (554058c0,0)
 | | | | | | | | | | | | | | | | | | INT=10
 | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | N_EXP_ASSIGN (bba61920,0)
-| | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | (ID="d") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=36
- | | | | | | | | | | | | | | | | | N_EXP_MOD (bba61920,0)
-| | | | | | | | | | | | | | | | | | N_EXP_ADD (bba61920,0)
-| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | | | (ID="a") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
- | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (bba61920,0)
+| | | | | | | | | | | | | | | | N_EXP_ASSIGN (554058c0,0)
+| | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | (ID="d") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=36
+ | | | | | | | | | | | | | | | | | N_EXP_MOD (554058c0,0)
+| | | | | | | | | | | | | | | | | | N_EXP_ADD (554058c0,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | | | (ID="a") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
+ | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (554058c0,0)
 | | | | | | | | | | | | | | | | | | | INT=10
 | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | N_EXP_ASSIGN (bba61920,0)
-| | | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | | | | | | N_EXP_ADD (bba61920,0)
-| | | | | | | | | | | | | | | | | | | N_EXP_MUL (bba61920,0)
-| | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | | | | (ID="b") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
- | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (bba61920,0)
+| | | | | | | | | | | | | | | | | N_EXP_ASSIGN (554058c0,0)
+| | | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | | | | | | N_EXP_ADD (554058c0,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_MUL (554058c0,0)
+| | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | | | | (ID="b") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
+ | | | | | | | | | | | | | | | | | | | | N_EXP_INT_CONST (554058c0,0)
 | | | | | | | | | | | | | | | | | | | | | INT=10
-| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | | | (ID="d") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=36
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | | | (ID="d") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=36
  | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | N_EXP_POST_INC (bba61920,0)
-| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | | | | | | (ID="count") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | | | | | | | | | | | | | N_EXP_POST_INC (554058c0,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | | | | | | (ID="count") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
-| | | | | | | | | | N_EXP_NEQ (bba61920,0)
-| | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | (ID="n") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | (ID="init") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | | | | | N_EXP_NEQ (554058c0,0)
+| | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | (ID="n") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | (ID="init") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | N_EXP_FUNCTION_CALL (bba61ad0,0)
-| | | | | | | | | | | | N_EXP_AMP (bba67b10,0)
-| | | | | | | | | | | | | N_EXP_IDENT (bba61bf0,0)
-| | | | | | | | | | | | | | (ID="printf") TYPE:bba61bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | N_EXP_FUNCTION_CALL (55405a70,0)
+| | | | | | | | | | | | N_EXP_AMP (554072c0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (55405b90,0)
+| | | | | | | | | | | | | | (ID="printf") TYPE:55405b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | | | | N_EXP_STRING_LITERAL (bba61b10,0)
+| | | | | | | | | | | | | N_EXP_STRING_LITERAL (55405b00,0)
 | | | | | | | | | | | | | | LITERAL: "%d"
 | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | N_EXP_IDENT (bba61920,1)
-| | | | | | | | | | | | | | | (ID="count") TYPE:bba61920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | | | | | | | | | N_EXP_IDENT (554058c0,1)
+| | | | | | | | | | | | | | | (ID="count") TYPE:554058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | N_STMT_LIST_NIL (0,0)

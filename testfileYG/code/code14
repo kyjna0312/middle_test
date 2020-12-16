@@ -62,4 +62,17 @@
   52:  LDX	0,1
   53:  INCI	0,0
   54:  STO	0,1
-  5
+  55:  POP	0,1
+  56:  LOD	1,12
+  57:  LOD	1,16
+  58:  NEQI	0,0
+  59:  JPT	0,14
+  60:  INT	0,12
+  61:  LDA	0,20
+  62:  LOD	1,20
+  63:  POP	0,5
+  64:  ADDR	0,-1
+  65:  CAL	0,0
+  66:  RET	0,0
+start execution
+60end execution

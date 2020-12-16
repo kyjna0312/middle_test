@@ -1,20 +1,31 @@
-syntax error at line 32: near L1
+======== symbol =========
+   1:  printf	-1
+   2:  malloc	-2
+   3:  scanf	-3
+   4:  main	3
+   5:  Han	25
+   6:  L1	35
+   7:  L2	92
+   8:  L4	39
+   9:  L5	86
+  10:  L6	79
+  11:  L3	79
 ========  code ==========
    0:  INT	0,28
-   1:  SUP	0,4
+   1:  SUP	0,3
    2:  RET	0,0
    3:  INT	0,20
    4:  INT	0,12
    5:  LDA	0,12
    6:  LDA	1,12
    7:  POP	0,5
-   8:  ADDR	0,3
+   8:  ADDR	0,-3
    9:  CAL	0,0
   10:  LDA	1,16
   11:  INT	0,16
   12:  LOD	1,12
   13:  POP	0,4
-  14:  ADDR	0,5
+  14:  ADDR	0,25
   15:  CAL	0,0
   16:  STX	0,1
   17:  POP	0,1
@@ -22,10 +33,76 @@ syntax error at line 32: near L1
   19:  LDA	0,20
   20:  LOD	1,16
   21:  POP	0,5
-  22:  ADDR	0,1
+  22:  ADDR	0,-1
   23:  CAL	0,0
   24:  RET	0,0
   25:  INT	0,36
   26:  LOD	1,12
   27:  LITI	0,100
   28:  SUBI	0,0
+  29:  JPC	0,35
+  30:  LDA	1,-4
+  31:  LOD	1,12
+  32:  STO	0,1
+  33:  RET	0,0
+  34:  JMP	0,92
+  35:  LDA	1,16
+  36:  LITI	0,100
+  37:  STX	0,1
+  38:  POP	0,1
+  39:  LOD	1,16
+  40:  LOD	1,12
+  41:  LEQI	0,0
+  42:  JPC	0,86
+  43:  LDA	1,24
+  44:  LOD	1,16
+  45:  LITI	0,100
+  46:  DIVI	0,0
+  47:  STX	0,1
+  48:  POP	0,1
+  49:  LDA	1,28
+  50:  LOD	1,16
+  51:  LITI	0,100
+  52:  MOD	0,0
+  53:  LITI	0,10
+  54:  DIVI	0,0
+  55:  STX	0,1
+  56:  POP	0,1
+  57:  LDA	1,32
+  58:  LOD	1,16
+  59:  LITI	0,100
+  60:  MOD	0,0
+  61:  LITI	0,10
+  62:  MOD	0,0
+  63:  STX	0,1
+  64:  POP	0,1
+  65:  LOD	1,24
+  66:  LOD	1,28
+  67:  SUBI	0,0
+  68:  LOD	1,28
+  69:  LOD	1,32
+  70:  SUBI	0,0
+  71:  EQLI	0,0
+  72:  JPC	0,79
+  73:  LOD	1,20
+  74:  LDA	1,20
+  75:  LDX	0,1
+  76:  INCI	0,0
+  77:  STO	0,1
+  78:  POP	0,1
+  79:  LOD	1,16
+  80:  LDA	1,16
+  81:  LDX	0,1
+  82:  INCI	0,0
+  83:  STO	0,1
+  84:  POP	0,1
+  85:  JMP	0,39
+  86:  LDA	1,-4
+  87:  LITI	0,99
+  88:  LOD	1,20
+  89:  ADDI	0,0
+  90:  STO	0,1
+  91:  RET	0,0
+  92:  RET	0,0
+start execution
+101end execution

@@ -4,7 +4,7 @@ initialize
       parse
 ======= syntax tree ==========
 N_PROGRAM (0,0)
-| (ID="main") TYPE:ee340200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="main") TYPE:55c05fa0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -12,7 +12,7 @@ N_PROGRAM (0,0)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | | INIT
@@ -23,7 +23,7 @@ N_PROGRAM (0,0)
 | | | | | | | N_STMT_IF_ELSE (0,0)
 | | | | | | | | N_EXP_GTR (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | 3
 | | | | | | | | N_STMT_COMPOUND (0,0)
@@ -31,10 +31,10 @@ N_PROGRAM (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_EXP_MUL (0,0)
 | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | 2
 | | | | | | | | | | N_STMT_LIST_NIL (0,0)
@@ -43,14 +43,14 @@ N_PROGRAM (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | 0
 | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST_NIL (0,0)
 ======= semantic tree ==========
 N_PROGRAM (0,12)
-| (ID="main") TYPE:ee340200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="main") TYPE:55c05fa0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -58,7 +58,7 @@ N_PROGRAM (0,12)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,4)
-| | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | | INIT
@@ -67,30 +67,30 @@ N_PROGRAM (0,12)
 | | | | | | | | | | INT=5
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_IF_ELSE (0,0)
-| | | | | | | | N_EXP_GTR (ee33b920,0)
-| | | | | | | | | N_EXP_IDENT (ee33b920,1)
-| | | | | | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | N_EXP_INT_CONST (ee33b920,0)
+| | | | | | | | N_EXP_GTR (55c058c0,0)
+| | | | | | | | | N_EXP_IDENT (55c058c0,1)
+| | | | | | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | N_EXP_INT_CONST (55c058c0,0)
 | | | | | | | | | | INT=3
 | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | N_EXP_ASSIGN (ee33b920,0)
-| | | | | | | | | | | | N_EXP_IDENT (ee33b920,1)
-| | | | | | | | | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | N_EXP_MUL (ee33b920,0)
-| | | | | | | | | | | | | N_EXP_IDENT (ee33b920,1)
-| | | | | | | | | | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | | N_EXP_INT_CONST (ee33b920,0)
+| | | | | | | | | | | N_EXP_ASSIGN (55c058c0,0)
+| | | | | | | | | | | | N_EXP_IDENT (55c058c0,1)
+| | | | | | | | | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | N_EXP_MUL (55c058c0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (55c058c0,1)
+| | | | | | | | | | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | | N_EXP_INT_CONST (55c058c0,0)
 | | | | | | | | | | | | | | INT=2
 | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | N_EXP_ASSIGN (ee33b920,0)
-| | | | | | | | | | | | N_EXP_IDENT (ee33b920,1)
-| | | | | | | | | | | | | (ID="data") TYPE:ee33b920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | N_EXP_INT_CONST (ee33b920,0)
+| | | | | | | | | | | N_EXP_ASSIGN (55c058c0,0)
+| | | | | | | | | | | | N_EXP_IDENT (55c058c0,1)
+| | | | | | | | | | | | | (ID="data") TYPE:55c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | N_EXP_INT_CONST (55c058c0,0)
 | | | | | | | | | | | | | INT=0
 | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST_NIL (0,0)

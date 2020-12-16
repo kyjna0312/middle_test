@@ -10,24 +10,24 @@
    0:  INT	0,12
    1:  SUP	0,3
    2:  RET	0,0
-   3:  INT	0,28
-   4:  LDA	1,24
+   3:  INT	0,20
+   4:  LDA	1,16
    5:  LITI	0,0
    6:  STX	0,1
    7:  POP	0,1
-   8:  LOD	1,24
+   8:  LOD	1,16
    9:  LITI	0,5
   10:  SUBI	0,0
   11:  JPC	0,26
-  12:  LDA	1,20
+  12:  LDA	1,12
   13:  LDA	1,12
-  14:  LOD	1,24
+  14:  LOD	1,16
   15:  OFFSET	0,0
   16:  LDIB	0,0
   17:  STX	0,1
   18:  POP	0,1
-  19:  LOD	1,24
-  20:  LDA	1,24
+  19:  LOD	1,16
+  20:  LDA	1,16
   21:  LDX	0,1
   22:  INCI	0,0
   23:  STO	0,1

@@ -4,7 +4,7 @@ initialize
                                                      parse
 ======= syntax tree ==========
 N_PROGRAM (0,0)
-| (ID="main") TYPE:ce42d200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="main") TYPE:76c05fa0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -12,23 +12,23 @@ N_PROGRAM (0,0)
 | | | | | (void)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="x") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="x") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="y") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="y") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | | INIT
 | | | | | | | | N_INIT_LIST_ONE (0,0)
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | 0
-| | | | | | (ID="monthArr") TYPE:ce42d570 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="monthArr") TYPE:76c06270 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | ARRAY
 | | | | | | | | | INDEX
@@ -90,77 +90,77 @@ N_PROGRAM (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="scanf") TYPE:ce428d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="scanf") TYPE:76c05cc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | "%d %d"
 | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="x") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="x") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | (ID="y") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | (ID="y") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | N_FOR_EXP (0,0)
 | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | 0
 | | | | | | | | | | N_EXP_LSS (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_SUB (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="x") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="x") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | 1
 | | | | | | | | | | N_EXP_POST_INC (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_EXP_ADD (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_EXP_ARRAY (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="monthArr") TYPE:ce42d570 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="monthArr") TYPE:76c06270 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_ADD (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="y") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="y") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_EXP_MOD (0,0)
 | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | | | 7
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_SWITCH (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
@@ -169,7 +169,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | "SUN"
@@ -183,7 +183,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | "MON"
@@ -197,7 +197,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | "TUE"
@@ -211,7 +211,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | "WED"
@@ -225,7 +225,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | "THU"
@@ -239,7 +239,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "FRI"
@@ -253,7 +253,7 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "SAT"
@@ -267,31 +267,31 @@ N_PROGRAM (0,0)
 | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 ======= semantic tree ==========
 N_PROGRAM (0,76)
-| (ID="main") TYPE:ce42d200 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="main") TYPE:76c05fa0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
 | | | | TYPE
 | | | | | (void)
 | | | | BODY
-| | | | | N_STMT_COMPOUND (0,64)
-| | | | | | (ID="x") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | N_STMT_COMPOUND (0,16)
+| | | | | | (ID="x") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="y") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | (ID="y") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+| | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | | INIT
 | | | | | | | | N_INIT_LIST_ONE (0,0)
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | INT=0
-| | | | | | (ID="monthArr") TYPE:ce42d570 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
+| | | | | | (ID="monthArr") TYPE:76c06270 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
  | | | | | | | TYPE
 | | | | | | | | ARRAY
 | | | | | | | | | INDEX
@@ -350,91 +350,91 @@ N_PROGRAM (0,76)
 | | | | | | | | | | | | | | | | | | | | N_INIT_LIST_NIL (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_FUNCTION_CALL (ce428ad0,0)
-| | | | | | | | | N_EXP_AMP (ce4302b0,0)
-| | | | | | | | | | N_EXP_IDENT (ce428d20,0)
-| | | | | | | | | | | (ID="scanf") TYPE:ce428d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | N_EXP_FUNCTION_CALL (76c05a70,0)
+| | | | | | | | | N_EXP_AMP (76d04080,0)
+| | | | | | | | | | N_EXP_IDENT (76c05cc0,0)
+| | | | | | | | | | | (ID="scanf") TYPE:76c05cc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | N_ARG_LIST (0,12)
-| | | | | | | | | | N_EXP_STRING_LITERAL (ce428b10,0)
+| | | | | | | | | | N_EXP_STRING_LITERAL (76c05b00,0)
 | | | | | | | | | | | LITERAL: "%d %d"
 | | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | | N_EXP_AMP (ce430330,0)
-| | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | (ID="x") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | | N_EXP_AMP (76d040f0,0)
+| | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | (ID="x") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | N_EXP_AMP (ce430370,0)
-| | | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | | (ID="y") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | | | | | | | N_EXP_AMP (76d04130,0)
+| | | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | | (ID="y") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | N_FOR_EXP (0,0)
-| | | | | | | | | | N_EXP_ASSIGN (ce428920,0)
-| | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
- | | | | | | | | | | | N_EXP_INT_CONST (ce428920,0)
+| | | | | | | | | | N_EXP_ASSIGN (76c058c0,0)
+| | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+ | | | | | | | | | | | N_EXP_INT_CONST (76c058c0,0)
 | | | | | | | | | | | | INT=0
-| | | | | | | | | | N_EXP_LSS (ce428920,0)
-| | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
- | | | | | | | | | | | N_EXP_SUB (ce428920,0)
-| | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | (ID="x") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | | N_EXP_INT_CONST (ce428920,0)
+| | | | | | | | | | N_EXP_LSS (76c058c0,0)
+| | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+ | | | | | | | | | | | N_EXP_SUB (76c058c0,0)
+| | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | (ID="x") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | | N_EXP_INT_CONST (76c058c0,0)
 | | | | | | | | | | | | | INT=1
-| | | | | | | | | | N_EXP_POST_INC (ce428920,0)
-| | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | | | | | N_EXP_POST_INC (76c058c0,0)
+| | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | N_EXP_ASSIGN (ce428920,0)
-| | | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | | | N_EXP_ADD (ce428920,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | | | | N_EXP_ARRAY (ce428920,1)
-| | | | | | | | | | | | | | | N_EXP_IDENT (ce42d570,0)
-| | | | | | | | | | | | | | | | (ID="monthArr") TYPE:ce42d570 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
- | | | | | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | | | | (ID="i") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | | | | | | | N_EXP_ASSIGN (76c058c0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | | | N_EXP_ADD (76c058c0,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | | | | N_EXP_ARRAY (76c058c0,1)
+| | | | | | | | | | | | | | | N_EXP_IDENT (76c06270,0)
+| | | | | | | | | | | | | | | | (ID="monthArr") TYPE:76c06270 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=28
+ | | | | | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | | | | (ID="i") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | N_EXP_ASSIGN (ce428920,0)
-| | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | N_EXP_ADD (ce428920,0)
-| | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | (ID="y") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | | | | | N_EXP_ASSIGN (76c058c0,0)
+| | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | N_EXP_ADD (76c058c0,0)
+| | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | (ID="y") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | N_EXP_ASSIGN (ce428920,0)
-| | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | | N_EXP_MOD (ce428920,0)
-| | | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
- | | | | | | | | | | | | | N_EXP_INT_CONST (ce428920,0)
+| | | | | | | | | | | N_EXP_ASSIGN (76c058c0,0)
+| | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | | N_EXP_MOD (76c058c0,0)
+| | | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+ | | | | | | | | | | | | | N_EXP_INT_CONST (76c058c0,0)
 | | | | | | | | | | | | | | INT=7
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_SWITCH (0,0)
-| | | | | | | | | | | | N_EXP_IDENT (ce428920,1)
-| | | | | | | | | | | | | (ID="day") TYPE:ce428920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
+| | | | | | | | | | | | N_EXP_IDENT (76c058c0,1)
+| | | | | | | | | | | | | (ID="day") TYPE:76c058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=24
  | | | | | | | | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
 | | | | | | | | | | | | | | | INT=0
 | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (ce428ad0,0)
-| | | | | | | | | | | | | | | | | N_EXP_AMP (ce4303b0,0)
-| | | | | | | | | | | | | | | | | | N_EXP_IDENT (ce428bf0,0)
-| | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (76c05a70,0)
+| | | | | | | | | | | | | | | | | N_EXP_AMP (76d04170,0)
+| | | | | | | | | | | | | | | | | | N_EXP_IDENT (76c05b90,0)
+| | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (ce428b10,0)
+| | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (76c05b00,0)
 | | | | | | | | | | | | | | | | | | | LITERAL: "SUN"
 | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | N_STMT_LIST (0,0)
@@ -443,12 +443,12 @@ N_PROGRAM (0,76)
 | | | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
 | | | | | | | | | | | | | | | | | INT=1
 | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (ce428ad0,0)
-| | | | | | | | | | | | | | | | | | | N_EXP_AMP (ce430430,0)
-| | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (ce428bf0,0)
-| | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (76c05a70,0)
+| | | | | | | | | | | | | | | | | | | N_EXP_AMP (76d041e0,0)
+| | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (76c05b90,0)
+| | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (ce428b10,0)
+| | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (76c05b00,0)
 | | | | | | | | | | | | | | | | | | | | | LITERAL: "MON"
 | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
@@ -457,12 +457,12 @@ N_PROGRAM (0,76)
 | | | | | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
 | | | | | | | | | | | | | | | | | | | INT=2
 | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (ce428ad0,0)
-| | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (ce4304b0,0)
-| | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (ce428bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (76c05a70,0)
+| | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (76d04250,0)
+| | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (76c05b90,0)
+| | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (ce428b10,0)
+| | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (76c05b00,0)
 | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "TUE"
 | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
@@ -471,12 +471,12 @@ N_PROGRAM (0,76)
 | | | | | | | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
 | | | | | | | | | | | | | | | | | | | | | INT=3
 | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (ce428ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (ce430530,0)
-| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (ce428bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (76c05a70,0)
+| | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (76d042c0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (76c05b90,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (ce428b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (76c05b00,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "WED"
 | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
@@ -485,12 +485,12 @@ N_PROGRAM (0,76)
 | | | | | | | | | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | INT=4
 | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (ce428ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (ce4305b0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (ce428bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (76c05a70,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (76d04330,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (76c05b90,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (ce428b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (76c05b00,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "THU"
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
@@ -499,12 +499,12 @@ N_PROGRAM (0,76)
 | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | INT=5
 | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (ce428ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (ce430630,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (ce428bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (76c05a70,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (76d043a0,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (76c05b90,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (ce428b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (76c05b00,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "FRI"
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)
@@ -513,12 +513,12 @@ N_PROGRAM (0,76)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LABEL_CASE (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | INT=6
 | | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (ce428ad0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (ce4306b0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (ce428bf0,0)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:ce428bf0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (76c05a70,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_AMP (76d04410,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (76c05b90,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | (ID="printf") TYPE:76c05b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (ce428b10,0)
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (76c05b00,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | LITERAL: "SAT"
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | | | | | | | | | | | | N_STMT_LIST (0,0)

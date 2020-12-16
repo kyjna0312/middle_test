@@ -8,7 +8,7 @@ run:
 	./interp
 
 interp: y.tab.c lex.yy.c
-	$(GCC) -g -w -o  interp y.tab.c lex.yy.c interp.c lib.c
+	$(GCC) -w -o  interp y.tab.c lex.yy.c interp.c lib.c
 
 lex.yy.c: 
 	$(LEX) interp.l

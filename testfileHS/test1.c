@@ -35,13 +35,12 @@ int main()
 		int a;
 		int b;
 	};
-	int i;
+	int i, j;
 	int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
 
 	if (fun(10))
 	{
 		printf("test1\n");
-		scanf("test2\n");
 	}
 	else
 	{
@@ -50,11 +49,11 @@ int main()
 
 	for (i = 0; i < 10; i++)
 	{
-		while (i >= 7)
-		{
-			i = 0;
-		}
+
+		j = 0;
 	}
+
+	printf("%d %d\n", i, j);
 
 	return 0;
 }

@@ -2,6 +2,80 @@
 #include <string.h>
 #include "type.h"
 
+typedef enum op
+{
+    OP_NULL,
+    LOD,
+    LDX,
+    LDXB,
+    LDA,
+    LITI,
+    STO,
+    STOB,
+    STX,
+    STXB,
+    SUBI,
+    SUBF,
+    DIVI,
+    DIVF,
+    ADDI,
+    ADDF,
+    OFFSET,
+    MULI,
+    MULF,
+    MOD,
+    LSSI,
+    LSSF,
+    GTRI,
+    GTRF,
+    LEQI,
+    LEQF,
+    GEQI,
+    GEQF,
+    NEQI,
+    NEQF,
+    EQLI,
+    EQLF,
+    NOT,
+    OR,
+    AND,
+    CVTI,
+    CVTF,
+    JPC,
+    JPCR,
+    JMP,
+    JPT,
+    JPTR,
+    INT,
+    INCI,
+    INCF,
+    DECI,
+    DECF,
+    SUP,
+    CAL,
+    ADDR,
+    RET,
+    MINUSI,
+    MINUSF,
+    CHK,
+    LDI,
+    LDIB,
+    SWITCH,
+    SWVALUE,
+    SWDEFAULT,
+    SWLABEL,
+    SWEND,
+    POP,
+    POPB
+} OPCODE;
+
+// typedef struct
+// // {
+//     OPCODE f;
+//     int l;
+//     int a;
+// } INSTRUCTION;
+
 typedef enum
 {
     SW_VALUE,

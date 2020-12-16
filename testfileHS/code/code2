@@ -1,24 +1,99 @@
-syntax error at line 25: near L3
+======== symbol =========
+   1:  printf	-1
+   2:  malloc	-2
+   3:  scanf	-3
+   4:  main	3
+   5:  addNode	51
+   6:  L2	19
+   7:  L3	45
+   8:  L1	38
+   9:  printList	60
+  10:  L5	61
+  11:  L6	77
+  12:  L4	76
 ========  code ==========
    0:  INT	0,28
-   1:  SUP	0,4
+   1:  SUP	0,3
    2:  RET	0,0
-   3:  INT	0,16
+   3:  INT	0,20
    4:  LDA	1,12
    5:  INT	0,12
    6:  LITI	0,1
    7:  MINUSI	0,0
    8:  POP	0,4
-   9:  ADDR	0,5
+   9:  ADDR	0,51
   10:  CAL	0,0
   11:  STX	0,0
-  12:  LDA	1,12
+  12:  LDA	1,16
   13:  LOD	1,12
   14:  STX	0,0
-  15:  LDA	1,12
+  15:  LDA	1,16
   16:  LITI	0,0
   17:  STX	0,1
   18:  POP	0,1
-  19:  LOD	1,12
+  19:  LOD	1,16
   20:  LITI	0,10
   21:  SUBI	0,0
+  22:  JPC	0,45
+  23:  LDA	1,16
+  24:  LITI	0,4
+  25:  OFFSET	0,0
+  26:  INT	0,12
+  27:  LOD	1,16
+  28:  POP	0,4
+  29:  ADDR	0,51
+  30:  CAL	0,0
+  31:  STX	0,0
+  32:  LDA	1,16
+  33:  LOD	1,16
+  34:  LITI	0,4
+  35:  OFFSET	0,0
+  36:  LDI	0,0
+  37:  STX	0,0
+  38:  LOD	1,16
+  39:  LDA	1,16
+  40:  LDX	0,1
+  41:  INCI	0,0
+  42:  STO	0,1
+  43:  POP	0,1
+  44:  JMP	0,19
+  45:  INT	0,12
+  46:  LOD	1,12
+  47:  POP	0,3
+  48:  ADDR	0,60
+  49:  CAL	0,0
+  50:  RET	0,0
+  51:  INT	0,32740
+  52:  LOD	1,16
+  53:  LDI	0,1
+  54:  POP	0,1
+  55:  LDA	1,0
+  56:  LOD	1,16
+  57:  STO	0,0
+  58:  RET	0,0
+  59:  RET	0,0
+  60:  INT	0,12
+  61:  LOD	1,12
+  62:  JPC	0,77
+  63:  INT	0,12
+  64:  LDA	0,12
+  65:  LOD	1,12
+  66:  LDI	0,1
+  67:  POP	0,5
+  68:  ADDR	0,-1
+  69:  CAL	0,0
+  70:  LDA	1,12
+  71:  LOD	1,12
+  72:  LITI	0,4
+  73:  OFFSET	0,0
+  74:  LDI	0,0
+  75:  STX	0,0
+  76:  JMP	0,61
+  77:  INT	0,12
+  78:  LDA	0,20
+  79:  POP	0,4
+  80:  ADDR	0,-1
+  81:  CAL	0,0
+  82:  RET	0,0
+start execution
+runtime error at pc 52 : stack overflow 

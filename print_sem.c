@@ -1,23 +1,10 @@
 #include "type.h"
+#include "print_sem.h"
+
 extern char *node_name[];
 extern char *type_kind_name[];
 extern char *id_kind_name[];
 extern char *spec_name[];
-
-// void print_sem_ast(A_NODE *);
-// void prt_sem_program(A_NODE *, int);
-// void prt_sem_initializer(A_NODE *, int);
-// void prt_sem_arg_expr_list(A_NODE *, int);
-// void prt_sem_statement(A_NODE *, int);
-// void prt_sem_statement_list(A_NODE *, int);
-// void prt_sem_for_expression(A_NODE *, int);
-// void prt_sem_expression(A_NODE *, int);
-// void prt_sem_A_TYPE(A_TYPE *, int);
-// void prt_sem_A_ID_LIST(A_ID *, int);
-// void prt_sem_A_ID(A_ID *, int);
-// void prt_sem_A_ID_NAME(A_ID *, int);
-// void prt_sem_LITERAL(int, int);
-// void prt_sem_integer(int, int);
 extern A_LITERAL literal_table[];
 extern A_TYPE *int_type, *float_type, *char_type, *void_type, *string_type;
 

@@ -1,7 +1,20 @@
-syntax error at line 16: near L1
+======== symbol =========
+   1:  printf	-1
+   2:  malloc	-2
+   3:  scanf	-3
+   4:  main	3
+   5:  L1	57
+   6:  L2	39
+   7:  L3	56
+   8:  L4	56
+   9:  L5	104
+  10:  L6	104
+  11:  L7	87
+  12:  L8	104
+  13:  L9	104
 ========  code ==========
    0:  INT	0,52
-   1:  SUP	0,4
+   1:  SUP	0,3
    2:  RET	0,0
    3:  INT	0,20
    4:  INT	0,12
@@ -9,8 +22,105 @@ syntax error at line 16: near L1
    6:  LDA	1,12
    7:  LDA	1,16
    8:  POP	0,6
-   9:  ADDR	0,3
+   9:  ADDR	0,-3
   10:  CAL	0,0
   11:  LOD	1,12
   12:  LITI	0,0
   13:  EQLI	0,0
+  14:  JPC	0,57
+  15:  LOD	1,16
+  16:  LITI	0,45
+  17:  SUBI	0,0
+  18:  JPC	0,39
+  19:  LDA	1,12
+  20:  LITI	0,23
+  21:  STX	0,1
+  22:  POP	0,1
+  23:  LDA	1,16
+  24:  LOD	1,16
+  25:  LITI	0,60
+  26:  ADDI	0,0
+  27:  LITI	0,45
+  28:  SUBI	0,0
+  29:  STX	0,1
+  30:  POP	0,1
+  31:  INT	0,12
+  32:  LDA	0,20
+  33:  LOD	1,12
+  34:  LOD	1,16
+  35:  POP	0,6
+  36:  ADDR	0,-1
+  37:  CAL	0,0
+  38:  JMP	0,56
+  39:  LOD	1,16
+  40:  LITI	0,45
+  41:  GEQI	0,0
+  42:  JPC	0,56
+  43:  LDA	1,16
+  44:  LOD	1,16
+  45:  LITI	0,45
+  46:  SUBI	0,0
+  47:  STX	0,1
+  48:  POP	0,1
+  49:  INT	0,12
+  50:  LDA	0,28
+  51:  LOD	1,12
+  52:  LOD	1,16
+  53:  POP	0,6
+  54:  ADDR	0,-1
+  55:  CAL	0,0
+  56:  JMP	0,104
+  57:  LOD	1,12
+  58:  LITI	0,0
+  59:  GTRI	0,0
+  60:  JPC	0,104
+  61:  LOD	1,16
+  62:  LITI	0,45
+  63:  SUBI	0,0
+  64:  JPC	0,87
+  65:  LDA	1,12
+  66:  LOD	1,12
+  67:  LITI	0,1
+  68:  SUBI	0,0
+  69:  STX	0,1
+  70:  POP	0,1
+  71:  LDA	1,16
+  72:  LOD	1,16
+  73:  LITI	0,60
+  74:  ADDI	0,0
+  75:  LITI	0,45
+  76:  SUBI	0,0
+  77:  STX	0,1
+  78:  POP	0,1
+  79:  INT	0,12
+  80:  LDA	0,36
+  81:  LOD	1,12
+  82:  LOD	1,16
+  83:  POP	0,6
+  84:  ADDR	0,-1
+  85:  CAL	0,0
+  86:  JMP	0,104
+  87:  LOD	1,16
+  88:  LITI	0,45
+  89:  GEQI	0,0
+  90:  JPC	0,104
+  91:  LDA	1,16
+  92:  LOD	1,16
+  93:  LITI	0,45
+  94:  SUBI	0,0
+  95:  STX	0,1
+  96:  POP	0,1
+  97:  INT	0,12
+  98:  LDA	0,44
+  99:  LOD	1,12
+ 100:  LOD	1,16
+ 101:  POP	0,6
+ 102:  ADDR	0,-1
+ 103:  CAL	0,0
+ 104:  LDA	1,-4
+ 105:  LITI	0,0
+ 106:  STO	0,1
+ 107:  RET	0,0
+ 108:  RET	0,0
+start execution
+44 15end execution

@@ -1,13 +1,10 @@
-syntax error at line 14: near L3
-========  code ==========
-   0:  INT	0,12
-   1:  SUP	0,4
-   2:  RET	0,0
-   3:  INT	0,20
-   4:  LDA	1,16
-   5:  LITI	0,0
-   6:  STX	0,1
-   7:  POP	0,1
-   8:  LOD	1,16
-   9:  LOD	1,0
-  10:  SUBI	0,0
+======== symbol =========
+   1:  printf	-1
+   2:  malloc	-2
+   3:  scanf	-3
+   4:  main	0
+   5:  sum	3
+   6:  L2	8
+   7:  L3	30
+   8:  L1	23
+error: undefined identifier main

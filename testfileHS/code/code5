@@ -1,7 +1,23 @@
-syntax error at line 94: near L3
+======== symbol =========
+   1:  printf	-1
+   2:  malloc	-2
+   3:  scanf	-3
+   4:  main	68
+   5:  nodeMaker	3
+   6:  GetData	19
+   7:  SetData	26
+   8:  GotoLeft	32
+   9:  LinkLeft	41
+  10:  GotoRight	48
+  11:  LinkRight	57
+  12:  searchNode	64
+  13:  treeInOrder	66
+  14:  L2	79
+  15:  L3	128
+  16:  L1	121
 ========  code ==========
    0:  INT	0,32
-   1:  SUP	0,4
+   1:  SUP	0,68
    2:  RET	0,0
    3:  INT	0,12
    4:  LDA	1,12
@@ -26,9 +42,9 @@ syntax error at line 94: near L3
   23:  STO	0,1
   24:  RET	0,0
   25:  RET	0,0
-  26:  INT	0,12
+  26:  INT	0,16
   27:  LDA	1,12
-  28:  LOD	1,0
+  28:  LOD	1,12
   29:  STXB	0,0
   30:  POP	0,1
   31:  RET	0,0
@@ -45,7 +61,7 @@ syntax error at line 94: near L3
   42:  LDA	1,12
   43:  LITI	0,4
   44:  OFFSET	0,0
-  45:  LOD	1,0
+  45:  LOD	1,12
   46:  STX	0,0
   47:  RET	0,0
   48:  INT	0,12
@@ -61,7 +77,7 @@ syntax error at line 94: near L3
   58:  LDA	1,12
   59:  LITI	0,4
   60:  OFFSET	0,0
-  61:  LOD	1,0
+  61:  LOD	1,12
   62:  STX	0,0
   63:  RET	0,0
   64:  INT	0,12
@@ -73,7 +89,7 @@ syntax error at line 94: near L3
   70:  LDA	0,12
   71:  LDA	1,12
   72:  POP	0,5
-  73:  ADDR	0,3
+  73:  ADDR	0,-3
   74:  CAL	0,0
   75:  LDA	1,16
   76:  LITI	0,0
@@ -82,3 +98,56 @@ syntax error at line 94: near L3
   79:  LOD	1,16
   80:  LOD	1,12
   81:  SUBI	0,0
+  82:  JPC	0,128
+  83:  INT	0,12
+  84:  LDA	0,20
+  85:  LDA	2,20
+  86:  LDA	2,24
+  87:  LDA	2,28
+  88:  POP	0,7
+  89:  ADDR	0,-3
+  90:  CAL	0,0
+  91:  LDA	1,20
+  92:  INT	0,12
+  93:  POP	0,3
+  94:  ADDR	0,3
+  95:  CAL	0,0
+  96:  STX	0,0
+  97:  INT	0,12
+  98:  LOD	1,20
+  99:  LOD	2,20
+ 100:  POP	0,4
+ 101:  ADDR	0,26
+ 102:  CAL	0,0
+ 103:  INT	0,12
+ 104:  LOD	1,20
+ 105:  LITI	0,4
+ 106:  OFFSET	0,0
+ 107:  LDI	0,0
+ 108:  LOD	2,24
+ 109:  POP	0,4
+ 110:  ADDR	0,26
+ 111:  CAL	0,0
+ 112:  INT	0,12
+ 113:  LOD	1,20
+ 114:  LITI	0,4
+ 115:  OFFSET	0,0
+ 116:  LDI	0,0
+ 117:  LOD	2,28
+ 118:  POP	0,4
+ 119:  ADDR	0,26
+ 120:  CAL	0,0
+ 121:  LOD	1,16
+ 122:  LDA	1,16
+ 123:  LDX	0,1
+ 124:  INCI	0,0
+ 125:  STO	0,1
+ 126:  POP	0,1
+ 127:  JMP	0,79
+ 128:  LDA	1,-4
+ 129:  LITI	0,0
+ 130:  STO	0,1
+ 131:  RET	0,0
+ 132:  RET	0,0
+start execution
+end execution

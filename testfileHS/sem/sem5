@@ -4,57 +4,57 @@ initialize
                                                                                                                                                                                                                                                          parse
 ======= syntax tree ==========
 N_PROGRAM (0,0)
-| (ID="TreeNode") TYPE:d03481e0 KIND:TYPE SPEC=TYPEDEF LEV=0 VAL=0 ADDR=0 
+| (ID="TreeNode") TYPE:5c405f90 KIND:TYPE SPEC=TYPEDEF LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | STRUCT
 | | | | FIELD
-| | | | | (ID="value") TYPE:d0343a40 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="value") TYPE:5c4059e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | (char 1)
-| | | | | (ID="left") TYPE:d03482b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="left") TYPE:5c406040 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| | | | | (ID="right") TYPE:d0348360 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | (DONE:5c405f90)
+| | | | | (ID="right") TYPE:5c4060e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| (ID="nodeMaker") TYPE:d0348550 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | (DONE:5c405f90)
+| (ID="nodeMaker") TYPE:5c406290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
 | | | | TYPE
 | | | | | POINTER
 | | | | | | ELEMENT_TYPE
-| | | | | | | (DONE:d03481e0)
+| | | | | | | (DONE:5c405f90)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="anode") TYPE:d03485d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="anode") TYPE:5c4062f0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | POINTER
 | | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | | (DONE:5c405f90)
 | | | | | | | INIT
 | | | | | | | | N_INIT_LIST_ONE (0,0)
 | | | | | | | | | N_EXP_CAST (0,0)
 | | | | | | | | | | POINTER
 | | | | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | | | | (DONE:5c405f90)
 | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="malloc") TYPE:d0343e50 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="malloc") TYPE:5c405df0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | N_EXP_SIZE_TYPE (0,0)
-| | | | | | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | | | | | (DONE:5c405f90)
 | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="anode") TYPE:d03485d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="anode") TYPE:5c4062f0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | left
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | 0
@@ -63,24 +63,24 @@ N_PROGRAM (0,0)
 | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="anode") TYPE:d03485d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="anode") TYPE:5c4062f0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | right
 | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | 0
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_RETURN (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="anode") TYPE:d03485d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="anode") TYPE:5c4062f0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="GetData") TYPE:d0348ec0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="GetData") TYPE:5c4069e0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="node") TYPE:d0348e30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="node") TYPE:5c406950 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | (char 1)
 | | | | BODY
@@ -89,19 +89,19 @@ N_PROGRAM (0,0)
 | | | | | | | N_STMT_RETURN (0,0)
 | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="node") TYPE:d0348e30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="node") TYPE:5c406950 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | value
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="SetData") TYPE:d0349270 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="SetData") TYPE:5c406cd0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="node") TYPE:d0349150 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="node") TYPE:5c406bd0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| | | | | (ID="value") TYPE:d0343a40 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | (DONE:5c405f90)
+| | | | | (ID="value") TYPE:5c4059e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | (char 1)
 | | | | TYPE
@@ -113,47 +113,47 @@ N_PROGRAM (0,0)
 | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="node") TYPE:d0349150 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="node") TYPE:5c406bd0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | value
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="value") TYPE:d0343a40 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="value") TYPE:5c4059e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="GotoLeft") TYPE:d0349630 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="GotoLeft") TYPE:5c406fe0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="node") TYPE:d03495a0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="node") TYPE:5c406f50 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | POINTER
 | | | | | | ELEMENT_TYPE
-| | | | | | | (DONE:d03481e0)
+| | | | | | | (DONE:5c405f90)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_RETURN (0,0)
 | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="node") TYPE:d03495a0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="node") TYPE:5c406f50 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | left
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="LinkLeft") TYPE:d0349a40 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="LinkLeft") TYPE:5c407320 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="root") TYPE:d03498e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="root") TYPE:5c4071e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| | | | | (ID="left") TYPE:d03499b0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | (DONE:5c405f90)
+| | | | | (ID="left") TYPE:5c407290 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | (void)
 | | | | BODY
@@ -163,47 +163,47 @@ N_PROGRAM (0,0)
 | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="root") TYPE:d03498e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="root") TYPE:5c4071e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | left
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="left") TYPE:d03499b0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="left") TYPE:5c407290 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="GotoRight") TYPE:d0349e00 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="GotoRight") TYPE:5c407630 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="node") TYPE:d0349d70 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="node") TYPE:5c4075a0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | POINTER
 | | | | | | ELEMENT_TYPE
-| | | | | | | (DONE:d03481e0)
+| | | | | | | (DONE:5c405f90)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_RETURN (0,0)
 | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="node") TYPE:d0349d70 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="node") TYPE:5c4075a0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | right
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="LinkRight") TYPE:d034a1f0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="LinkRight") TYPE:5c407960 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="root") TYPE:d034a090 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | (ID="root") TYPE:5c407820 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| | | | | (ID="right") TYPE:d034a160 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | (DONE:5c405f90)
+| | | | | (ID="right") TYPE:5c4078d0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | (void)
 | | | | BODY
@@ -213,12 +213,12 @@ N_PROGRAM (0,0)
 | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | (ID="root") TYPE:d034a090 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | (ID="root") TYPE:5c407820 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | right
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="right") TYPE:d034a160 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="right") TYPE:5c4078d0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0 
 | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="searchNode") TYPE:d034a4c0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="searchNode") TYPE:5c407b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -227,7 +227,7 @@ N_PROGRAM (0,0)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="treeInOrder") TYPE:d034a610 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="treeInOrder") TYPE:5c407ca0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -236,7 +236,7 @@ N_PROGRAM (0,0)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="main") TYPE:d034a760 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| (ID="main") TYPE:5c407db0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -244,129 +244,129 @@ N_PROGRAM (0,0)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="N") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="N") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="i") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="i") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | | INIT
 | | | | | | | | N_INIT_LIST_ONE (0,0)
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | 0
-| | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | TYPE
 | | | | | | | | POINTER
 | | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | | (DONE:5c405f90)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | (ID="scanf") TYPE:d0343d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="scanf") TYPE:5c405cc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | "%d"
 | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | (ID="N") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | (ID="N") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_FOR (0,0)
 | | | | | | | | | N_FOR_EXP (0,0)
 | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | | 0
 | | | | | | | | | | N_EXP_LSS (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="N") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="N") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | N_EXP_POST_INC (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="i") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | (ID="i") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | | | | | (ID="parent") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="parent") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | TYPE
 | | | | | | | | | | | | (char 1)
-| | | | | | | | | | (ID="leftChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="leftChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | TYPE
 | | | | | | | | | | | | (char 1)
-| | | | | | | | | | (ID="rightChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | (ID="rightChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | TYPE
 | | | | | | | | | | | | (char 1)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | (ID="scanf") TYPE:d0343d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | (ID="scanf") TYPE:5c405cc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | N_EXP_STRING_LITERAL (0,0)
 | | | | | | | | | | | | | | | "%c %c %c"
 | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | (ID="parent") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | (ID="parent") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | (ID="leftChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | (ID="leftChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_AMP (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | (ID="rightChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | (ID="rightChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | N_EXP_ASSIGN (0,0)
 | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="nodeMaker") TYPE:d0348550 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="nodeMaker") TYPE:5c406290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | (ID="SetData") TYPE:d0349270 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | (ID="SetData") TYPE:5c406cd0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | (ID="parent") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | (ID="parent") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | (ID="SetData") TYPE:d0349270 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | (ID="SetData") TYPE:5c406cd0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | left
 | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | (ID="leftChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | (ID="leftChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
 | | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | (ID="SetData") TYPE:d0349270 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | (ID="SetData") TYPE:5c406cd0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | N_EXP_ARROW (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | right
 | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | | | | | | | | | (ID="rightChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
+| | | | | | | | | | | | | | | | | | | | (ID="rightChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=0 
 | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST (0,0)
@@ -374,226 +374,226 @@ N_PROGRAM (0,0)
 | | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | | 0
 | | | | | | | | | N_STMT_LIST_NIL (0,0)
---- warning at line 60:incompatible types in argument or return expr
---- warning at line 60:incompatible types in argument or return expr
---- warning at line 60:incompatible types in argument or return expr
+--- warning at line 21:incompatible types in assignment expression
 ======= semantic tree ==========
 N_PROGRAM (0,32)
-| (ID="TreeNode") TYPE:d03481e0 KIND:TYPE SPEC=TYPEDEF LEV=0 VAL=0 ADDR=0
+| (ID="TreeNode") TYPE:5c405f90 KIND:TYPE SPEC=TYPEDEF LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | STRUCT
 | | | | FIELD
-| | | | | (ID="value") TYPE:d0343a40 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
+| | | | | (ID="value") TYPE:5c4059e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
  | | | | | | TYPE
 | | | | | | | (char 1)
-| | | | | (ID="left") TYPE:d03482b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+| | | | | (ID="left") TYPE:5c406040 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| | | | | (ID="right") TYPE:d0348360 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+| | | | | | | | | (DONE:5c405f90)
+| | | | | (ID="right") TYPE:5c4060e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| (ID="nodeMaker") TYPE:d0348550 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | (DONE:5c405f90)
+| (ID="nodeMaker") TYPE:5c406290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
 | | | | TYPE
 | | | | | POINTER
 | | | | | | ELEMENT_TYPE
-| | | | | | | (DONE:d03481e0)
+| | | | | | | (DONE:5c405f90)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
-| | | | | | (ID="anode") TYPE:d03485d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | (ID="anode") TYPE:5c4062f0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | POINTER
 | | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | | (DONE:5c405f90)
 | | | | | | | INIT
 | | | | | | | | N_INIT_LIST_ONE (0,0)
 | | | | | | | | | N_EXP_CAST (0,0)
 | | | | | | | | | | POINTER
 | | | | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | | | | (DONE:5c405f90)
 | | | | | | | | | | N_EXP_FUNCTION_CALL (0,0)
 | | | | | | | | | | | N_EXP_IDENT (0,0)
-| | | | | | | | | | | | (ID="malloc") TYPE:d0343e50 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | (ID="malloc") TYPE:5c405df0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | N_ARG_LIST (0,0)
 | | | | | | | | | | | | N_EXP_SIZE_TYPE (0,0)
-| | | | | | | | | | | | | INT=-801865248
+| | | | | | | | | | | | | INT=1547722640
 | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_ASSIGN (d03482b0,0)
-| | | | | | | | | N_EXP_ARROW (d03482b0,1)
-| | | | | | | | | | N_EXP_IDENT (d03485d0,1)
-| | | | | | | | | | | (ID="anode") TYPE:d03485d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | (ID="left") TYPE:d03482b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
- | | | | | | | | | N_EXP_INT_CONST (d0343920,0)
+| | | | | | | | N_EXP_ASSIGN (5c406040,0)
+| | | | | | | | | N_EXP_ARROW (5c406040,1)
+| | | | | | | | | | N_EXP_IDENT (5c4062f0,1)
+| | | | | | | | | | | (ID="anode") TYPE:5c4062f0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | (ID="left") TYPE:5c406040 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | N_EXP_INT_CONST (5c4058c0,0)
 | | | | | | | | | | INT=0
 | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | N_EXP_ASSIGN (d0348360,0)
-| | | | | | | | | | N_EXP_ARROW (d0348360,1)
-| | | | | | | | | | | N_EXP_IDENT (d03485d0,1)
-| | | | | | | | | | | | (ID="anode") TYPE:d03485d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | | (ID="right") TYPE:d0348360 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
- | | | | | | | | | | N_EXP_INT_CONST (d0343920,0)
+| | | | | | | | | N_EXP_ASSIGN (5c4060e0,0)
+| | | | | | | | | | N_EXP_ARROW (5c4060e0,1)
+| | | | | | | | | | | N_EXP_IDENT (5c4062f0,1)
+| | | | | | | | | | | | (ID="anode") TYPE:5c4062f0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | | (ID="right") TYPE:5c4060e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | | N_EXP_INT_CONST (5c4058c0,0)
 | | | | | | | | | | | INT=0
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | | N_EXP_IDENT (d03485d0,1)
-| | | | | | | | | | | (ID="anode") TYPE:d03485d0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | N_EXP_IDENT (5c4062f0,1)
+| | | | | | | | | | | (ID="anode") TYPE:5c4062f0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="GetData") TYPE:d0348ec0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="GetData") TYPE:5c4069e0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="node") TYPE:d0348e30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | (ID="node") TYPE:5c406950 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | (char 1)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | N_EXP_ARROW (d0343a40,1)
-| | | | | | | | | N_EXP_IDENT (d0348e30,1)
-| | | | | | | | | | (ID="node") TYPE:d0348e30 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | (ID="value") TYPE:d0343a40 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
+| | | | | | | | N_EXP_ARROW (5c4059e0,1)
+| | | | | | | | | N_EXP_IDENT (5c406950,1)
+| | | | | | | | | | (ID="node") TYPE:5c406950 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | (ID="value") TYPE:5c4059e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
  | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="SetData") TYPE:d0349270 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="SetData") TYPE:5c406cd0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="node") TYPE:d0349150 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | (ID="node") TYPE:5c406bd0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| | | | | (ID="value") TYPE:d0343a40 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0
+| | | | | | | | | (DONE:5c405f90)
+| | | | | (ID="value") TYPE:5c4058c0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
-| | | | | | | (char 1)
+| | | | | | | (int)
 | | | | TYPE
 | | | | | (void)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_ASSIGN (d0343a40,0)
-| | | | | | | | | N_EXP_ARROW (d0343a40,1)
-| | | | | | | | | | N_EXP_IDENT (d0349150,1)
-| | | | | | | | | | | (ID="node") TYPE:d0349150 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | (ID="value") TYPE:d0343a40 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
- | | | | | | | | | N_EXP_IDENT (d0343a40,1)
-| | | | | | | | | | (ID="value") TYPE:d0343a40 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0
+| | | | | | | | N_EXP_ASSIGN (5c4059e0,0)
+| | | | | | | | | N_EXP_ARROW (5c4059e0,1)
+| | | | | | | | | | N_EXP_IDENT (5c406bd0,1)
+| | | | | | | | | | | (ID="node") TYPE:5c406bd0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | (ID="value") TYPE:5c4059e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=0
+ | | | | | | | | | N_EXP_CAST (5c4059e0,0)
+| | | | | | | | | | (char 1)
+| | | | | | | | | | N_EXP_IDENT (5c4058c0,1)
+| | | | | | | | | | | (ID="value") TYPE:5c4058c0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="GotoLeft") TYPE:d0349630 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="GotoLeft") TYPE:5c406fe0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="node") TYPE:d03495a0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | (ID="node") TYPE:5c406f50 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | POINTER
 | | | | | | ELEMENT_TYPE
-| | | | | | | (DONE:d03481e0)
+| | | | | | | (DONE:5c405f90)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | N_EXP_ARROW (d03482b0,1)
-| | | | | | | | | N_EXP_IDENT (d03495a0,1)
-| | | | | | | | | | (ID="node") TYPE:d03495a0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | (ID="left") TYPE:d03482b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+| | | | | | | | N_EXP_ARROW (5c406040,1)
+| | | | | | | | | N_EXP_IDENT (5c406f50,1)
+| | | | | | | | | | (ID="node") TYPE:5c406f50 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | (ID="left") TYPE:5c406040 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
  | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="LinkLeft") TYPE:d0349a40 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="LinkLeft") TYPE:5c407320 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="root") TYPE:d03498e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | (ID="root") TYPE:5c4071e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| | | | | (ID="left") TYPE:d03499b0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0
+| | | | | | | | | (DONE:5c405f90)
+| | | | | (ID="left") TYPE:5c407290 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | (void)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_ASSIGN (d03482b0,0)
-| | | | | | | | | N_EXP_ARROW (d03482b0,1)
-| | | | | | | | | | N_EXP_IDENT (d03498e0,1)
-| | | | | | | | | | | (ID="root") TYPE:d03498e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | (ID="left") TYPE:d03482b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
- | | | | | | | | | N_EXP_IDENT (d03499b0,1)
-| | | | | | | | | | (ID="left") TYPE:d03499b0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0
+| | | | | | | | N_EXP_ASSIGN (5c406040,0)
+| | | | | | | | | N_EXP_ARROW (5c406040,1)
+| | | | | | | | | | N_EXP_IDENT (5c4071e0,1)
+| | | | | | | | | | | (ID="root") TYPE:5c4071e0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | (ID="left") TYPE:5c406040 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | N_EXP_IDENT (5c407290,1)
+| | | | | | | | | | (ID="left") TYPE:5c407290 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="GotoRight") TYPE:d0349e00 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="GotoRight") TYPE:5c407630 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="node") TYPE:d0349d70 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | (ID="node") TYPE:5c4075a0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | POINTER
 | | | | | | ELEMENT_TYPE
-| | | | | | | (DONE:d03481e0)
+| | | | | | | (DONE:5c405f90)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | N_EXP_ARROW (d0348360,1)
-| | | | | | | | | N_EXP_IDENT (d0349d70,1)
-| | | | | | | | | | (ID="node") TYPE:d0349d70 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | (ID="right") TYPE:d0348360 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+| | | | | | | | N_EXP_ARROW (5c4060e0,1)
+| | | | | | | | | N_EXP_IDENT (5c4075a0,1)
+| | | | | | | | | | (ID="node") TYPE:5c4075a0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | (ID="right") TYPE:5c4060e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
  | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="LinkRight") TYPE:d034a1f0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="LinkRight") TYPE:5c407960 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
-| | | | | (ID="root") TYPE:d034a090 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+| | | | | (ID="root") TYPE:5c407820 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
-| | | | | (ID="right") TYPE:d034a160 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0
+| | | | | | | | | (DONE:5c405f90)
+| | | | | (ID="right") TYPE:5c4078d0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | TYPE
 | | | | | | | POINTER
 | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | (DONE:5c405f90)
 | | | | TYPE
 | | | | | (void)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST (0,0)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_ASSIGN (d0348360,0)
-| | | | | | | | | N_EXP_ARROW (d0348360,1)
-| | | | | | | | | | N_EXP_IDENT (d034a090,1)
-| | | | | | | | | | | (ID="root") TYPE:d034a090 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | (ID="right") TYPE:d0348360 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
- | | | | | | | | | N_EXP_IDENT (d034a160,1)
-| | | | | | | | | | (ID="right") TYPE:d034a160 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=0
+| | | | | | | | N_EXP_ASSIGN (5c4060e0,0)
+| | | | | | | | | N_EXP_ARROW (5c4060e0,1)
+| | | | | | | | | | N_EXP_IDENT (5c407820,1)
+| | | | | | | | | | | (ID="root") TYPE:5c407820 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | (ID="right") TYPE:5c4060e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | N_EXP_IDENT (5c4078d0,1)
+| | | | | | | | | | (ID="right") TYPE:5c4078d0 KIND:PARM SPEC=NULL LEV=1 VAL=0 ADDR=12
  | | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="searchNode") TYPE:d034a4c0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="searchNode") TYPE:5c407b90 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -602,7 +602,7 @@ N_PROGRAM (0,32)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="treeInOrder") TYPE:d034a610 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="treeInOrder") TYPE:5c407ca0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -611,7 +611,7 @@ N_PROGRAM (0,32)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,0)
 | | | | | | N_STMT_LIST_NIL (0,0)
-| (ID="main") TYPE:d034a760 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| (ID="main") TYPE:5c407db0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | TYPE
 | | | FUNCTION
 | | | | PARAMETER
@@ -619,151 +619,145 @@ N_PROGRAM (0,32)
 | | | | | (int)
 | | | | BODY
 | | | | | N_STMT_COMPOUND (0,20)
-| | | | | | (ID="N") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | (ID="N") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | TYPE
 | | | | | | | | (int)
-| | | | | | (ID="i") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | (ID="i") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | TYPE
 | | | | | | | | (int)
 | | | | | | | INIT
 | | | | | | | | N_INIT_LIST_ONE (0,0)
 | | | | | | | | | N_EXP_INT_CONST (0,0)
 | | | | | | | | | | INT=0
-| | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+| | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
  | | | | | | | TYPE
 | | | | | | | | POINTER
 | | | | | | | | | ELEMENT_TYPE
-| | | | | | | | | | (DONE:d03481e0)
+| | | | | | | | | | (DONE:5c405f90)
 | | | | | | N_STMT_LIST (0,12)
 | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | N_EXP_FUNCTION_CALL (d0343ad0,0)
-| | | | | | | | | N_EXP_AMP (d034bfc0,0)
-| | | | | | | | | | N_EXP_IDENT (d0343d20,0)
-| | | | | | | | | | | (ID="scanf") TYPE:d0343d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | N_EXP_FUNCTION_CALL (5c405a70,0)
+| | | | | | | | | N_EXP_AMP (5c409070,0)
+| | | | | | | | | | N_EXP_IDENT (5c405cc0,0)
+| | | | | | | | | | | (ID="scanf") TYPE:5c405cc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | N_EXP_STRING_LITERAL (d0343b10,0)
+| | | | | | | | | | N_EXP_STRING_LITERAL (5c405b00,0)
 | | | | | | | | | | | LITERAL: "%d"
 | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | N_EXP_AMP (d034c040,0)
-| | | | | | | | | | | | N_EXP_IDENT (d0343920,1)
-| | | | | | | | | | | | | (ID="N") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+| | | | | | | | | | | N_EXP_AMP (5c4090e0,0)
+| | | | | | | | | | | | N_EXP_IDENT (5c4058c0,1)
+| | | | | | | | | | | | | (ID="N") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
  | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | N_STMT_LIST (0,12)
 | | | | | | | | N_STMT_FOR (0,12)
 | | | | | | | | | N_FOR_EXP (0,0)
-| | | | | | | | | | N_EXP_ASSIGN (d0343920,0)
-| | | | | | | | | | | N_EXP_IDENT (d0343920,1)
-| | | | | | | | | | | | (ID="i") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
- | | | | | | | | | | | N_EXP_INT_CONST (d0343920,0)
+| | | | | | | | | | N_EXP_ASSIGN (5c4058c0,0)
+| | | | | | | | | | | N_EXP_IDENT (5c4058c0,1)
+| | | | | | | | | | | | (ID="i") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | N_EXP_INT_CONST (5c4058c0,0)
 | | | | | | | | | | | | INT=0
-| | | | | | | | | | N_EXP_LSS (d0343920,0)
-| | | | | | | | | | | N_EXP_IDENT (d0343920,1)
-| | | | | | | | | | | | (ID="i") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
- | | | | | | | | | | | N_EXP_IDENT (d0343920,1)
-| | | | | | | | | | | | (ID="N") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
- | | | | | | | | | | N_EXP_POST_INC (d0343920,0)
-| | | | | | | | | | | N_EXP_IDENT (d0343920,1)
-| | | | | | | | | | | | (ID="i") TYPE:d0343920 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+| | | | | | | | | | N_EXP_LSS (5c4058c0,0)
+| | | | | | | | | | | N_EXP_IDENT (5c4058c0,1)
+| | | | | | | | | | | | (ID="i") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
+ | | | | | | | | | | | N_EXP_IDENT (5c4058c0,1)
+| | | | | | | | | | | | (ID="N") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=12
+ | | | | | | | | | | N_EXP_POST_INC (5c4058c0,0)
+| | | | | | | | | | | N_EXP_IDENT (5c4058c0,1)
+| | | | | | | | | | | | (ID="i") TYPE:5c4058c0 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=16
  | | | | | | | | | N_STMT_COMPOUND (0,12)
-| | | | | | | | | | (ID="parent") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=20
+| | | | | | | | | | (ID="parent") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=20
  | | | | | | | | | | | TYPE
 | | | | | | | | | | | | (char 1)
-| | | | | | | | | | (ID="leftChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=24
+| | | | | | | | | | (ID="leftChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=24
  | | | | | | | | | | | TYPE
 | | | | | | | | | | | | (char 1)
-| | | | | | | | | | (ID="rightChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=28
+| | | | | | | | | | (ID="rightChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=28
  | | | | | | | | | | | TYPE
 | | | | | | | | | | | | (char 1)
 | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | N_EXP_FUNCTION_CALL (d0343ad0,0)
-| | | | | | | | | | | | | N_EXP_AMP (d034c080,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (d0343d20,0)
-| | | | | | | | | | | | | | | (ID="scanf") TYPE:d0343d20 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | N_EXP_FUNCTION_CALL (5c405a70,0)
+| | | | | | | | | | | | | N_EXP_AMP (5c409120,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (5c405cc0,0)
+| | | | | | | | | | | | | | | (ID="scanf") TYPE:5c405cc0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | N_ARG_LIST (0,16)
-| | | | | | | | | | | | | | N_EXP_STRING_LITERAL (d0343b10,0)
+| | | | | | | | | | | | | | N_EXP_STRING_LITERAL (5c405b00,0)
 | | | | | | | | | | | | | | | LITERAL: "%c %c %c"
 | | | | | | | | | | | | | | N_ARG_LIST (0,12)
-| | | | | | | | | | | | | | | N_EXP_AMP (d034c100,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (d0343a40,1)
-| | | | | | | | | | | | | | | | | (ID="parent") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=20
+| | | | | | | | | | | | | | | N_EXP_AMP (5c409190,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (5c4059e0,1)
+| | | | | | | | | | | | | | | | | (ID="parent") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=20
  | | | | | | | | | | | | | | | N_ARG_LIST (0,8)
-| | | | | | | | | | | | | | | | N_EXP_AMP (d034c140,0)
-| | | | | | | | | | | | | | | | | N_EXP_IDENT (d0343a40,1)
-| | | | | | | | | | | | | | | | | | (ID="leftChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=24
+| | | | | | | | | | | | | | | | N_EXP_AMP (5c4091d0,0)
+| | | | | | | | | | | | | | | | | N_EXP_IDENT (5c4059e0,1)
+| | | | | | | | | | | | | | | | | | (ID="leftChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=24
  | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
-| | | | | | | | | | | | | | | | | N_EXP_AMP (d034c180,0)
-| | | | | | | | | | | | | | | | | | N_EXP_IDENT (d0343a40,1)
-| | | | | | | | | | | | | | | | | | | (ID="rightChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=28
+| | | | | | | | | | | | | | | | | N_EXP_AMP (5c409210,0)
+| | | | | | | | | | | | | | | | | | N_EXP_IDENT (5c4059e0,1)
+| | | | | | | | | | | | | | | | | | | (ID="rightChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=28
  | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | N_EXP_ASSIGN (d034a940,0)
-| | | | | | | | | | | | | | N_EXP_IDENT (d034a940,1)
-| | | | | | | | | | | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
- | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (d03484c0,0)
-| | | | | | | | | | | | | | | N_EXP_AMP (d034c1c0,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (d0348550,0)
-| | | | | | | | | | | | | | | | | (ID="nodeMaker") TYPE:d0348550 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+| | | | | | | | | | | | | N_EXP_ASSIGN (5c407f30,0)
+| | | | | | | | | | | | | | N_EXP_IDENT (5c407f30,1)
+| | | | | | | | | | | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+ | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (5c406200,0)
+| | | | | | | | | | | | | | | N_EXP_AMP (5c409250,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (5c406290,0)
+| | | | | | | | | | | | | | | | | (ID="nodeMaker") TYPE:5c406290 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
  | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (d0343ad0,0)
-| | | | | | | | | | | | | | | N_EXP_AMP (d034c240,0)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (d0349270,0)
-| | | | | | | | | | | | | | | | | (ID="SetData") TYPE:d0349270 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
- | | | | | | | | | | | | | | | N_ARG_LIST (0,1)
-| | | | | | | | | | | | | | | | N_EXP_IDENT (d034a940,1)
-| | | | | | | | | | | | | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
- | | | | | | | | | | | | | | | | N_ARG_LIST (0,1)
-| | | | | | | | | | | | | | | | | N_EXP_CAST (d0343a40,0)
-| | | | | | | | | | | | | | | | | | (char 1)
-| | | | | | | | | | | | | | | | | | N_EXP_CAST (d0343920,0)
-| | | | | | | | | | | | | | | | | | | (int)
-| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (d0343a40,1)
-| | | | | | | | | | | | | | | | | | | | (ID="parent") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=20
+| | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (5c405a70,0)
+| | | | | | | | | | | | | | | N_EXP_AMP (5c4092c0,0)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (5c406cd0,0)
+| | | | | | | | | | | | | | | | | (ID="SetData") TYPE:5c406cd0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | | | | | N_EXP_IDENT (5c407f30,1)
+| | | | | | | | | | | | | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+ | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | | | | | | N_EXP_CAST (5c4058c0,0)
+| | | | | | | | | | | | | | | | | | (int)
+| | | | | | | | | | | | | | | | | | N_EXP_IDENT (5c4059e0,1)
+| | | | | | | | | | | | | | | | | | | (ID="parent") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=20
  | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (d0343ad0,0)
-| | | | | | | | | | | | | | | | N_EXP_AMP (d034c340,0)
-| | | | | | | | | | | | | | | | | N_EXP_IDENT (d0349270,0)
-| | | | | | | | | | | | | | | | | | (ID="SetData") TYPE:d0349270 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
- | | | | | | | | | | | | | | | | N_ARG_LIST (0,1)
-| | | | | | | | | | | | | | | | | N_EXP_ARROW (d03482b0,1)
-| | | | | | | | | | | | | | | | | | N_EXP_IDENT (d034a940,1)
-| | | | | | | | | | | | | | | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
- | | | | | | | | | | | | | | | | | | (ID="left") TYPE:d03482b0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
- | | | | | | | | | | | | | | | | | N_ARG_LIST (0,1)
-| | | | | | | | | | | | | | | | | | N_EXP_CAST (d0343a40,0)
-| | | | | | | | | | | | | | | | | | | (char 1)
-| | | | | | | | | | | | | | | | | | | N_EXP_CAST (d0343920,0)
-| | | | | | | | | | | | | | | | | | | | (int)
-| | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (d0343a40,1)
-| | | | | | | | | | | | | | | | | | | | | (ID="leftChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=24
+| | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (5c405a70,0)
+| | | | | | | | | | | | | | | | N_EXP_AMP (5c409360,0)
+| | | | | | | | | | | | | | | | | N_EXP_IDENT (5c406cd0,0)
+| | | | | | | | | | | | | | | | | | (ID="SetData") TYPE:5c406cd0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | | | | | | N_EXP_ARROW (5c406040,1)
+| | | | | | | | | | | | | | | | | | N_EXP_IDENT (5c407f30,1)
+| | | | | | | | | | | | | | | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+ | | | | | | | | | | | | | | | | | | (ID="left") TYPE:5c406040 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | | | | | | | N_EXP_CAST (5c4058c0,0)
+| | | | | | | | | | | | | | | | | | | (int)
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (5c4059e0,1)
+| | | | | | | | | | | | | | | | | | | | (ID="leftChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=24
  | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | | | | | | | N_STMT_EXPRESSION (0,0)
-| | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (d0343ad0,0)
-| | | | | | | | | | | | | | | | | N_EXP_AMP (d034c440,0)
-| | | | | | | | | | | | | | | | | | N_EXP_IDENT (d0349270,0)
-| | | | | | | | | | | | | | | | | | | (ID="SetData") TYPE:d0349270 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
- | | | | | | | | | | | | | | | | | N_ARG_LIST (0,1)
-| | | | | | | | | | | | | | | | | | N_EXP_ARROW (d0348360,1)
-| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (d034a940,1)
-| | | | | | | | | | | | | | | | | | | | (ID="node") TYPE:d034a940 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
- | | | | | | | | | | | | | | | | | | | (ID="right") TYPE:d0348360 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
- | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,1)
-| | | | | | | | | | | | | | | | | | | N_EXP_CAST (d0343a40,0)
-| | | | | | | | | | | | | | | | | | | | (char 1)
-| | | | | | | | | | | | | | | | | | | | N_EXP_CAST (d0343920,0)
-| | | | | | | | | | | | | | | | | | | | | (int)
-| | | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (d0343a40,1)
-| | | | | | | | | | | | | | | | | | | | | | (ID="rightChild") TYPE:d0343a40 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=28
+| | | | | | | | | | | | | | | | N_EXP_FUNCTION_CALL (5c405a70,0)
+| | | | | | | | | | | | | | | | | N_EXP_AMP (5c409400,0)
+| | | | | | | | | | | | | | | | | | N_EXP_IDENT (5c406cd0,0)
+| | | | | | | | | | | | | | | | | | | (ID="SetData") TYPE:5c406cd0 KIND:FUNC SPEC=NULL LEV=0 VAL=0 ADDR=0
+ | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | | | | | | | N_EXP_ARROW (5c4060e0,1)
+| | | | | | | | | | | | | | | | | | | N_EXP_IDENT (5c407f30,1)
+| | | | | | | | | | | | | | | | | | | | (ID="node") TYPE:5c407f30 KIND:VAR SPEC=AUTO LEV=1 VAL=0 ADDR=20
+ | | | | | | | | | | | | | | | | | | | (ID="right") TYPE:5c4060e0 KIND:FIELD SPEC=NULL LEV=1 VAL=0 ADDR=4
+ | | | | | | | | | | | | | | | | | | N_ARG_LIST (0,4)
+| | | | | | | | | | | | | | | | | | | N_EXP_CAST (5c4058c0,0)
+| | | | | | | | | | | | | | | | | | | | (int)
+| | | | | | | | | | | | | | | | | | | | N_EXP_IDENT (5c4059e0,1)
+| | | | | | | | | | | | | | | | | | | | | (ID="rightChild") TYPE:5c4059e0 KIND:VAR SPEC=AUTO LEV=2 VAL=0 ADDR=28
  | | | | | | | | | | | | | | | | | | | N_ARG_LIST_NIL (0,0)
 | | | | | | | | | | | | | | | N_STMT_LIST_NIL (0,0)
 | | | | | | | | N_STMT_LIST (0,0)
 | | | | | | | | | N_STMT_RETURN (0,0)
-| | | | | | | | | | N_EXP_INT_CONST (d0343920,0)
+| | | | | | | | | | N_EXP_INT_CONST (5c4058c0,0)
 | | | | | | | | | | | INT=0
 | | | | | | | | | N_STMT_LIST_NIL (0,0)
