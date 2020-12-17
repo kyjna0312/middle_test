@@ -341,11 +341,14 @@ A_TYPE *sem_expression(A_NODE *node)
         t1 = sem_expression(node->llink);
         t2 = sem_expression(node->rlink);
         if (isArithmeticType(t1) && isArithmeticType(t2))
-            result = convertUsualUnaryConversion(node);
+            result = convertUsualBinaryConversion(node);
         else if (isPointerType(t1) && isIntegralType(t2))
+            result = t1;
+        else if(isCompatiblePointerType(t1, t2))
             result = t1;
         else
             semantic_error(24, node->line, 0);
+        break;
     case N_EXP_LSS:
     case N_EXP_GTR:
     case N_EXP_LEQ:
@@ -983,7 +986,14 @@ A_TYPE *convertUsualBinaryConversion(A_NODE *node)
     t1 = node->llink->type;
     t2 = node->rlink->type;
 
-    if (isFloatType(t1) && isFloatType(t2))
+    if (isFloatType(t1) && !isFloatType(t2))
+    {
+        semantic_warning(14, node->line);
+        node->clink = makeNode(N_EXP_CAST, t1, NIL, node->llink);
+        node->llink->type = t2;
+    } 
+    
+    else if (!isFloatType(t1) && isFloatType(t2))
     {
         semantic_warning(14, node->line);
         node->clink = makeNode(N_EXP_CAST, t1, NIL, node->llink);
@@ -1021,7 +1031,7 @@ BOOLEAN isAllowableAssignmentConversion(A_TYPE *t1, A_TYPE *t2, A_NODE *node) //
     if (isArithmeticType(t1) && isArithmeticType(t2))
         return (TRUE);
 
-    else if (isStructOrUnionType(t1) && isCompatiblePointerType(t1, t2))
+    else if (isStructOrUnionType(t1) && isCompatibleType(t1, t2))
     {
         return (TRUE);
     }
