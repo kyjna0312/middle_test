@@ -317,6 +317,11 @@ void gen_expression(A_NODE *node)
         t = node->type;
 
         if (node->type->size == 1)
+            gen_code_i(LDXB, 0, 0);
+        else
+            gen_code_i(LDX, 0, 1);
+
+        if (isPointerOrArrayType(node->type))
         {
             gen_code_i(LITI, 0, node->type->element_type->size);
             gen_code_i(ADDI, 0, 0);
@@ -330,6 +335,7 @@ void gen_expression(A_NODE *node)
             gen_code_i(STXB, 0, 0);
         else
             gen_code_i(STX, 0, 1);
+
         break;
 
     case N_EXP_PRE_DEC:
@@ -476,7 +482,7 @@ void gen_expression(A_NODE *node)
         if (isFloatType(node->llink->type))
             gen_code_i(LSSF, 0, 0);
         else
-            gen_code_i(SUBI, 0, 0);
+            gen_code_i(LSSI, 0, 0);
         break;
 
     case N_EXP_GTR:
@@ -832,7 +838,7 @@ void gen_statement(A_NODE *node, int cont_label, int break_label, A_SWITCH sw[],
         gen_label_number(l3);
 
         if (n->rlink)
-        {
+        { //a
             gen_expression(n->rlink);
             i = n->rlink->type->size;
             if (i)
