@@ -298,6 +298,7 @@ A_TYPE *sem_expression(A_NODE *node)
         }
         else
             semantic_error(31, node->line, 0);
+        break;
     case N_EXP_PRE_INC:
     case N_EXP_PRE_DEC:
         result = sem_expression(node->clink);
@@ -317,6 +318,7 @@ A_TYPE *sem_expression(A_NODE *node)
             result = convertUsualBinaryConversion(node);
         else
             semantic_error(28, node->line, 0);
+        break;
     case N_EXP_MOD:
         t1 = sem_expression(node->llink);
         t2 = sem_expression(node->rlink);
@@ -438,7 +440,11 @@ void sem_arg_expr_list(A_NODE *node, A_ID *id)
                 t = sem_expression(node->llink);
                 sem_arg_expr_list(node->rlink, id);
             }
-            arg_size = node->llink->type->size + node->rlink->value;
+
+            if(node->llink->type->kind == T_ARRAY)
+                arg_size = 4 + node->rlink->value;
+            else
+                arg_size = node->llink->type->size + node->rlink->value;
         }
         break;
     case N_ARG_LIST_NIL:
@@ -451,7 +457,7 @@ void sem_arg_expr_list(A_NODE *node, A_ID *id)
     }
 
     if (arg_size % 4)
-        arg_size / 4 * 4 + 4;
+        arg_size = arg_size / 4 * 4 + 4;
 
     node->value = arg_size;
 }
@@ -492,6 +498,7 @@ int sem_statement(A_NODE *node, int addr, A_TYPE *ret, BOOLEAN sw, BOOLEAN brk, 
         if (node->llink)
             local_size = sem_declaration_list(node->llink, addr);
         local_size += sem_statement_list(node->rlink, local_size + addr, ret, sw, brk, cnt);
+        break;
     case N_STMT_EMPTY:
         break;
     case N_STMT_EXPRESSION:
@@ -720,6 +727,9 @@ int sem_A_TYPE(A_TYPE *t)
         semantic_error(90, t->line, 0);
         break;
     }
+
+    t->size = result;
+    return result;
 }
 
 //set variable address in declaration-list and return its total variable size
@@ -819,7 +829,7 @@ int sem_declaration(A_ID *id, int addr)
         semantic_error(89, id->line, id->name);
         break;
     }
-
+    
     return (size);
 }
 
